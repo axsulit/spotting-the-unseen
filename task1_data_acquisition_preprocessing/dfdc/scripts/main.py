@@ -23,7 +23,7 @@ roll_threshold = config["roll_threshold"]
 print(f"Processing {manipulation_type}...")
 
 # Construct the path to the video directory (edit nyo nalang for your own dataset)
-video_dir = os.path.join(dataset_root, manipulation_type, "c23", "videos")
+video_dir = os.path.join(dataset_root)
 
 # Check if the video directory exists
 if not os.path.exists(video_dir):

@@ -1,6 +1,6 @@
-dataset_root: D:\.THESIS\ff++\manipulated_sequences # Replace with your actual path
-output_dir: D:\.THESIS\ff++\preprocessed_frames # Where to save processed frames (relative to project root)
-landmark_model_path: C:\Users\aizur\OneDrive\Documents\GitHub\spotting-the-unseen\task1_data_acquisition_preprocessing\ff++ (c23)\scripts\shape_predictor_68_face_landmarks.dat
+dataset_root: C:\Users\user\OneDrive - De La Salle University - Manila\Ice's\lasalle\Subjects\Thesis\DFDC Full Dataset\dfdc_train_part_0 # Replace with your actual path
+output_dir: C:\Users\user\OneDrive - De La Salle University - Manila\Ice's\lasalle\Subjects\Thesis\DFDC Full Dataset\preprocessed_train0 # Where to save processed frames (relative to project root)
+landmark_model_path: C:\Users\user\Documents\GitHub Repos\spotting-the-unseen\task1_data_acquisition_preprocessing\dfdc\scripts\shape_predictor_68_face_landmarks.dat
 frame_interval: 10 # Process every 10th frame
 yaw_threshold: 30 # Max head rotation in yaw direction
 pitch_threshold: 30 # Max head rotation in pitch direction
