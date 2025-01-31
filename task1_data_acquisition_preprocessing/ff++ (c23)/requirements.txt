@@ -1,4 +1,6 @@
 opencv-python
 os
+cmake
+dlib
 pyyaml
-time
+numpy
