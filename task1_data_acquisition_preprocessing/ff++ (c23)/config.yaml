@@ -1,0 +1,2 @@
+dataset_root: D:\.THESIS\ff++\manipulated_sequences # Replace with your actual path
+output_dir: D:\.THESIS\ff++\preprocessed_frames # Where to save processed frames (relative to project root)
