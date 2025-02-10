@@ -114,7 +114,7 @@ def process_images_with_color_mismatch(input_folder, output_folder, intensity=50
 
     os.makedirs(output_folder, exist_ok=True)
 
-    for filename in os.listdir(input_folder)[:50]:
+    for filename in os.listdir(input_folder):
         file_path = os.path.join(input_folder, filename)
 
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
