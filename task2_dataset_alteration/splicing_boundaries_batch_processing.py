@@ -78,7 +78,7 @@ def process_images_with_canny(input_base_folder, output_base_folder, resolutions
         edge_threshold1 (int): First threshold for Canny edge detection.
         edge_threshold2 (int): Second threshold for Canny edge detection.
     """
-    for filename in os.listdir(os.path.join(input_base_folder, resolutions[0]))[:50]:
+    for filename in os.listdir(os.path.join(input_base_folder, resolutions[0])):
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
             continue
 
