@@ -29,7 +29,7 @@ def blur_images(input_folder, output_folder):
 
     os.makedirs(output_folder, exist_ok=True)
 
-    for filename in os.listdir(input_folder)[:20]:
+    for filename in os.listdir(input_folder):
         file_path = os.path.join(input_folder, filename)
 
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
