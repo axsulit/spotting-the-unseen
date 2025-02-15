@@ -31,7 +31,8 @@ def blur_images(input_folder, output_base_folder):
     intensities = [5, 10, 15, 20, 25]  
 
     # Define blur types
-    blur_types = ["gaussian", "median", "bilateral"]
+    blur_types = ["gaussian"] # primary experiment
+    # blur_types = ["median", "bilateral"] # secondary experiment
 
     for filename in os.listdir(input_folder):
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
