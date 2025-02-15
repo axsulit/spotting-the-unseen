@@ -40,7 +40,7 @@ def blur_images(input_folder, output_base_folder):
     os.makedirs(primary_output_folder, exist_ok=True)
     os.makedirs(secondary_output_folder, exist_ok=True)
 
-    for filename in os.listdir(input_folder)[:10]:
+    for filename in os.listdir(input_folder):
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
             print(f"Skipping non-image file: {filename}")
             continue
