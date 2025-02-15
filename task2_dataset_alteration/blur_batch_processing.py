@@ -25,20 +25,13 @@ def apply_blur(image, blur_type, intensity):
     return image  
 
 def blur_images(input_folder, output_base_folder):
-    """Applies different blurs at various intensities and organizes output into subfolders."""
+    """Applies different blurs at various intensities and organizes output into structured subfolders."""
     
-    # Define intensity levels
-    primary_gaussian_intensities = [5, 10, 15, 20, 25]  # Used for Gaussian blur
-    secondary_intensities = [5, 10, 15, 20, 25]  # Used for both Gaussian & Other blurs
-    
-    blur_types_secondary = ["median", "bilateral"]
+    # Define intensity levels (Same for all blur types)
+    intensities = [5, 10, 15, 20, 25]  
 
-    # Create primary and secondary output folders
-    primary_output_folder = os.path.join(output_base_folder, "primary")
-    secondary_output_folder = os.path.join(output_base_folder, "secondary")
-    
-    os.makedirs(primary_output_folder, exist_ok=True)
-    os.makedirs(secondary_output_folder, exist_ok=True)
+    # Define blur types
+    blur_types = ["gaussian", "median", "bilateral"]
 
     for filename in os.listdir(input_folder):
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
@@ -51,30 +44,20 @@ def blur_images(input_folder, output_base_folder):
             print(f"Error: Could not load image '{input_path}'. Skipping.")
             continue
 
-        # Apply Gaussian Blur for primary & secondary sets
-        for intensity in primary_gaussian_intensities:
-            blurred_image = apply_blur(image, "gaussian", intensity)
-
-            output_filename = f"{os.path.splitext(filename)[0]}_gaussian_{intensity}.jpg"
-            output_path = os.path.join(primary_output_folder, output_filename)
-            cv2.imwrite(output_path, blurred_image)
-            print(f"Saved (Primary): {output_path}")
-
-            # Save 5, 10, 15, 25 Gaussian blur in the secondary set as well
-            if intensity in secondary_intensities:
-                secondary_output_path = os.path.join(secondary_output_folder, output_filename)
-                cv2.imwrite(secondary_output_path, blurred_image)
-                print(f"Saved (Secondary): {secondary_output_path}")
-
-        # Apply Median & Bilateral Blurs for secondary set
-        for blur_type in blur_types_secondary:
-            for intensity in secondary_intensities:
+        # Apply all blur types and save them in organized subfolders
+        for blur_type in blur_types:
+            for intensity in intensities:
                 blurred_image = apply_blur(image, blur_type, intensity)
 
+                # Define folder structure: output_base_folder/blur_type/intensity/
+                intensity_folder = os.path.join(output_base_folder, blur_type, str(intensity))
+                os.makedirs(intensity_folder, exist_ok=True)
+
                 output_filename = f"{os.path.splitext(filename)[0]}_{blur_type}_{intensity}.jpg"
-                output_path = os.path.join(secondary_output_folder, output_filename)
+                output_path = os.path.join(intensity_folder, output_filename)
+
                 cv2.imwrite(output_path, blurred_image)
-                print(f"Saved (Secondary): {output_path}")
+                print(f"Saved: {output_path}")
 
     print("Batch processing complete.")
 
