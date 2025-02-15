@@ -2,23 +2,22 @@ import cv2
 import dlib
 import os
 import numpy as np
-import random
 
 # Load Dlib face detector
 detector = dlib.get_frontal_face_detector()
 
 def apply_canny_edge_detection(image, edge_opacity, edge_threshold1=50, edge_threshold2=150):
     """
-    Apply Canny Edge Detection with a fixed opacity for consistency across resolutions.
+    Apply Canny Edge Detection with a fixed opacity for consistency.
 
     Parameters:
         image (numpy.ndarray): Input image.
-        edge_opacity (float): Fixed opacity for edge blending.
+        edge_opacity (float): Opacity for edge blending.
         edge_threshold1 (int): First threshold for Canny edge detection.
         edge_threshold2 (int): Second threshold for Canny edge detection.
 
     Returns:
-        numpy.ndarray: Image with transparent edges.
+        numpy.ndarray: Image with blended edge detection.
     """
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(gray, edge_threshold1, edge_threshold2)
@@ -31,17 +30,17 @@ def apply_canny_edge_detection(image, edge_opacity, edge_threshold1=50, edge_thr
     edge_overlay = cv2.GaussianBlur(edge_overlay, (3, 3), 0)
 
     # Blend edge overlay with the original image using fixed opacity
-    transparent_edges = cv2.addWeighted(image, 1, edge_overlay, edge_opacity, 0)
+    processed_image = cv2.addWeighted(image, 1, edge_overlay, edge_opacity, 0)
 
-    return transparent_edges
+    return processed_image
 
 def sharpen_and_brighten_edges(image, edge_opacity):
     """
-    If no face is detected, apply sharpening and brighten the edges with a fixed opacity.
+    If no face is detected, apply sharpening and brighten the edges.
 
     Parameters:
         image (numpy.ndarray): Input image.
-        edge_opacity (float): Fixed opacity for edge blending.
+        edge_opacity (float): Opacity for edge blending.
 
     Returns:
         numpy.ndarray: Image with sharpened and brightened edges.
@@ -62,73 +61,70 @@ def sharpen_and_brighten_edges(image, edge_opacity):
     edge_mask = cv2.erode(edge_mask, kernel, iterations=1)
 
     # Blend edges with the original image using fixed opacity
-    transparent_edges = cv2.addWeighted(image, 1, edge_mask, edge_opacity, 0)
+    processed_image = cv2.addWeighted(image, 1, edge_mask, edge_opacity, 0)
 
-    return transparent_edges
+    return processed_image
 
-def process_images_with_canny(input_base_folder, output_base_folder, resolutions, edge_threshold1=50, edge_threshold2=150):
+def process_images(input_folder, output_base_folder, edge_opacity_levels, edge_threshold1=50, edge_threshold2=150):
     """
-    Process images by applying Canny edge detection with fixed opacity.
-    If no face is detected, sharpen and brighten edges with the same opacity.
+    Process images by applying Canny edge detection with fixed intensity levels.
 
     Parameters:
-        input_base_folder (str): Path to the base input folder.
-        output_base_folder (str): Path to the base output folder.
-        resolutions (list): List of resolutions to process.
+        input_folder (str): Path to the input folder.
+        output_base_folder (str): Path to the output folder.
+        edge_opacity_levels (list): List of fixed opacity levels for boundary splicing.
         edge_threshold1 (int): First threshold for Canny edge detection.
         edge_threshold2 (int): Second threshold for Canny edge detection.
     """
-    for filename in os.listdir(os.path.join(input_base_folder, resolutions[0])):
+    if not os.path.exists(input_folder):
+        print(f"Error: Input folder '{input_folder}' does not exist.")
+        return
+
+    for filename in os.listdir(input_folder):
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
             continue
 
-        # Generate a fixed opacity value per image
-        
+        # Load image
+        input_path = os.path.join(input_folder, filename)
+        image = cv2.imread(input_path)
+        if image is None:
+            continue
 
-        for res in resolutions:
-            input_folder = os.path.join(input_base_folder, res)
-            output_folder = os.path.join(output_base_folder, res)
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-            if not os.path.exists(input_folder):
-                print(f"Error: Input folder '{input_folder}' does not exist.")
-                continue
+        # Detect faces
+        faces = detector(gray)
 
-            os.makedirs(output_folder, exist_ok=True)
-
-            file_path = os.path.join(input_folder, filename)
-            image = cv2.imread(file_path)
-            if image is None:
-                continue
-
-            # Convert image to grayscale for face detection
-            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-            # Detect faces
-            faces = detector(gray)
+        for opacity in edge_opacity_levels:
+            opacity_scaled = opacity / 100.0  # Convert to float (e.g., 20 → 0.2)
 
             if len(faces) > 0:
-                edge_opacity = random.uniform(0.2, 0.5)  # Adjust range as needed
-                # Apply Canny edge detection with fixed opacity
-                processed_image = apply_canny_edge_detection(image, edge_opacity, edge_threshold1, edge_threshold2)
+                # Apply Canny edge detection
+                processed_image = apply_canny_edge_detection(image, opacity_scaled, edge_threshold1, edge_threshold2)
             else:
-                edge_opacity = random.uniform(0.4, 0.7)  # Adjust range as needed
-                # Apply sharpening and edge brightening with fixed opacity
-                processed_image = sharpen_and_brighten_edges(image, edge_opacity)
+                # Apply sharpening and edge brightening
+                processed_image = sharpen_and_brighten_edges(image, opacity_scaled)
 
-            # Modify filename to indicate edge detection
+            # Define folder structure: output_base_folder/intensity_level/
+            intensity_folder = os.path.join(output_base_folder, str(opacity))
+            os.makedirs(intensity_folder, exist_ok=True)
+
+            # Modify filename to indicate boundary splicing intensity
             name, ext = os.path.splitext(filename)
-            new_filename = f"{name}_canny{ext}"
-            output_path = os.path.join(output_folder, new_filename)
+            new_filename = f"{name}_canny_{opacity}.jpg"
+            output_path = os.path.join(intensity_folder, new_filename)
 
             cv2.imwrite(output_path, processed_image)
-            print(f"Saved processed image: {output_path}")
+            print(f"Saved: {output_path}")
 
     print("Processing complete.")
 
 # Define input and output folder paths
-input_base_folder = 'datasets/2 celebdf-resized/Celeb-real'
-output_base_folder = 'datasets/3.3 celebdf-boundary_splicing/Celeb-real'
-resolutions = ["64x64", "128x128", "256x256"]
+input_folder = 'datasets/2 celebdf-resized/Celeb-synthesis/256x256'
+output_base_folder = 'datasets/3.3 celebdf-boundary_splicing/Celeb-synthesis'
 
-# Process images with consistent opacity across resolutions
-process_images_with_canny(input_base_folder, output_base_folder, resolutions, edge_threshold1=50, edge_threshold2=150)
+# Define fixed intensity levels (in percentage form)
+edge_opacity_levels = [20, 40, 60, 80]
+
+# Process images and save them in intensity-based folders
+process_images(input_folder, output_base_folder, edge_opacity_levels, edge_threshold1=50, edge_threshold2=150)
