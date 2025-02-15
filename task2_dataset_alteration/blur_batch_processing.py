@@ -1,62 +1,86 @@
 import cv2
 import os
 import numpy as np
-import random
 
-def apply_blur(image, blur_type, kernel_size):
-    """Applies a specified blur type and kernel size to an image."""
+def apply_blur(image, blur_type, intensity):
+    """Applies a specific blur type and intensity to an image."""
     if blur_type == "gaussian":
+        kernel_size = max(3, int(intensity * min(image.shape[:2]) / 100))
+        if kernel_size % 2 == 0:  # Ensure kernel size is odd
+            kernel_size += 1
         return cv2.GaussianBlur(image, (kernel_size, kernel_size), 0)
     
     elif blur_type == "median":
+        kernel_size = max(3, int(intensity * min(image.shape[:2]) / 100))
+        if kernel_size % 2 == 0:
+            kernel_size += 1
         return cv2.medianBlur(image, kernel_size)
 
     elif blur_type == "bilateral":
-        d, sigma_color, sigma_space = kernel_size
+        d = max(5, int(intensity * min(image.shape[:2]) / 100))
+        sigma_color = int(intensity * 2.5)
+        sigma_space = int(intensity * 2.5)
         return cv2.bilateralFilter(image, d, sigma_color, sigma_space)
-    
-    return image  # Default (no change)
 
-def blur_images_across_resolutions(input_base_folder, output_base_folder, resolutions):
-    """Ensures the same blur type is applied across different resolutions."""
-    for filename in os.listdir(os.path.join(input_base_folder, "64x64")):
+    return image  
+
+def blur_images(input_folder, output_base_folder):
+    """Applies different blurs at various intensities and organizes output into subfolders."""
+    
+    # Define intensity levels
+    primary_gaussian_intensities = [5, 10, 15, 20, 25]  # Used for Gaussian blur
+    secondary_intensities = [5, 10, 15, 20, 25]  # Used for both Gaussian & Other blurs
+    
+    blur_types_secondary = ["median", "bilateral"]
+
+    # Create primary and secondary output folders
+    primary_output_folder = os.path.join(output_base_folder, "primary")
+    secondary_output_folder = os.path.join(output_base_folder, "secondary")
+    
+    os.makedirs(primary_output_folder, exist_ok=True)
+    os.makedirs(secondary_output_folder, exist_ok=True)
+
+    for filename in os.listdir(input_folder)[:10]:
         if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
             print(f"Skipping non-image file: {filename}")
             continue
 
-        blur_type = random.choice(["gaussian", "median", "bilateral"])
+        input_path = os.path.join(input_folder, filename)
+        image = cv2.imread(input_path)
+        if image is None:
+            print(f"Error: Could not load image '{input_path}'. Skipping.")
+            continue
 
-        if blur_type in ["gaussian", "median"]:
-            kernel_size = random.choice(range(3, 16, 2))  # Odd kernel sizes
-        else:  # Bilateral filter parameters
-            kernel_size = (random.randint(5, 15), random.randint(50, 150), random.randint(50, 150))
+        # Apply Gaussian Blur for primary & secondary sets
+        for intensity in primary_gaussian_intensities:
+            blurred_image = apply_blur(image, "gaussian", intensity)
 
-        for res in resolutions:
-            input_folder = os.path.join(input_base_folder, res)
-            output_folder = os.path.join(output_base_folder, res)
-
-            os.makedirs(output_folder, exist_ok=True)
-
-            input_path = os.path.join(input_folder, filename)
-            output_filename = f"{os.path.splitext(filename)[0]}_{blur_type}_{kernel_size}{os.path.splitext(filename)[1]}"
-            output_path = os.path.join(output_folder, output_filename)
-
-            image = cv2.imread(input_path)
-            if image is None:
-                print(f"Error: Could not load image '{input_path}'. Skipping.")
-                continue
-
-            # Apply the same blur settings across resolutions
-            blurred_image = apply_blur(image, blur_type, kernel_size)
+            output_filename = f"{os.path.splitext(filename)[0]}_gaussian_{intensity}.jpg"
+            output_path = os.path.join(primary_output_folder, output_filename)
             cv2.imwrite(output_path, blurred_image)
-            print(f"Blurred image saved ({blur_type}, {kernel_size}): {output_path}")
+            print(f"Saved (Primary): {output_path}")
+
+            # Save 5, 10, 15, 25 Gaussian blur in the secondary set as well
+            if intensity in secondary_intensities:
+                secondary_output_path = os.path.join(secondary_output_folder, output_filename)
+                cv2.imwrite(secondary_output_path, blurred_image)
+                print(f"Saved (Secondary): {secondary_output_path}")
+
+        # Apply Median & Bilateral Blurs for secondary set
+        for blur_type in blur_types_secondary:
+            for intensity in secondary_intensities:
+                blurred_image = apply_blur(image, blur_type, intensity)
+
+                output_filename = f"{os.path.splitext(filename)[0]}_{blur_type}_{intensity}.jpg"
+                output_path = os.path.join(secondary_output_folder, output_filename)
+                cv2.imwrite(output_path, blurred_image)
+                print(f"Saved (Secondary): {output_path}")
 
     print("Batch processing complete.")
 
-# Define input and output folder structures
-input_base_folder = 'datasets/2 celebdf-resized/Celeb-real'
+# Define input and output folder paths
+input_folder = 'datasets/2 celebdf-resized/Celeb-real/256x256'
 output_base_folder = 'datasets/3.1 celebdf-blurring/Celeb-real'
-resolutions = ["64x64", "128x128", "256x256"]
 
-# Apply consistent blurring across resolutions
-blur_images_across_resolutions(input_base_folder, output_base_folder, resolutions)
+# Apply blurring transformations
+blur_images(input_folder, output_base_folder)
