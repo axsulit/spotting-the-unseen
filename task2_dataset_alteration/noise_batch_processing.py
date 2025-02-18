@@ -11,6 +11,7 @@ def add_random_noise(image, noise_level=25):
         image (numpy.ndarray): The input image.
         noise_level (int): The standard deviation of the Gaussian noise.
 
+<<<<<<< Updated upstream
     Returns:
         numpy.ndarray: The altered image with added noise.
     """
@@ -32,6 +33,12 @@ def process_images_with_noise(input_folder, output_folder, noise_level=25):
         return
 
     os.makedirs(output_folder, exist_ok=True)
+=======
+    # Define noise types and intensity levels
+    noise_types = ["salt_pepper", "gaussian", "speckle"] # Primary experiment
+    # noise_types = ["gaussian", "speckle"] # Secondary experiment
+    noise_levels = [10,20,30,40,50]  # Fixed intensity levels
+>>>>>>> Stashed changes
 
     for filename in os.listdir(input_folder):
         file_path = os.path.join(input_folder, filename)
@@ -56,8 +63,13 @@ def process_images_with_noise(input_folder, output_folder, noise_level=25):
     print("Processing complete.")
 
 # Define input and output folder paths
+<<<<<<< Updated upstream
 input_folder = 'path_to_input_folder'  # Replace
 output_folder = 'path_to_output_folder'  # Replace
+=======
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\Resized\youtube\256x256'
+output_base_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\Noise\youtube'
+>>>>>>> Stashed changes
 
 # Process images with random noise
 process_images_with_noise(input_folder, output_folder, noise_level=25)

@@ -3,7 +3,15 @@ import os
 import numpy as np
 import random
 
+<<<<<<< Updated upstream
 def apply_color_distortion(image, region, intensity=50):
+=======
+# Load dlib's pre-trained face detector & shape predictor
+detector = dlib.get_frontal_face_detector()
+predictor = dlib.shape_predictor(r"D:\ACADEMICS\THESIS\spotting-the-unseen\task2_dataset_alteration\shape_predictor_68_face_landmarks.dat")
+
+def apply_partial_color_distortion(image, regions, intensity=50):
+>>>>>>> Stashed changes
     """
     Apply random color distortions to a specific region of the image.
 
@@ -80,8 +88,13 @@ def process_images_with_color_mismatch(input_folder, output_folder, intensity=50
     print("Processing complete.")
 
 # Define input and output folder paths
+<<<<<<< Updated upstream
 input_folder = 'path_to_input_folder'  # Replace
 output_folder = 'path_to_output_folder'  # Replace
+=======
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\Resized\youtube\256x256'
+output_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\ColorMismatch\youtube'
+>>>>>>> Stashed changes
 
 # Process images with color mismatches
 process_images_with_color_mismatch(input_folder, output_folder, intensity=50)

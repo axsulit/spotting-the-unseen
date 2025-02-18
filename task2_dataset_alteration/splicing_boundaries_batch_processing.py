@@ -73,8 +73,13 @@ def process_images_with_splicing_boundaries(input_folder, output_folder, num_bou
 
 
 # Define input and output folder paths
+<<<<<<< Updated upstream
 input_folder = 'path_to_input_folder'  # Replace
 output_folder = 'path_to_output_folder'  # Replace
+=======
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\Resized\youtube\256x256'
+output_base_folder = r'D:\ACADEMICS\THESIS\Datasets\FF\c40\preprocessed_frames\originalFrames\alterations\SplicingBoundaries\youtube'
+>>>>>>> Stashed changes
 
 # Process images with splicing boundaries
 process_images_with_splicing_boundaries(input_folder, output_folder, num_boundaries=3, boundary_thickness=2,
