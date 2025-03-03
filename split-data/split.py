@@ -6,20 +6,20 @@ import cv2
 
 # 🚀 Define dataset paths
 real_types = {
-    "actors": r"D:\.THESIS\datasets\1_resized\64x64\real\actors",
-    "youtube": r"D:\.THESIS\datasets\1_resized\64x64\real\youtube",
+    "actors": r"D:\.THESIS\datasets\sample_data\real\actors",
+    "youtube": r"D:\.THESIS\datasets\sample_data\real\youtube",
 }
 
 fake_types = {
-    "deepfakedetection": r"D:\.THESIS\datasets\1_resized\64x64\fake\DeepFakeDetection",
-    "deepfakes": r"D:\.THESIS\datasets\1_resized\64x64\fake\Deepfakes",
-    "face2face": r"D:\.THESIS\datasets\1_resized\64x64\fake\Face2Face",
-    "faceshifter": r"D:\.THESIS\datasets\1_resized\64x64\fake\FaceShifter",
-    "faceswap": r"D:\.THESIS\datasets\1_resized\64x64\fake\FaceSwap",
-    "neuraltextures": r"D:\.THESIS\datasets\1_resized\64x64\fake\NeuralTextures",
+    "deepfakedetection": r"D:\.THESIS\datasets\sample_data\fake\DeepFakeDetection",
+    "deepfakes": r"D:\.THESIS\datasets\sample_data\fake\Deepfakes",
+    "face2face": r"D:\.THESIS\datasets\sample_data\fake\Face2Face",
+    "faceshifter": r"D:\.THESIS\datasets\sample_data\fake\FaceShifter",
+    "faceswap": r"D:\.THESIS\datasets\sample_data\fake\FaceSwap",
+    "neuraltextures": r"D:\.THESIS\datasets\sample_data\fake\NeuralTextures",
 }
 
-output_dir = r"D:\.THESIS\datasets\final\ffc23_final_64x64"  # Final dataset directory
+output_dir = r"D:\.THESIS\datasets\final\balanced_dataset"
 
 print("🚀 Starting dataset split...\n")
 
@@ -31,15 +31,13 @@ for split in ["train", "test", "val"]:
 # 📌 Function to group images by video
 def group_by_video(type_dict):
     video_dict = {}
-    print(f"📂 Grouping images by video for {len(type_dict)} datasets...")
     for type_name, folder in type_dict.items():
         for file in os.listdir(folder):
             if file.endswith((".jpg", ".png")):
-                video_name = "_".join(file.split("_")[:-2])  # Extract video identifier
+                video_name = "_".join(file.split("_")[:-2])  
                 if video_name not in video_dict:
                     video_dict[video_name] = {"type": type_name, "files": []}
                 video_dict[video_name]["files"].append(os.path.join(folder, file))
-    print(f"✅ Finished grouping. Total videos found: {len(video_dict)}\n")
     return video_dict
 
 # 📌 Group images by video
@@ -57,7 +55,7 @@ print(f"📊 Initial Dataset Summary:")
 print(f"   🔹 Real Images: {real_image_count}")
 print(f"   🔹 Fake Images: {fake_image_count}\n")
 
-# 📌 Augmentation pipeline for oversampling
+# 📌 Augmentation pipeline
 augmentation = A.Compose([
     A.HorizontalFlip(p=0.5),
     A.RandomBrightnessContrast(p=0.5),
@@ -77,7 +75,7 @@ def oversample_real_images(real_videos, target_count):
     real_images_needed = target_count - len(all_real_images)
 
     if real_images_needed <= 0:
-        print("✅ No oversampling needed. Real dataset is already balanced.\n")
+        print("✅ No oversampling needed.\n")
         return real_videos
 
     print(f"⚡ Oversampling: Need {real_images_needed} more real images.")
@@ -105,28 +103,63 @@ def oversample_real_images(real_videos, target_count):
     print("✅ Oversampling complete!\n")
     return real_videos
 
-# 🚀 Oversample real dataset to match fake dataset exactly
+# 🚀 Oversample real dataset
 real_videos = oversample_real_images(real_videos, fake_image_count)
 
-# 📌 Function to move images into output folders
-def move_images(video_list, video_dict, label, split):
+# 📌 Function to move images into output folders with strict balancing
+def move_images(video_list, video_dict, label, split, target_count):
     dataset_path = os.path.join(output_dir, split, label)
     os.makedirs(dataset_path, exist_ok=True)
 
     total_images = 0
+    total_files = min(target_count, sum(len(video_dict[video]["files"]) for video in video_list if video in video_dict))
+
+    print(f"📂 Moving {total_files} {label} images to {split}...")
+
     for video in video_list:
         if video in video_dict:
             for image_path in video_dict[video]["files"]:
                 shutil.copy(image_path, os.path.join(dataset_path, os.path.basename(image_path)))
                 total_images += 1
 
-    print(f"   ✅ Moved {total_images} {label} images to {split}.")
+                if total_images % 500 == 0 or total_images == total_files:
+                    print(f"   → {total_images}/{total_files} {label} images moved to {split}")
+
+# 📌 Function to enforce the 70%-15%-15% split
+def enforce_strict_split():
+    train_ratio, test_ratio, val_ratio = 0.7, 0.15, 0.15
+    train_size = int(fake_image_count * train_ratio)
+    test_size = int(fake_image_count * test_ratio)
+    val_size = int(fake_image_count * val_ratio)
+
+    for split, target_count in zip(["train", "test", "val"], [train_size, test_size, val_size]):
+        real_folder = os.path.join(output_dir, split, "real")
+        fake_folder = os.path.join(output_dir, split, "fake")
+
+        real_files = sorted(os.listdir(real_folder))
+        fake_files = sorted(os.listdir(fake_folder))
+
+        min_count = min(len(real_files), len(fake_files), target_count)
+
+        real_files = real_files[:min_count]
+        fake_files = fake_files[:min_count]
+
+        for excess in os.listdir(real_folder):
+            if excess not in real_files:
+                os.remove(os.path.join(real_folder, excess))
+
+        for excess in os.listdir(fake_folder):
+            if excess not in fake_files:
+                os.remove(os.path.join(fake_folder, excess))
 
 # 🚀 Move files
-for split in ["train", "test", "val"]:
-    print(f"\n📂 Moving files to {split} dataset...")
-    move_images(real_videos.keys(), real_videos, "real", split)
-    move_images(fake_videos.keys(), fake_videos, "fake", split)
+for split, target_count in zip(["train", "test", "val"], 
+                               [int(fake_image_count * 0.7), int(fake_image_count * 0.15), int(fake_image_count * 0.15)]):
+    move_images(real_videos.keys(), real_videos, "real", split, target_count)
+    move_images(fake_videos.keys(), fake_videos, "fake", split, target_count)
+
+# 🚀 Enforce strict balance
+enforce_strict_split()
 
 # 📌 Print final dataset summary
 def count_final_images():
