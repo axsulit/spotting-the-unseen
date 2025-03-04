@@ -6,8 +6,8 @@ import cv2
 
 # 🚀 Define dataset paths
 real_types = {
-    "actors": r"D:\ACADEMICS\THESIS\Datasets\backup\preprocessed_frames\originalFrames\alterations\Resized\actors\256x256",
-    "youtube": r"D:\ACADEMICS\THESIS\Datasets\backup\preprocessed_frames\originalFrames\alterations\Resized\youtube\256x256",
+    "actors": r"D:\ACADEMICS\THESIS\Datasets\backup\preprocessed_frames\originalFrames\alterations\Blur\actors\gaussian\5",
+    "youtube": r"D:\ACADEMICS\THESIS\Datasets\backup\preprocessed_frames\originalFrames\alterations\Blur\youtube\gaussian\5",
 }
 
 fake_types = {
