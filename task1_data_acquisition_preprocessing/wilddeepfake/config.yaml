@@ -1,0 +1,15 @@
+# Dataset root paths
+dataset_root: C:\Users\user\OneDrive - De La Salle University - Manila\Ice's\lasalle\Subjects\Thesis\WildDeepFake\original
+output_dir: C:\Users\user\OneDrive - De La Salle University - Manila\Ice's\lasalle\Subjects\Thesis\WildDeepFake\pre_processed
+rejects_dir: C:\Users\user\OneDrive - De La Salle University - Manila\Ice's\lasalle\Subjects\Thesis\WildDeepFake\rejects
+
+# Processing parameters
+landmark_model_path: C:\Users\user\Documents\GitHub Repos\spotting-the-unseen\task1_data_acquisition_preprocessing\wilddeepfake\scripts\shape_predictor_68_face_landmarks.dat
+frame_interval: 10 # Process every 10th frame
+yaw_threshold: 30 # Max head rotation in yaw direction
+pitch_threshold: 30 # Max head rotation in pitch direction
+roll_threshold: 30 # Max head rotation in roll direction
+
+# Dataset structure
+process_category: fake # Options: 'real' or 'fake'
+process_subset: train # Options: 'train' or 'test'

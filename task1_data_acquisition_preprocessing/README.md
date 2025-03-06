@@ -25,7 +25,7 @@ This folder contains scripts and files related to acquiring datasets and preproc
 ## How to Run
 
 1. Make sure that you have successfully downloaded your dataset.
-2. Create a virtual environment (recommended): `python3 -m venv .venv` and activate it: `.venv\Scripts\activate` (Windows).
+2. Create a virtual environment (recommended): `python -m venv .venv` and activate it: `.venv\Scripts\activate` (Windows).
 3. Install required packages: `pip install -r requirements.txt`
 4. Modify `config.yaml` and `main.py` based on your dataset configurations.
 5. Run script: `python scripts/main.py`
