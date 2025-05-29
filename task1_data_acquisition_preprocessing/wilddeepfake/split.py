@@ -24,12 +24,12 @@ for base_dir in [NEW_TRAIN_DIR, NEW_VAL_DIR, NEW_TEST_DIR]:
 # 2. STATIC TOTAL & DESIRED SPLITS BASED ON IT
 # ─────────────────────────────────────────────────────────────────────────────
 
-STATIC_TOTAL = 106_193  # Fixed total count to use for splitting
+STATIC_TOTAL = 96_993  # Fixed total count to use for splitting
 
 # Calculate split sizes from static total
-n_train_desired = 74335  # 70% of STATIC_TOTAL
-n_val_desired   = 15929 # 15% of STATIC_TOTAL
-n_test_desired  = 15929  # 15% of STATIC_TOTAL
+n_train_desired = 67895  # 70% of STATIC_TOTAL
+n_val_desired   = 14549  # 15% of STATIC_TOTAL
+n_test_desired  = 14549  # 15% of STATIC_TOTAL
 
 print(f"Static total images used for splitting: {STATIC_TOTAL}")
 print(f"Desired splits (absolute counts):")
@@ -56,7 +56,7 @@ print(f" - fake_test:  {n_test0} images")
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Since train+val = static total - test desired
-trainval_total = STATIC_TOTAL - n_test_desired  # ~90,264
+trainval_total = STATIC_TOTAL - n_test_desired  # ~82,444
 
 # Fraction of fake_train images to hold out as val to match val desired count
 val_frac = n_val_desired / n_train0  # val images out of available train images
