@@ -21,21 +21,20 @@ for base_dir in [NEW_TRAIN_DIR, NEW_VAL_DIR, NEW_TEST_DIR]:
     os.makedirs(os.path.join(base_dir, "real"), exist_ok=True)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 2. STATIC TOTAL & DESIRED SPLITS BASED ON IT
+# 2. DESIRED SPLIT SIZES
 # ─────────────────────────────────────────────────────────────────────────────
 
-STATIC_TOTAL = 96_993  # Fixed total count to use for splitting
+# Direct split sizes
+n_train_desired = 67895  # 70% of total
+n_val_desired   = 14549  # 15% of total
+n_test_desired  = 14549  # 15% of total
 
-# Calculate split sizes from static total
-n_train_desired = 67895  # 70% of STATIC_TOTAL
-n_val_desired   = 14549  # 15% of STATIC_TOTAL
-n_test_desired  = 14549  # 15% of STATIC_TOTAL
-
-print(f"Static total images used for splitting: {STATIC_TOTAL}")
-print(f"Desired splits (absolute counts):")
+total_desired = n_train_desired + n_val_desired + n_test_desired
+print(f"Desired split sizes:")
 print(f" - Train:      {n_train_desired}")
 print(f" - Validation: {n_val_desired}")
 print(f" - Test:       {n_test_desired}")
+print(f" - Total:      {total_desired}")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. LIST FILES IN ORIGINAL FOLDERS
@@ -52,13 +51,10 @@ print(f" - fake_train: {n_train0} images")
 print(f" - fake_test:  {n_test0} images")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 4. SPLIT fake_train INTO TRAIN & VAL BASED ON STATIC TOTAL
+# 4. SPLIT fake_train INTO TRAIN & VAL BASED ON DESIRED SIZES
 # ─────────────────────────────────────────────────────────────────────────────
 
-# Since train+val = static total - test desired
-trainval_total = STATIC_TOTAL - n_test_desired  # ~82,444
-
-# Fraction of fake_train images to hold out as val to match val desired count
+# Calculate fraction of fake_train images to hold out as val
 val_frac = n_val_desired / n_train0  # val images out of available train images
 
 # Sanity check val_frac: must be <=1
@@ -78,7 +74,7 @@ print(f" - Train:      {len(train_paths)} images")
 print(f" - Validation: {len(val_paths)} images")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 5. SUBSAMPLE TEST SET FROM fake_test BASED ON STATIC TOTAL
+# 5. SUBSAMPLE TEST SET FROM fake_test BASED ON DESIRED SIZE
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Subsample n_test_desired images from fake_test (without replacement)
@@ -99,7 +95,7 @@ print(f"Selected {len(test_paths)} images for test set (from fake_test)")
 # ─────────────────────────────────────────────────────────────────────────────
 
 total_used = len(train_paths) + len(val_paths) + len(test_paths)
-print(f"\nFinal dataset counts (based on static total {STATIC_TOTAL}):")
+print(f"\nFinal dataset counts:")
 print(f" - Train set size:      {len(train_paths)}")
 print(f" - Validation set size: {len(val_paths)}")
 print(f" - Test set size:       {len(test_paths)}")
