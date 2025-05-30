@@ -7,10 +7,10 @@ from sklearn.model_selection import train_test_split
 # 1. CONFIGURATION: SOURCE & TARGET DIRECTORIES
 # ─────────────────────────────────────────────────────────────────────────────
 
-OLD_TRAIN_DIR = r"D:\.THESIS\WildDeepfake\wdf_restructured\fake_train"
-OLD_TEST_DIR  = r"D:\.THESIS\WildDeepfake\wdf_restructured\fake_test\archive"
+OLD_TRAIN_DIR = r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_restructured\real_train"
+OLD_TEST_DIR  = r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_restructured\real_test"
 
-NEW_BASE_DIR  = r"D:\.THESIS\WildDeepfake\final_split"
+NEW_BASE_DIR  = r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\final_split"
 NEW_TRAIN_DIR = os.path.join(NEW_BASE_DIR, "train")
 NEW_VAL_DIR   = os.path.join(NEW_BASE_DIR, "val")
 NEW_TEST_DIR  = os.path.join(NEW_BASE_DIR, "test")
@@ -47,8 +47,8 @@ n_train0 = len(train0_files)
 n_test0  = len(test0_files)
 
 print(f"\nOriginal counts:")
-print(f" - fake_train: {n_train0} images")
-print(f" - fake_test:  {n_test0} images")
+print(f" - real_train: {n_train0} images")
+print(f" - real_test:  {n_test0} images")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 4. SPLIT fake_train INTO TRAIN & VAL BASED ON DESIRED SIZES
@@ -61,15 +61,31 @@ val_frac = n_val_desired / n_train0  # val images out of available train images
 if val_frac > 1.0:
     raise ValueError(f"Validation fraction {val_frac:.2f} > 1.0: Not enough train images to satisfy val size")
 
-# Split fake_train into train and val
-train_paths, val_paths = train_test_split(
+# # Split fake_train into train and val
+# train_paths, val_paths = train_test_split(
+#     train0_files,
+#     test_size=val_frac,
+#     shuffle=True,
+#     random_state=42
+# )
+
+# Subsample the desired total size from the original train set
+trainval_subset, _ = train_test_split(
     train0_files,
-    test_size=val_frac,
+    train_size=(n_train_desired + n_val_desired),
     shuffle=True,
     random_state=42
 )
 
-print(f"\nSplit fake_train into:")
+# Split the subset into train and validation sets
+train_paths, val_paths = train_test_split(
+    trainval_subset,
+    test_size=n_val_desired,
+    shuffle=True,
+    random_state=42
+)
+
+print(f"\nSplit real_train into:")
 print(f" - Train:      {len(train_paths)} images")
 print(f" - Validation: {len(val_paths)} images")
 
@@ -79,7 +95,7 @@ print(f" - Validation: {len(val_paths)} images")
 
 # Subsample n_test_desired images from fake_test (without replacement)
 if n_test_desired > n_test0:
-    raise ValueError(f"Test desired {n_test_desired} > available fake_test images {n_test0}")
+    raise ValueError(f"Test desired {n_test_desired} > available real_test images {n_test0}")
 
 test_paths = train_test_split(
     test0_files,
@@ -88,7 +104,7 @@ test_paths = train_test_split(
     random_state=42
 )[0]
 
-print(f"Selected {len(test_paths)} images for test set (from fake_test)")
+print(f"Selected {len(test_paths)} images for test set (from real_test)")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 6. SUMMARY OF FINAL COUNTS & UNUSED IMAGES
@@ -105,8 +121,14 @@ print(f" - Total images unused: {n_train0 + n_test0 - total_used} (leftover in o
 # ─────────────────────────────────────────────────────────────────────────────
 # 7. COPY FILES INTO NEW FOLDER STRUCTURE
 # ─────────────────────────────────────────────────────────────────────────────
-
-def scatter(file_list, target_dir, is_fake=True):
+# Clear existing files in the fake subfolder before copying
+def clear_directory(folder_path):
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+            
+def scatter(file_list, target_dir, is_fake=False):
     """
     Copy files to the target directory, organizing them into fake/real subfolders.
     
@@ -126,16 +148,19 @@ def scatter(file_list, target_dir, is_fake=True):
         shutil.copy2(src, dst)
 
 print("\nCopying train images...")
-scatter(train_paths, NEW_TRAIN_DIR, is_fake=True)
+clear_directory(os.path.join(NEW_TRAIN_DIR, "real"))
+scatter(train_paths, NEW_TRAIN_DIR, is_fake=False)
 
 print("Copying validation images...")
-scatter(val_paths, NEW_VAL_DIR, is_fake=True)
+clear_directory(os.path.join(NEW_VAL_DIR, "real"))
+scatter(val_paths, NEW_VAL_DIR, is_fake=False)
 
 print("Copying test images...")
-scatter(test_paths, NEW_TEST_DIR, is_fake=True)
+clear_directory(os.path.join(NEW_TEST_DIR, "real"))
+scatter(test_paths, NEW_TEST_DIR, is_fake=False)
 
 print("\nAll done!")
 print(f"Train images folder:      {NEW_TRAIN_DIR}")
 print(f"Validation images folder: {NEW_VAL_DIR}")
-print(f"Test images folder:       {NEW_TEST_DIR} (subset of original fake_test)")
+print(f"Test images folder:       {NEW_TEST_DIR} (subset of original real_test)")
 print("\nEach folder contains 'fake' and 'real' subfolders for organized storage.")
