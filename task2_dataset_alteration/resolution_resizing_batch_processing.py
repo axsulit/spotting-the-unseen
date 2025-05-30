@@ -43,8 +43,8 @@ def resize_images(input_folder, output_folder, sizes=[(256, 256), (128, 128), (6
     print("Processing complete.")
 
 # Define input and output folder paths
-input_folder = 'datasets\celebdf-preprocessed-cropped\YouTube-real'  # Replace with your actual input folder path
-output_folder = 'datasets\celebdf-resized'  # Replace with your actual output folder path
+input_folder = r'datasets\celebdf-preprocessed-cropped\YouTube-real'  # Replace with your actual input folder path
+output_folder = r'datasets\celebdf-resized'  # Replace with your actual output folder path
 
 # Call the function to resize images
 resize_images(input_folder, output_folder)

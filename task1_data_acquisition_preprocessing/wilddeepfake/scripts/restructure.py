@@ -2,15 +2,15 @@ import shutil
 from pathlib import Path
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────
-SRC_ROOT = Path(r"D:\.THESIS\WildDeepfake\deepfake_in_the_wild_original")
-DST_ROOT = Path(r"D:\.THESIS\WildDeepfake\wdf_restructured")
+SRC_ROOT = Path(r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\deepfake_in_the_wild")
+DST_ROOT = Path(r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_restructured")
 DST_ROOT.mkdir(parents=True, exist_ok=True)
 
-SPLITS = ("fake_train", "fake_test")
+SPLITS = ("real_train", "real_test")
 # ────────────────────────────────────────────────────────────────────────────
 
 for split in SPLITS:
-    src_extracted = SRC_ROOT / split / "extracted"
+    src_extracted = SRC_ROOT / split 
     dst_split    = DST_ROOT / split
     dst_split.mkdir(parents=True, exist_ok=True)
 

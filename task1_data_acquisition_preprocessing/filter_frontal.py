@@ -5,8 +5,10 @@ import os
 import shutil
 
 # Paths
-input_folder = "datasets\celebdf-preprocessed-cropped\Celeb-synthesis"  # Folder containing input images
-output_folder = "synthesis dump"  # Folder to move non-frontal images
+# input_folder = "datasets\celebdf-preprocessed-cropped\Celeb-synthesis"  # Folder containing input images
+# output_folder = "synthesis dump"  # Folder to move non-frontal images
+input_folder = r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_restructured\real_test"  # Folder containing input images
+output_folder = r"D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\synthesis_dump\real_test2"  # Folder to move non-frontal images
 
 # Ensure output folder exists
 os.makedirs(output_folder, exist_ok=True)
@@ -39,7 +41,7 @@ def process_images():
                 yaw = get_yaw_angle(landmarks)
 
                 
-                if abs(yaw) > 10:  # If yaw is beyond ±10 degrees, move image
+                if abs(yaw) > 7:  # If yaw is beyond ±10 degrees, move image
                     print(f"Moving {filename} (Yaw: {yaw:.2f})")
                     shutil.move(image_path, os.path.join(output_folder, filename))
                     break  # Only move once per image
