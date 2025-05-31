@@ -1,7 +1,7 @@
 import cv2
 import os
 
-def resize_images(input_folder, output_folder, sizes=[(256, 256), (128, 128), (64, 64)]):
+def resize_images(input_folder, output_folder, sizes=[(512, 512), (256, 256), (128, 128), (64, 64)]):
     # Check if input folder exists
     if not os.path.exists(input_folder):
         print(f"Error: Input folder '{input_folder}' does not exist.")
@@ -28,9 +28,9 @@ def resize_images(input_folder, output_folder, sizes=[(256, 256), (128, 128), (6
             continue
 
         # Check if the input image is 512x512
-        if image.shape[:2] != (512, 512):
-            print(f"Skipping '{filename}' - not 512x512")
-            continue
+        # if image.shape[:2] != (512, 512):
+        #     print(f"Skipping '{filename}' - not 512x512")
+        #     continue
 
         # Resize and save the images in their respective folders
         for size in sizes:
@@ -43,8 +43,13 @@ def resize_images(input_folder, output_folder, sizes=[(256, 256), (128, 128), (6
     print("Processing complete.")
 
 # Define input and output folder paths
+<<<<<<< Updated upstream
 input_folder = r'datasets\celebdf-preprocessed-cropped\YouTube-real'  # Replace with your actual input folder path
 output_folder = r'datasets\celebdf-resized'  # Replace with your actual output folder path
+=======
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\final_split\train\real'  # Replace with your actual input folder path
+output_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\alterations\resized\train'  # Replace with your actual output folder path
+>>>>>>> Stashed changes
 
 # Call the function to resize images
 resize_images(input_folder, output_folder)
