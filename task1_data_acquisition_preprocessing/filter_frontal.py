@@ -5,15 +5,15 @@ import os
 import shutil
 
 # Paths
-input_folder = "datasets\celebdf-preprocessed-cropped\Celeb-synthesis"  # Folder containing input images
-output_folder = "synthesis dump"  # Folder to move non-frontal images
+input_folder = r"D:\.THESIS\WildDeepfake\wdf_restructured\fake_test\archive"  # Folder containing input images
+output_folder = r"D:\.THESIS\WildDeepfake\wdf_restructured\fake_t\synthesis dump"  # Folder to move non-frontal images
 
 # Ensure output folder exists
 os.makedirs(output_folder, exist_ok=True)
 
 # Load dlib face detector and shape predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("task1_data_acquisition_preprocessing\shape_predictor_68_face_landmarks.dat") 
+predictor = dlib.shape_predictor(r"C:\Users\aizur\OneDrive\Documents\GitHub\spotting-the-unseen\task1_data_acquisition_preprocessing\shape_predictor_68_face_landmarks.dat") 
 
 def get_yaw_angle(landmarks):
     """Calculate yaw (left-right rotation) based on facial landmarks."""

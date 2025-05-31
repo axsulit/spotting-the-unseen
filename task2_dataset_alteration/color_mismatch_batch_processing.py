@@ -6,7 +6,7 @@ import random
 
 # Load dlib's pre-trained face detector & shape predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("task2_dataset_alteration/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor(r"C:\Users\aizur\OneDrive\Documents\GitHub\spotting-the-unseen\task2_dataset_alteration\shape_predictor_68_face_landmarks.dat")
 
 def apply_partial_color_distortion(image, regions, intensity=50):
     """
@@ -62,7 +62,7 @@ def get_facial_regions(landmarks):
 
 def process_images(input_folder, output_folder, intensity=50):
     """
-    Process images in the 256x256 resolution folder and save them directly in the output folder.
+    Process images in the input folder and save them in the corresponding output folder.
 
     Parameters:
         input_folder (str): Path to the input folder.
@@ -116,11 +116,32 @@ def process_images(input_folder, output_folder, intensity=50):
         cv2.imwrite(output_path, altered_image)
         print(f"Saved: {output_path}")
 
-    print("Processing complete.")
+def process_dataset(input_base_folder, output_base_folder, intensity=50):
+    """
+    Process all subfolders (train/test/val) in the dataset.
+
+    Parameters:
+        input_base_folder (str): Base input folder containing train/test/val subfolders
+        output_base_folder (str): Base output folder where processed images will be saved
+        intensity (int): Color distortion intensity
+    """
+    subfolders = ['train', 'test', 'val']
+    
+    for subfolder in subfolders:
+        input_folder = os.path.join(input_base_folder, subfolder)
+        output_folder = os.path.join(output_base_folder, subfolder)
+        
+        if not os.path.exists(input_folder):
+            print(f"Warning: Input subfolder '{input_folder}' does not exist. Skipping...")
+            continue
+            
+        print(f"\nProcessing {subfolder} folder...")
+        process_images(input_folder, output_folder, intensity)
+        print(f"Completed processing {subfolder} folder.")
 
 # Define input and output folder paths
-input_folder = 'datasets/2 celebdf-resized/Celeb-synthesis/256x256'
-output_folder = 'datasets/3.2 celebdf-color_mismatch/Celeb-synthesis'
+input_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
+output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\color_mismatch'
 
-# Process images and save directly in the output folder
-process_images(input_folder, output_folder, intensity=50)
+# Process all subfolders
+process_dataset(input_base_folder, output_base_folder, intensity=50)

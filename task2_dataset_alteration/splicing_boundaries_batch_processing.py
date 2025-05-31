@@ -80,48 +80,55 @@ def process_images(input_folder, output_base_folder, edge_opacity_levels, edge_t
         print(f"Error: Input folder '{input_folder}' does not exist.")
         return
 
-    for filename in os.listdir(input_folder):
-        if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+    # Process each subfolder (train, test, val)
+    for subfolder in ['train', 'test', 'val']:
+        input_subfolder = os.path.join(input_folder, subfolder)
+        if not os.path.exists(input_subfolder):
+            print(f"Warning: Subfolder '{input_subfolder}' does not exist. Skipping...")
             continue
 
-        # Load image
-        input_path = os.path.join(input_folder, filename)
-        image = cv2.imread(input_path)
-        if image is None:
-            continue
+        for filename in os.listdir(input_subfolder):
+            if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+                continue
 
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            # Load image
+            input_path = os.path.join(input_subfolder, filename)
+            image = cv2.imread(input_path)
+            if image is None:
+                continue
 
-        # Detect faces
-        faces = detector(gray)
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-        for opacity in edge_opacity_levels:
-            opacity_scaled = opacity / 100.0  # Convert to float (e.g., 20 → 0.2)
+            # Detect faces
+            faces = detector(gray)
 
-            if len(faces) > 0:
-                # Apply Canny edge detection
-                processed_image = apply_canny_edge_detection(image, opacity_scaled, edge_threshold1, edge_threshold2)
-            else:
-                # Apply sharpening and edge brightening
-                processed_image = sharpen_and_brighten_edges(image, opacity_scaled)
+            for opacity in edge_opacity_levels:
+                opacity_scaled = opacity / 100.0  # Convert to float (e.g., 20 → 0.2)
 
-            # Define folder structure: output_base_folder/intensity_level/
-            intensity_folder = os.path.join(output_base_folder, str(opacity))
-            os.makedirs(intensity_folder, exist_ok=True)
+                if len(faces) > 0:
+                    # Apply Canny edge detection
+                    processed_image = apply_canny_edge_detection(image, opacity_scaled, edge_threshold1, edge_threshold2)
+                else:
+                    # Apply sharpening and edge brightening
+                    processed_image = sharpen_and_brighten_edges(image, opacity_scaled)
 
-            # Modify filename to indicate boundary splicing intensity
-            name, ext = os.path.splitext(filename)
-            new_filename = f"{name}_canny_{opacity}.jpg"
-            output_path = os.path.join(intensity_folder, new_filename)
+                # Define folder structure: output_base_folder/spliced_{opacity}/{subfolder}/
+                intensity_folder = os.path.join(output_base_folder, f"spliced_{opacity}", subfolder)
+                os.makedirs(intensity_folder, exist_ok=True)
 
-            cv2.imwrite(output_path, processed_image)
-            print(f"Saved: {output_path}")
+                # Modify filename to indicate boundary splicing intensity
+                name, ext = os.path.splitext(filename)
+                new_filename = f"{name}_canny_{opacity}.jpg"
+                output_path = os.path.join(intensity_folder, new_filename)
+
+                cv2.imwrite(output_path, processed_image)
+                print(f"Saved: {output_path}")
 
     print("Processing complete.")
 
 # Define input and output folder paths
-input_folder = 'datasets/2 celebdf-resized/Celeb-synthesis/256x256'
-output_base_folder = 'datasets/3.3 celebdf-boundary_splicing/Celeb-synthesis'
+input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
+output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
 
 # Define fixed intensity levels (in percentage form)
 edge_opacity_levels = [20, 40, 60, 80]

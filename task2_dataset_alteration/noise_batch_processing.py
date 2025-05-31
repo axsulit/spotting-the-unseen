@@ -43,9 +43,10 @@ def apply_noise(image, noise_type, noise_level):
 def process_images_with_fixed_noise(input_folder, output_base_folder):
     """
     Process images with fixed noise levels and noise types across all resolutions.
+    Handles train/test/val subfolders in the input directory.
 
     Parameters:
-        input_folder (str): Base input folder containing images.
+        input_folder (str): Base input folder containing train/test/val subfolders.
         output_base_folder (str): Base output folder to save altered images.
     """
 
@@ -54,37 +55,46 @@ def process_images_with_fixed_noise(input_folder, output_base_folder):
     # noise_types = ["gaussian", "speckle"] # Secondary experiment
     noise_levels = [10,20,30,40,50]  # Fixed intensity levels
 
-    for filename in os.listdir(input_folder):
-        if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
-            print(f"Skipping non-image file: {filename}")
+    # Process each subfolder (train/test/val)
+    for subfolder in ['train', 'test', 'val']:
+        input_subfolder = os.path.join(input_folder, subfolder)
+        if not os.path.exists(input_subfolder):
+            print(f"Warning: {input_subfolder} does not exist. Skipping.")
             continue
 
-        input_path = os.path.join(input_folder, filename)
-        image = cv2.imread(input_path)
-        if image is None:
-            print(f"Error: Could not load image '{filename}'. Skipping.")
-            continue
+        print(f"\nProcessing {subfolder} set...")
+        
+        for filename in os.listdir(input_subfolder):
+            if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+                print(f"Skipping non-image file: {filename}")
+                continue
 
-        # Apply each noise type at different intensities
-        for noise_type in noise_types:
-            for noise_level in noise_levels:
-                noisy_image = apply_noise(image, noise_type, noise_level)
+            input_path = os.path.join(input_subfolder, filename)
+            image = cv2.imread(input_path)
+            if image is None:
+                print(f"Error: Could not load image '{filename}'. Skipping.")
+                continue
 
-                # Define folder structure: output_base_folder/noise_type/intensity/
-                intensity_folder = os.path.join(output_base_folder, noise_type, str(noise_level))
-                os.makedirs(intensity_folder, exist_ok=True)
+            # Apply each noise type at different intensities
+            for noise_type in noise_types:
+                for noise_level in noise_levels:
+                    noisy_image = apply_noise(image, noise_type, noise_level)
 
-                output_filename = f"{os.path.splitext(filename)[0]}_{noise_type}_{noise_level}.jpg"
-                output_path = os.path.join(intensity_folder, output_filename)
+                    # Define folder structure: output_base_folder/noise_level/subfolder/
+                    intensity_folder = os.path.join(output_base_folder, str(noise_level), subfolder)
+                    os.makedirs(intensity_folder, exist_ok=True)
 
-                cv2.imwrite(output_path, noisy_image)
-                print(f"Saved: {output_path}")
+                    output_filename = f"{os.path.splitext(filename)[0]}_{noise_type}_{noise_level}.jpg"
+                    output_path = os.path.join(intensity_folder, output_filename)
 
-    print("Processing complete.")
+                    cv2.imwrite(output_path, noisy_image)
+                    print(f"Saved: {output_path}")
+
+    print("\nProcessing complete.")
 
 # Define input and output folder paths
-input_folder = 'datasets/2 celebdf-resized/YouTube-real/256x256'
-output_base_folder = 'datasets/3.4 celebdf-noise_addition/YouTube-real'
+input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
+output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
 
 # Apply noise transformations
 process_images_with_fixed_noise(input_folder, output_base_folder)

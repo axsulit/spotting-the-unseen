@@ -34,37 +34,44 @@ def blur_images(input_folder, output_base_folder):
     blur_types = ["gaussian"] # primary experiment
     # blur_types = ["median", "bilateral"] # secondary experiment
 
-    for filename in os.listdir(input_folder):
-        if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
-            print(f"Skipping non-image file: {filename}")
+    # Process each split (train/test/val)
+    for split in ['train', 'test', 'val']:
+        split_input_folder = os.path.join(input_folder, split)
+        if not os.path.exists(split_input_folder):
+            print(f"Warning: {split_input_folder} does not exist. Skipping.")
             continue
 
-        input_path = os.path.join(input_folder, filename)
-        image = cv2.imread(input_path)
-        if image is None:
-            print(f"Error: Could not load image '{input_path}'. Skipping.")
-            continue
+        for filename in os.listdir(split_input_folder):
+            if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+                print(f"Skipping non-image file: {filename}")
+                continue
 
-        # Apply all blur types and save them in organized subfolders
-        for blur_type in blur_types:
-            for intensity in intensities:
-                blurred_image = apply_blur(image, blur_type, intensity)
+            input_path = os.path.join(split_input_folder, filename)
+            image = cv2.imread(input_path)
+            if image is None:
+                print(f"Error: Could not load image '{input_path}'. Skipping.")
+                continue
 
-                # Define folder structure: output_base_folder/blur_type/intensity/
-                intensity_folder = os.path.join(output_base_folder, blur_type, str(intensity))
-                os.makedirs(intensity_folder, exist_ok=True)
+            # Apply all blur types and save them in organized subfolders
+            for blur_type in blur_types:
+                for intensity in intensities:
+                    blurred_image = apply_blur(image, blur_type, intensity)
 
-                output_filename = f"{os.path.splitext(filename)[0]}_{blur_type}_{intensity}.jpg"
-                output_path = os.path.join(intensity_folder, output_filename)
+                    # Define folder structure: output_base_folder/blur_intensity/split/
+                    output_folder = os.path.join(output_base_folder, f"blur_{intensity}", split)
+                    os.makedirs(output_folder, exist_ok=True)
 
-                cv2.imwrite(output_path, blurred_image)
-                print(f"Saved: {output_path}")
+                    output_filename = f"{os.path.splitext(filename)[0]}_{blur_type}_{intensity}.jpg"
+                    output_path = os.path.join(output_folder, output_filename)
+
+                    cv2.imwrite(output_path, blurred_image)
+                    print(f"Saved: {output_path}")
 
     print("Batch processing complete.")
 
 # Define input and output folder paths
-input_folder = 'datasets/2 celebdf-resized/Celeb-real/256x256'
-output_base_folder = 'datasets/3.1 celebdf-blurring/Celeb-real'
+input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
+output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
 
 # Apply blurring transformations
 blur_images(input_folder, output_base_folder)
