@@ -4,6 +4,8 @@ This folder contains information on the datasets used for training and evaluatin
 
 ## Included Datasets
 
+![](samples.png)
+
 ### 1. Celeb-DF v2
 - **Description:** High-quality deepfake dataset featuring 59 celebrities with minimal visual artifacts.
 - **Download Instructions:** [Celeb-DF GitHub](https://github.com/yuezunli/celeb-deepfakeforensics)
