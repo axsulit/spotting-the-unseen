@@ -3,7 +3,7 @@
   "num_videos": 1000,
   "num_real_videos": 590,
   "num_fake_videos": 5639,
-  "frames_per_video": 390,
+  "frames_per_video": 39,
   "total_frames_extracted": 16004,
   "frontal_face_filtering": true,
   "resize": "256x256",
