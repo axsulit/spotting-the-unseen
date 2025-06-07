@@ -1,0 +1,22 @@
+{
+  "dataset_name": "celeb_df",
+  "num_videos": 1000,
+  "num_real_videos": 590,
+  "num_fake_videos": 5639,
+  "frames_per_video": 39,
+  "total_frames_extracted": 16004,
+  "frontal_face_filtering": true,
+  "resize": "256x256",
+  "alterations_applied_to_fake_videos": [
+    "DeepFake synthesis"
+  ],
+  "augmentations_applied": [
+    "resize_resolution",
+    "blur",
+    "color_mismatch",
+    "splice",
+    "noise"
+  ],
+  "pipeline_date": "2025-06-06",
+  "notes": "Original videos downloaded upon filling up form from Celeb-DF authors. 590 Real videos and 5639 Fake videos generated using an advanced Deepfake synthesis. Every 10th frame with a valid frontal angle per video was extracted."
+}
