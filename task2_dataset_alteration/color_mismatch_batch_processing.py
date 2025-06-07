@@ -6,7 +6,7 @@ import random
 
 # Load dlib's pre-trained face detector & shape predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(r"C:\Users\aizur\OneDrive\Documents\GitHub\spotting-the-unseen\task2_dataset_alteration\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor(r"D:\ACADEMICS\THESIS\spotting-the-unseen\task2_dataset_alteration\shape_predictor_68_face_landmarks.dat")
 
 def apply_partial_color_distortion(image, regions, intensity=50):
     """
@@ -140,8 +140,8 @@ def process_dataset(input_base_folder, output_base_folder, intensity=50):
         print(f"Completed processing {subfolder} folder.")
 
 # Define input and output folder paths
-input_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
-output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\color_mismatch'
+input_base_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real\01_wdf_real_unaltered'
+output_base_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real\\10_wdf_real_color_mismatch'
 
 # Process all subfolders
 process_dataset(input_base_folder, output_base_folder, intensity=50)

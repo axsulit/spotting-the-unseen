@@ -70,8 +70,10 @@ def blur_images(input_folder, output_base_folder):
     print("Batch processing complete.")
 
 # Define input and output folder paths
-input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
-output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
+# input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
+# output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real\01_wdf_real_unaltered'
+output_base_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real'
 
 # Apply blurring transformations
 blur_images(input_folder, output_base_folder)

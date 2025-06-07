@@ -127,8 +127,8 @@ def process_images(input_folder, output_base_folder, edge_opacity_levels, edge_t
     print("Processing complete.")
 
 # Define input and output folder paths
-input_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake\01_wdf_fake_unaltered'
-output_base_folder = r'D:\.THESIS\WildDeepfake\wdf_final_fake'
+input_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real\01_wdf_real_unaltered'
+output_base_folder = r'D:\ACADEMICS\THESIS\Datasets\WDF\WildDeepfake\wdf_final_real'
 
 # Define fixed intensity levels (in percentage form)
 edge_opacity_levels = [20, 40, 60, 80]
