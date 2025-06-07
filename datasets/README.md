@@ -17,4 +17,4 @@ This folder contains information on the datasets used for training and evaluatin
 
 ### 3. WildDeepfake
 - **Description:** Real-world deepfakes sourced from the internet, challenging due to their varied quality and lack of synthetic artifacts.
-- **Download Link:** [WildDeepfake on Hugging Face](https://huggingface.co/datasets/xingjunm/WildDeepfake/tree/main/deepfake_in_the_wild/real_train)
+- **Download Link:** [WildDeepfake on Hugging Face](https://huggingface.co/datasets/xingjunm/WildDeepfake/tree/main)
