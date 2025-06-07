@@ -1,13 +1,16 @@
-# This file contains the logic for processing individual video files.
+"""
+This module contains logic for processing video and image files to detect 
+and extract frontal faces using facial landmark estimation.
+"""
 
 import cv2
 import os
 import numpy as np
 from pathlib import Path
 from utils.face_detector import detect_faces, is_frontal_face
-from utils.utils import create_directory, resize, load_predictor
+from utils.utils import resize, load_predictor
 
-# Function to process a video file, detect frontal faces, and save them
+
 def process_video(
     video_path,
     output_dir,
@@ -17,10 +20,24 @@ def process_video(
     roll_threshold,
     predictor_path="preprocess/utils/shape_predictor_68_face_landmarks.dat"
 ):
-    # Load the shape predictor once per video
+    """
+    Process a video file to extract and save frontal face images at specified frame intervals.
+
+    Args:
+        video_path (str or Path): Path to the input video file.
+        output_dir (str or Path): Directory where cropped frontal faces will be saved.
+        frame_interval (int): Process every nth frame (e.g., every 5th frame).
+        yaw_threshold (float): Maximum allowed yaw angle in degrees.
+        pitch_threshold (float): Maximum allowed pitch angle in degrees.
+        roll_threshold (float): Maximum allowed roll angle in degrees.
+        predictor_path (str or Path, optional): Path to the dlib shape predictor model. 
+            Defaults to 'preprocess/utils/shape_predictor_68_face_landmarks.dat'.
+
+    Returns:
+        None
+    """
     predictor = load_predictor(predictor_path)
 
-    # Open video
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print(f"❌ Error: Could not open video file: {video_path}")
@@ -48,7 +65,7 @@ def process_video(
 
             if is_frontal_face(landmarks, yaw_threshold, pitch_threshold, roll_threshold):
                 x, y, w, h = face.left(), face.top(), face.width(), face.height()
-                w = h = max(w, h)  # Make it square
+                w = h = max(w, h)  # Ensure square crop
 
                 cropped = frame[max(0, y):y + h, max(0, x):x + w]
                 resized = resize(cropped, (256, 256))
@@ -64,8 +81,21 @@ def process_video(
     print(f"🎞️ Finished {video_path} — Faces saved: {saved_frame_count}")
 
 
-
 def process_image_folder(image_folder, output_folder, frame_interval, yaw_threshold, pitch_threshold, roll_threshold):
+    """
+    Process a folder of images to extract and save frontal faces at specified intervals.
+
+    Args:
+        image_folder (str or Path): Path to the folder containing input images.
+        output_folder (str or Path): Directory to save the output cropped face images.
+        frame_interval (int): Process every nth image (e.g., every 5th image).
+        yaw_threshold (float): Maximum allowed yaw angle in degrees.
+        pitch_threshold (float): Maximum allowed pitch angle in degrees.
+        roll_threshold (float): Maximum allowed roll angle in degrees.
+
+    Returns:
+        None
+    """
     import cv2
     from utils.utils import is_frontal, extract_face
 

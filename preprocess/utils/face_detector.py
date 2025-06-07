@@ -1,9 +1,11 @@
-# This file contains the core logic for detecting faces and determining if they are frontal
+"""
+This module contains the core logic for detecting faces and determining 
+if they are frontal using dlib and OpenCV.
+"""
 
 import cv2
 import dlib
 import numpy as np
-from pathlib import Path
 
 # Load dlib's face detector
 detector = dlib.get_frontal_face_detector()
@@ -18,15 +20,30 @@ MODEL_POINTS = np.array([
     (150.0, -150.0, -125.0)    # Right mouth corner
 ], dtype=np.float32)
 
+# Assumed camera matrix for pose estimation
 CAMERA_MATRIX = np.array([
     [1.0, 0, 0],
     [0, 1.0, 0],
     [0, 0, 1]
 ], dtype=np.float32)
 
-DIST_COEFFS = np.zeros((4, 1))  # No distortion
+# No distortion coefficients assumed
+DIST_COEFFS = np.zeros((4, 1))
+
 
 def is_frontal_face(landmarks, yaw_threshold, pitch_threshold, roll_threshold):
+    """
+    Determine if the face is frontal based on head pose estimation.
+
+    Args:
+        landmarks (list or array): Array of facial landmarks (68 points).
+        yaw_threshold (float): Maximum allowed yaw angle in degrees.
+        pitch_threshold (float): Maximum allowed pitch angle in degrees.
+        roll_threshold (float): Maximum allowed roll angle in degrees.
+
+    Returns:
+        bool: True if face is within the threshold limits (frontal), False otherwise.
+    """
     image_points = np.array([
         landmarks[30],  # Nose tip
         landmarks[8],   # Chin
@@ -49,7 +66,18 @@ def is_frontal_face(landmarks, yaw_threshold, pitch_threshold, roll_threshold):
 
     return abs(yaw) < yaw_threshold and abs(pitch) < pitch_threshold and abs(roll) < roll_threshold
 
+
 def detect_faces(frame, scale_factor=2.0):
+    """
+    Detect faces in the input frame using dlib's frontal face detector.
+
+    Args:
+        frame (numpy.ndarray): Input image in BGR format.
+        scale_factor (float, optional): Scale factor for resizing image to improve detection. Defaults to 2.0.
+
+    Returns:
+        list: List of dlib.rectangle objects representing detected face bounding boxes.
+    """
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     resized_gray = cv2.resize(gray, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_LINEAR)
     faces = detector(resized_gray, 0)
