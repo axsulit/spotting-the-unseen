@@ -12,11 +12,12 @@ import argparse
 from pathlib import Path
 from augmentations.apply_blur import batch_apply_blur 
 from augmentations.apply_noise import batch_apply_noise
+from augmentations.apply_splice import batch_apply_splice
 
 ALTERATION_FUNCS = {
     "blur": batch_apply_blur,
     "noise": batch_apply_noise,
-    # "splice": apply_splice,
+    "splice": batch_apply_splice,
     # "resize": apply_resize,
     # "color": apply_color_mismatch,
 }
@@ -33,6 +34,8 @@ def process_images(alteration_type, input_dir, output_dir):
     if alteration_type == 'blur':
         alter_fn(input_dir, output_dir)
     elif alteration_type == 'noise':
+        alter_fn(input_dir, output_dir)
+    elif alteration_type == 'splice':
         alter_fn(input_dir, output_dir)
  
 if __name__ == "__main__":
