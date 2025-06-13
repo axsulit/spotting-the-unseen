@@ -10,17 +10,18 @@ Usage:
 
 import argparse
 from pathlib import Path
-from augmentations.apply_blur import batch_apply_blur 
-from augmentations.apply_noise import batch_apply_noise
-from augmentations.apply_splice import batch_apply_splice
-from augmentations.apply_resize import batch_apply_resize
+from preprocess.augmentations.apply_blur import batch_apply_blur 
+from preprocess.augmentations.apply_noise import batch_apply_noise
+from preprocess.augmentations.apply_splice import batch_apply_splice
+from preprocess.augmentations.apply_resize import batch_apply_resize
+from preprocess.augmentations.apply_color_mismatch import batch_apply_color_mismatch
 
 ALTERATION_FUNCS = {
     "blur": batch_apply_blur,
     "noise": batch_apply_noise,
     "splice": batch_apply_splice,
     "resize": batch_apply_resize,
-    # "color": apply_color_mismatch,
+    "color": batch_apply_color_mismatch,
 }
 
 def process_images(alteration_type, input_dir, output_dir):
@@ -40,7 +41,9 @@ def process_images(alteration_type, input_dir, output_dir):
         alter_fn(input_dir, output_dir)
     elif alteration_type == 'resize':
         alter_fn(input_dir, output_dir)
- 
+    elif alteration_type == 'color':
+        alter_fn(input_dir, output_dir)
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Apply a visual alteration to a folder of images.")
     parser.add_argument("--type", required=True, choices=ALTERATION_FUNCS.keys(), help="Type of alteration")
@@ -49,3 +52,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     process_images(args.type, args.input_dir, args.output_dir)
+
