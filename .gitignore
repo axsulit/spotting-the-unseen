@@ -1,4 +1,6 @@
 .venv
 __pycache__/
-/datasets
 /synthesis dump
+/celeb-df_orig
+/test
+.DS_Store
