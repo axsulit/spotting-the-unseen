@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b9d82a0-b72c-4013-82b5-d1ed23f99aa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CIVI_README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoints/experiment_unaltered/log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoints/experiment_unaltered/model_epoch_last.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoints/experiment_unaltered/train/events.out.tfevents.1742880752.saliksik-gpu-10.coare.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoints/experiment_unaltered/val/events.out.tfevents.1742880752.saliksik-gpu-10.coare.local" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_13_18_23/opt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/experiment_unaltered/opt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_13_32_55/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_14_51_33/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_15_30_00/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_15_30_00/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_15_49_10/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_15_49_10/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_02_10/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_02_10/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_06_28/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_06_28/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_20_57/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_20_57/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_28_07/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_28_07/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_33_26/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_33_26/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_35_44/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_35_44/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_38_39/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_38_39/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_38_39/train/events.out.tfevents.1741163967.DESKTOP-2R08KK9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_38_39/val/events.out.tfevents.1741163967.DESKTOP-2R08KK9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_45_23/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_45_23/opt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_45_23/train/events.out.tfevents.1741164324.DESKTOP-2R08KK9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/experiment_name2025_03_05_16_45_23/val/events.out.tfevents.1741164324.DESKTOP-2R08KK9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networks/freqnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/networks/freqnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networks/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/networks/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options/base_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/options/base_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/validate.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../FreqNet-DeepfakeDetection\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2tfsujibK8XR7BlYxEbMv6eF6lG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ACADEMICS/THESIS/FreqNet-DeepfakeDetection/checkpoints&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ACADEMICS\THESIS\FreqNet-DeepfakeDetection\checkpoints" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
+        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b9d82a0-b72c-4013-82b5-d1ed23f99aa2" name="Changes" comment="" />
+      <created>1740754690537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740754690537</updated>
+      <workItem from="1740754692094" duration="1512000" />
+      <workItem from="1740915814484" duration="2489000" />
+      <workItem from="1740935229845" duration="684000" />
+      <workItem from="1740977467476" duration="3647000" />
+      <workItem from="1741147014596" duration="5451000" />
+      <workItem from="1741157039290" duration="9802000" />
+      <workItem from="1741269025926" duration="596000" />
+      <workItem from="1741495285741" duration="754000" />
+      <workItem from="1742320358296" duration="1138000" />
+      <workItem from="1742384584872" duration="1840000" />
+      <workItem from="1742535229250" duration="5555000" />
+      <workItem from="1742716233201" duration="8252000" />
+      <workItem from="1742907484128" duration="13296000" />
+      <workItem from="1742972058240" duration="1570000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
