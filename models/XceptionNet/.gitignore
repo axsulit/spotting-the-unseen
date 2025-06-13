@@ -1,0 +1,16 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# venv
+.venv
+/celeb-df
+.DS_Store
+/output
+/celeb-df_imgs
+/celeb-df_orig
+*.pth

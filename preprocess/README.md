@@ -34,7 +34,7 @@ Applies visual alterations to images in a folder.
 - noise
 - splice
 - resize
-- color
+- colormismatch
 
 **Inputs:**  
 - Type of alteration  
