@@ -1,6 +1,0 @@
-opencv-python
-os
-cmake
-dlib
-pyyaml
-numpy
