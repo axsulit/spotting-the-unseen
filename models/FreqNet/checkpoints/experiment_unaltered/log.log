@@ -1,0 +1,795 @@
+Checking dataset paths:
+Training Path: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Validation Path: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking if '/scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real' exists: True
+Checking if '/scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake' exists: True
+train.py  --dataroot  /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train  --batch_size  16  --lr  0.001  --niter  100
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+==================== requires_grad Ture weight1
+==================== requires_grad Ture bias1
+==================== requires_grad Ture weight2
+==================== requires_grad Ture bias2
+==================== requires_grad Ture weight3
+==================== requires_grad Ture bias3
+==================== requires_grad Ture weight4
+==================== requires_grad Ture bias4
+==================== requires_grad Ture realconv1.weight
+==================== requires_grad Ture imagconv1.weight
+==================== requires_grad Ture realconv2.weight
+==================== requires_grad Ture imagconv2.weight
+==================== requires_grad Ture realconv3.weight
+==================== requires_grad Ture imagconv3.weight
+==================== requires_grad Ture realconv4.weight
+==================== requires_grad Ture imagconv4.weight
+==================== requires_grad Ture layer1.0.conv1.weight
+==================== requires_grad Ture layer1.0.bn1.weight
+==================== requires_grad Ture layer1.0.bn1.bias
+==================== requires_grad Ture layer1.0.conv2.weight
+==================== requires_grad Ture layer1.0.bn2.weight
+==================== requires_grad Ture layer1.0.bn2.bias
+==================== requires_grad Ture layer1.0.conv3.weight
+==================== requires_grad Ture layer1.0.bn3.weight
+==================== requires_grad Ture layer1.0.bn3.bias
+==================== requires_grad Ture layer1.0.downsample.0.weight
+==================== requires_grad Ture layer1.0.downsample.1.weight
+==================== requires_grad Ture layer1.0.downsample.1.bias
+==================== requires_grad Ture layer1.1.conv1.weight
+==================== requires_grad Ture layer1.1.bn1.weight
+==================== requires_grad Ture layer1.1.bn1.bias
+==================== requires_grad Ture layer1.1.conv2.weight
+==================== requires_grad Ture layer1.1.bn2.weight
+==================== requires_grad Ture layer1.1.bn2.bias
+==================== requires_grad Ture layer1.1.conv3.weight
+==================== requires_grad Ture layer1.1.bn3.weight
+==================== requires_grad Ture layer1.1.bn3.bias
+==================== requires_grad Ture layer1.2.conv1.weight
+==================== requires_grad Ture layer1.2.bn1.weight
+==================== requires_grad Ture layer1.2.bn1.bias
+==================== requires_grad Ture layer1.2.conv2.weight
+==================== requires_grad Ture layer1.2.bn2.weight
+==================== requires_grad Ture layer1.2.bn2.bias
+==================== requires_grad Ture layer1.2.conv3.weight
+==================== requires_grad Ture layer1.2.bn3.weight
+==================== requires_grad Ture layer1.2.bn3.bias
+==================== requires_grad Ture layer2.0.conv1.weight
+==================== requires_grad Ture layer2.0.bn1.weight
+==================== requires_grad Ture layer2.0.bn1.bias
+==================== requires_grad Ture layer2.0.conv2.weight
+==================== requires_grad Ture layer2.0.bn2.weight
+==================== requires_grad Ture layer2.0.bn2.bias
+==================== requires_grad Ture layer2.0.conv3.weight
+==================== requires_grad Ture layer2.0.bn3.weight
+==================== requires_grad Ture layer2.0.bn3.bias
+==================== requires_grad Ture layer2.0.downsample.0.weight
+==================== requires_grad Ture layer2.0.downsample.1.weight
+==================== requires_grad Ture layer2.0.downsample.1.bias
+==================== requires_grad Ture layer2.1.conv1.weight
+==================== requires_grad Ture layer2.1.bn1.weight
+==================== requires_grad Ture layer2.1.bn1.bias
+==================== requires_grad Ture layer2.1.conv2.weight
+==================== requires_grad Ture layer2.1.bn2.weight
+==================== requires_grad Ture layer2.1.bn2.bias
+==================== requires_grad Ture layer2.1.conv3.weight
+==================== requires_grad Ture layer2.1.bn3.weight
+==================== requires_grad Ture layer2.1.bn3.bias
+==================== requires_grad Ture layer2.2.conv1.weight
+==================== requires_grad Ture layer2.2.bn1.weight
+==================== requires_grad Ture layer2.2.bn1.bias
+==================== requires_grad Ture layer2.2.conv2.weight
+==================== requires_grad Ture layer2.2.bn2.weight
+==================== requires_grad Ture layer2.2.bn2.bias
+==================== requires_grad Ture layer2.2.conv3.weight
+==================== requires_grad Ture layer2.2.bn3.weight
+==================== requires_grad Ture layer2.2.bn3.bias
+==================== requires_grad Ture layer2.3.conv1.weight
+==================== requires_grad Ture layer2.3.bn1.weight
+==================== requires_grad Ture layer2.3.bn1.bias
+==================== requires_grad Ture layer2.3.conv2.weight
+==================== requires_grad Ture layer2.3.bn2.weight
+==================== requires_grad Ture layer2.3.bn2.bias
+==================== requires_grad Ture layer2.3.conv3.weight
+==================== requires_grad Ture layer2.3.bn3.weight
+==================== requires_grad Ture layer2.3.bn3.bias
+==================== requires_grad Ture fc1.weight
+==================== requires_grad Ture fc1.bias
+
+Current Working Directory: /scratch1/ice.exconde/FreqNet-DeepfakeDetection
+2025_03_25_13_33_56 - Train Loss: 0.7146 at step 400, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 0) Accuracy: 0.6908; AP: 0.8089
+2025_03_25_13_35_08 - Train Loss: 0.6398 at step 800, lr 0.001000
+2025_03_25_13_35_47 - Train Loss: 0.6364 at step 1200, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 1) Accuracy: 0.5200; AP: 0.6696
+2025_03_25_13_36_59 - Train Loss: 0.7200 at step 1600, lr 0.001000
+2025_03_25_13_37_38 - Train Loss: 0.4058 at step 2000, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 2) Accuracy: 0.5021; AP: 0.6799
+2025_03_25_13_38_50 - Train Loss: 0.4150 at step 2400, lr 0.001000
+2025_03_25_13_39_29 - Train Loss: 0.8063 at step 2800, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 3) Accuracy: 0.4970; AP: 0.6486
+2025_03_25_13_40_41 - Train Loss: 0.6226 at step 3200, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 4) Accuracy: 0.4981; AP: 0.6577
+2025_03_25_13_41_53 - Train Loss: 0.3817 at step 3600, lr 0.001000
+2025_03_25_13_42_32 - Train Loss: 0.3864 at step 4000, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 5) Accuracy: 0.6235; AP: 0.8084
+2025_03_25_13_43_44 - Train Loss: 0.3854 at step 4400, lr 0.001000
+2025_03_25_13_44_23 - Train Loss: 0.5357 at step 4800, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 6) Accuracy: 0.7224; AP: 0.8459
+2025_03_25_13_45_35 - Train Loss: 0.5314 at step 5200, lr 0.001000
+2025_03_25_13_46_14 - Train Loss: 0.4418 at step 5600, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 7) Accuracy: 0.5087; AP: 0.7776
+2025_03_25_13_47_26 - Train Loss: 0.3834 at step 6000, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 8) Accuracy: 0.4864; AP: 0.6600
+2025_03_25_13_48_38 - Train Loss: 0.4178 at step 6400, lr 0.001000
+2025_03_25_13_49_17 - Train Loss: 0.2409 at step 6800, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 9) Accuracy: 0.5162; AP: 0.8239
+2025_03_25_13_50_29 - Train Loss: 0.3700 at step 7200, lr 0.001000
+2025_03_25_13_51_08 - Train Loss: 0.3767 at step 7600, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 10) Accuracy: 0.6562; AP: 0.8594
+2025_03_25_13_52_20 - Train Loss: 0.4868 at step 8000, lr 0.001000
+2025_03_25_13_52_59 - Train Loss: 0.3701 at step 8400, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 11) Accuracy: 0.6419; AP: 0.8522
+2025_03_25_13_54_11 - Train Loss: 0.5532 at step 8800, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 12) Accuracy: 0.6877; AP: 0.8512
+2025_03_25_13_55_23 - Train Loss: 0.4754 at step 9200, lr 0.001000
+2025_03_25_13_56_02 - Train Loss: 0.5022 at step 9600, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 13) Accuracy: 0.7371; AP: 0.8807
+2025_03_25_13_57_14 - Train Loss: 0.4517 at step 10000, lr 0.001000
+2025_03_25_13_57_53 - Train Loss: 0.4430 at step 10400, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 14) Accuracy: 0.7284; AP: 0.8913
+2025_03_25_13_59_05 - Train Loss: 0.4801 at step 10800, lr 0.001000
+2025_03_25_13_59_44 - Train Loss: 0.6681 at step 11200, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 15) Accuracy: 0.5000; AP: 0.5910
+2025_03_25_14_00_57 - Train Loss: 0.3323 at step 11600, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 16) Accuracy: 0.5108; AP: 0.8499
+2025_03_25_14_02_09 - Train Loss: 0.6941 at step 12000, lr 0.001000
+2025_03_25_14_02_48 - Train Loss: 0.4447 at step 12400, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 17) Accuracy: 0.5007; AP: 0.7283
+2025_03_25_14_04_00 - Train Loss: 0.3497 at step 12800, lr 0.001000
+2025_03_25_14_04_39 - Train Loss: 0.2922 at step 13200, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 18) Accuracy: 0.7470; AP: 0.8752
+2025_03_25_14_05_50 - Train Loss: 0.4647 at step 13600, lr 0.001000
+2025_03_25_14_06_29 - Train Loss: 0.4177 at step 14000, lr 0.001000
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 19) Accuracy: 0.7033; AP: 0.8860
+2025_03_25_14_07_41 - Train Loss: 0.4964 at step 14400, lr 0.001000
+2025_03_25_14_08_10 - Adjusting LR at epoch 20, step 14700
+*************************
+Changing lr from 0.001 to 0.0008
+*************************
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 20) Accuracy: 0.5779; AP: 0.8791
+2025_03_25_14_08_53 - Train Loss: 0.3165 at step 14800, lr 0.000800
+2025_03_25_14_09_32 - Train Loss: 0.7276 at step 15200, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 21) Accuracy: 0.7300; AP: 0.8961
+2025_03_25_14_10_44 - Train Loss: 0.5971 at step 15600, lr 0.000800
+2025_03_25_14_11_23 - Train Loss: 0.5758 at step 16000, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 22) Accuracy: 0.6362; AP: 0.8668
+2025_03_25_14_12_36 - Train Loss: 0.7098 at step 16400, lr 0.000800
+2025_03_25_14_13_15 - Train Loss: 0.2878 at step 16800, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 23) Accuracy: 0.8142; AP: 0.9189
+2025_03_25_14_14_27 - Train Loss: 0.2175 at step 17200, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 24) Accuracy: 0.7134; AP: 0.8160
+2025_03_25_14_15_39 - Train Loss: 0.2868 at step 17600, lr 0.000800
+2025_03_25_14_16_18 - Train Loss: 0.5385 at step 18000, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 25) Accuracy: 0.5105; AP: 0.8596
+2025_03_25_14_17_30 - Train Loss: 0.7333 at step 18400, lr 0.000800
+2025_03_25_14_18_09 - Train Loss: 0.3309 at step 18800, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 26) Accuracy: 0.5367; AP: 0.8906
+2025_03_25_14_19_21 - Train Loss: 0.4801 at step 19200, lr 0.000800
+2025_03_25_14_19_59 - Train Loss: 0.6531 at step 19600, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 27) Accuracy: 0.5001; AP: 0.6976
+2025_03_25_14_21_12 - Train Loss: 0.5911 at step 20000, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 28) Accuracy: 0.7468; AP: 0.9046
+2025_03_25_14_22_23 - Train Loss: 0.6494 at step 20400, lr 0.000800
+2025_03_25_14_23_02 - Train Loss: 0.2768 at step 20800, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 29) Accuracy: 0.7929; AP: 0.9136
+2025_03_25_14_24_14 - Train Loss: 0.4482 at step 21200, lr 0.000800
+2025_03_25_14_24_53 - Train Loss: 0.4179 at step 21600, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 30) Accuracy: 0.6171; AP: 0.8981
+2025_03_25_14_26_05 - Train Loss: 0.3762 at step 22000, lr 0.000800
+2025_03_25_14_26_44 - Train Loss: 0.3080 at step 22400, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 31) Accuracy: 0.5053; AP: 0.7225
+2025_03_25_14_27_57 - Train Loss: 0.2763 at step 22800, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 32) Accuracy: 0.7812; AP: 0.9113
+2025_03_25_14_29_09 - Train Loss: 0.5818 at step 23200, lr 0.000800
+2025_03_25_14_29_48 - Train Loss: 0.8850 at step 23600, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 33) Accuracy: 0.7252; AP: 0.9171
+2025_03_25_14_31_00 - Train Loss: 0.3421 at step 24000, lr 0.000800
+2025_03_25_14_31_39 - Train Loss: 0.2606 at step 24400, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 34) Accuracy: 0.6924; AP: 0.8876
+2025_03_25_14_32_51 - Train Loss: 0.5401 at step 24800, lr 0.000800
+2025_03_25_14_33_30 - Train Loss: 0.3683 at step 25200, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 35) Accuracy: 0.5006; AP: 0.5102
+2025_03_25_14_34_42 - Train Loss: 0.5767 at step 25600, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 36) Accuracy: 0.5050; AP: 0.8517
+2025_03_25_14_35_54 - Train Loss: 0.3607 at step 26000, lr 0.000800
+2025_03_25_14_36_33 - Train Loss: 0.3105 at step 26400, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 37) Accuracy: 0.7539; AP: 0.8660
+2025_03_25_14_37_45 - Train Loss: 0.4143 at step 26800, lr 0.000800
+2025_03_25_14_38_25 - Train Loss: 0.3722 at step 27200, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 38) Accuracy: 0.5481; AP: 0.9009
+2025_03_25_14_39_38 - Train Loss: 0.4731 at step 27600, lr 0.000800
+2025_03_25_14_40_17 - Train Loss: 0.3726 at step 28000, lr 0.000800
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 39) Accuracy: 0.8085; AP: 0.9287
+2025_03_25_14_41_29 - Train Loss: 0.5168 at step 28400, lr 0.000800
+2025_03_25_14_41_58 - Adjusting LR at epoch 40, step 28700
+*************************
+Changing lr from 0.0008 to 0.00064
+*************************
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 40) Accuracy: 0.8167; AP: 0.9208
+2025_03_25_14_42_41 - Train Loss: 0.3085 at step 28800, lr 0.000640
+2025_03_25_14_43_20 - Train Loss: 0.6042 at step 29200, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 41) Accuracy: 0.8122; AP: 0.9297
+2025_03_25_14_44_32 - Train Loss: 0.5943 at step 29600, lr 0.000640
+2025_03_25_14_45_11 - Train Loss: 0.1504 at step 30000, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 42) Accuracy: 0.8147; AP: 0.9385
+2025_03_25_14_46_23 - Train Loss: 0.3001 at step 30400, lr 0.000640
+2025_03_25_14_47_02 - Train Loss: 0.1621 at step 30800, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 43) Accuracy: 0.8037; AP: 0.9205
+2025_03_25_14_48_14 - Train Loss: 0.3606 at step 31200, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 44) Accuracy: 0.7732; AP: 0.9155
+2025_03_25_14_49_27 - Train Loss: 0.4632 at step 31600, lr 0.000640
+2025_03_25_14_50_06 - Train Loss: 0.1980 at step 32000, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 45) Accuracy: 0.8077; AP: 0.9302
+2025_03_25_14_51_18 - Train Loss: 0.1700 at step 32400, lr 0.000640
+2025_03_25_14_51_57 - Train Loss: 0.3700 at step 32800, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 46) Accuracy: 0.5516; AP: 0.9190
+2025_03_25_14_53_09 - Train Loss: 0.2826 at step 33200, lr 0.000640
+2025_03_25_14_53_48 - Train Loss: 0.1908 at step 33600, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 47) Accuracy: 0.7443; AP: 0.9010
+2025_03_25_14_55_00 - Train Loss: 0.3080 at step 34000, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 48) Accuracy: 0.5639; AP: 0.8573
+2025_03_25_14_56_12 - Train Loss: 0.2658 at step 34400, lr 0.000640
+2025_03_25_14_56_51 - Train Loss: 0.6343 at step 34800, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 49) Accuracy: 0.7938; AP: 0.9047
+2025_03_25_14_58_04 - Train Loss: 0.2755 at step 35200, lr 0.000640
+2025_03_25_14_58_42 - Train Loss: 0.2114 at step 35600, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 50) Accuracy: 0.5560; AP: 0.9058
+2025_03_25_14_59_55 - Train Loss: 0.6112 at step 36000, lr 0.000640
+2025_03_25_15_00_34 - Train Loss: 0.3735 at step 36400, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 51) Accuracy: 0.6339; AP: 0.9251
+2025_03_25_15_01_46 - Train Loss: 0.4333 at step 36800, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 52) Accuracy: 0.7407; AP: 0.9316
+2025_03_25_15_02_58 - Train Loss: 0.2945 at step 37200, lr 0.000640
+2025_03_25_15_03_37 - Train Loss: 0.4320 at step 37600, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 53) Accuracy: 0.8054; AP: 0.9373
+2025_03_25_15_04_49 - Train Loss: 0.4216 at step 38000, lr 0.000640
+2025_03_25_15_05_28 - Train Loss: 0.4555 at step 38400, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 54) Accuracy: 0.8246; AP: 0.9308
+2025_03_25_15_06_40 - Train Loss: 0.3069 at step 38800, lr 0.000640
+2025_03_25_15_07_19 - Train Loss: 0.4802 at step 39200, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 55) Accuracy: 0.5048; AP: 0.7573
+2025_03_25_15_08_31 - Train Loss: 0.2286 at step 39600, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 56) Accuracy: 0.8317; AP: 0.9393
+2025_03_25_15_09_43 - Train Loss: 0.3636 at step 40000, lr 0.000640
+2025_03_25_15_10_22 - Train Loss: 0.2594 at step 40400, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 57) Accuracy: 0.8071; AP: 0.9356
+2025_03_25_15_11_34 - Train Loss: 0.4170 at step 40800, lr 0.000640
+2025_03_25_15_12_13 - Train Loss: 0.4363 at step 41200, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 58) Accuracy: 0.8099; AP: 0.9250
+2025_03_25_15_13_25 - Train Loss: 0.3453 at step 41600, lr 0.000640
+2025_03_25_15_14_04 - Train Loss: 0.2076 at step 42000, lr 0.000640
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 59) Accuracy: 0.8199; AP: 0.9268
+2025_03_25_15_15_16 - Train Loss: 0.4281 at step 42400, lr 0.000640
+2025_03_25_15_15_45 - Adjusting LR at epoch 60, step 42700
+*************************
+Changing lr from 0.00064 to 0.0005120000000000001
+*************************
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 60) Accuracy: 0.7654; AP: 0.9323
+2025_03_25_15_16_28 - Train Loss: 0.4170 at step 42800, lr 0.000512
+2025_03_25_15_17_07 - Train Loss: 0.3924 at step 43200, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 61) Accuracy: 0.6452; AP: 0.9413
+2025_03_25_15_18_18 - Train Loss: 0.5078 at step 43600, lr 0.000512
+2025_03_25_15_18_57 - Train Loss: 0.5982 at step 44000, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 62) Accuracy: 0.5591; AP: 0.9186
+2025_03_25_15_20_10 - Train Loss: 0.2123 at step 44400, lr 0.000512
+2025_03_25_15_20_49 - Train Loss: 0.1524 at step 44800, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 63) Accuracy: 0.8553; AP: 0.9448
+2025_03_25_15_22_01 - Train Loss: 0.1672 at step 45200, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 64) Accuracy: 0.8225; AP: 0.9446
+2025_03_25_15_23_13 - Train Loss: 0.2651 at step 45600, lr 0.000512
+2025_03_25_15_23_52 - Train Loss: 0.6631 at step 46000, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 65) Accuracy: 0.7846; AP: 0.9437
+2025_03_25_15_25_05 - Train Loss: 0.3892 at step 46400, lr 0.000512
+2025_03_25_15_25_43 - Train Loss: 0.2267 at step 46800, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 66) Accuracy: 0.8460; AP: 0.9480
+2025_03_25_15_26_56 - Train Loss: 0.3103 at step 47200, lr 0.000512
+2025_03_25_15_27_35 - Train Loss: 0.2588 at step 47600, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 67) Accuracy: 0.5029; AP: 0.6680
+2025_03_25_15_28_47 - Train Loss: 0.5682 at step 48000, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 68) Accuracy: 0.6656; AP: 0.9245
+2025_03_25_15_29_59 - Train Loss: 0.2860 at step 48400, lr 0.000512
+2025_03_25_15_30_38 - Train Loss: 0.3684 at step 48800, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 69) Accuracy: 0.8679; AP: 0.9526
+2025_03_25_15_31_50 - Train Loss: 0.3252 at step 49200, lr 0.000512
+2025_03_25_15_32_29 - Train Loss: 0.1886 at step 49600, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 70) Accuracy: 0.7107; AP: 0.9300
+2025_03_25_15_33_41 - Train Loss: 0.7440 at step 50000, lr 0.000512
+2025_03_25_15_34_20 - Train Loss: 0.4092 at step 50400, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 71) Accuracy: 0.8365; AP: 0.9544
+2025_03_25_15_35_32 - Train Loss: 0.3217 at step 50800, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 72) Accuracy: 0.6769; AP: 0.9132
+2025_03_25_15_36_45 - Train Loss: 0.2998 at step 51200, lr 0.000512
+2025_03_25_15_37_23 - Train Loss: 0.2170 at step 51600, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 73) Accuracy: 0.7274; AP: 0.9295
+2025_03_25_15_38_36 - Train Loss: 0.2911 at step 52000, lr 0.000512
+2025_03_25_15_39_14 - Train Loss: 0.3292 at step 52400, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 74) Accuracy: 0.8437; AP: 0.9504
+2025_03_25_15_40_27 - Train Loss: 0.4172 at step 52800, lr 0.000512
+2025_03_25_15_41_05 - Train Loss: 0.4874 at step 53200, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 75) Accuracy: 0.8001; AP: 0.9445
+2025_03_25_15_42_18 - Train Loss: 0.2557 at step 53600, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 76) Accuracy: 0.8634; AP: 0.9518
+2025_03_25_15_43_31 - Train Loss: 0.3596 at step 54000, lr 0.000512
+2025_03_25_15_44_11 - Train Loss: 0.4445 at step 54400, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 77) Accuracy: 0.6346; AP: 0.9344
+2025_03_25_15_45_23 - Train Loss: 0.2214 at step 54800, lr 0.000512
+2025_03_25_15_46_02 - Train Loss: 0.1411 at step 55200, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 78) Accuracy: 0.8664; AP: 0.9521
+2025_03_25_15_47_14 - Train Loss: 0.3393 at step 55600, lr 0.000512
+2025_03_25_15_47_53 - Train Loss: 0.3748 at step 56000, lr 0.000512
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 79) Accuracy: 0.8231; AP: 0.9471
+2025_03_25_15_49_05 - Train Loss: 0.7480 at step 56400, lr 0.000512
+2025_03_25_15_49_34 - Adjusting LR at epoch 80, step 56700
+*************************
+Changing lr from 0.0005120000000000001 to 0.0004096000000000001
+*************************
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 80) Accuracy: 0.8624; AP: 0.9568
+2025_03_25_15_50_17 - Train Loss: 0.4173 at step 56800, lr 0.000410
+2025_03_25_15_50_56 - Train Loss: 0.3995 at step 57200, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 81) Accuracy: 0.7833; AP: 0.9487
+2025_03_25_15_52_08 - Train Loss: 0.4806 at step 57600, lr 0.000410
+2025_03_25_15_52_47 - Train Loss: 0.4987 at step 58000, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 82) Accuracy: 0.7487; AP: 0.9564
+2025_03_25_15_54_00 - Train Loss: 0.4578 at step 58400, lr 0.000410
+2025_03_25_15_54_39 - Train Loss: 0.2109 at step 58800, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 83) Accuracy: 0.8766; AP: 0.9625
+2025_03_25_15_55_51 - Train Loss: 0.1705 at step 59200, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 84) Accuracy: 0.8329; AP: 0.9509
+2025_03_25_15_57_03 - Train Loss: 0.3215 at step 59600, lr 0.000410
+2025_03_25_15_57_42 - Train Loss: 0.3312 at step 60000, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 85) Accuracy: 0.8175; AP: 0.9561
+2025_03_25_15_58_55 - Train Loss: 0.1391 at step 60400, lr 0.000410
+2025_03_25_15_59_34 - Train Loss: 0.3013 at step 60800, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 86) Accuracy: 0.8117; AP: 0.9542
+2025_03_25_16_00_46 - Train Loss: 0.4580 at step 61200, lr 0.000410
+2025_03_25_16_01_25 - Train Loss: 0.5914 at step 61600, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 87) Accuracy: 0.8542; AP: 0.9603
+2025_03_25_16_02_37 - Train Loss: 0.3813 at step 62000, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 88) Accuracy: 0.8859; AP: 0.9619
+2025_03_25_16_03_50 - Train Loss: 0.3748 at step 62400, lr 0.000410
+2025_03_25_16_04_29 - Train Loss: 0.1659 at step 62800, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 89) Accuracy: 0.8769; AP: 0.9622
+2025_03_25_16_05_41 - Train Loss: 0.3461 at step 63200, lr 0.000410
+2025_03_25_16_06_19 - Train Loss: 0.1460 at step 63600, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 90) Accuracy: 0.8171; AP: 0.9364
+2025_03_25_16_07_32 - Train Loss: 0.5574 at step 64000, lr 0.000410
+2025_03_25_16_08_10 - Train Loss: 0.1570 at step 64400, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 91) Accuracy: 0.8854; AP: 0.9641
+2025_03_25_16_09_23 - Train Loss: 0.3065 at step 64800, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 92) Accuracy: 0.8944; AP: 0.9656
+2025_03_25_16_10_35 - Train Loss: 0.2801 at step 65200, lr 0.000410
+2025_03_25_16_11_14 - Train Loss: 0.3039 at step 65600, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 93) Accuracy: 0.8792; AP: 0.9609
+2025_03_25_16_12_26 - Train Loss: 0.2176 at step 66000, lr 0.000410
+2025_03_25_16_13_04 - Train Loss: 0.3820 at step 66400, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 94) Accuracy: 0.8134; AP: 0.9607
+2025_03_25_16_14_17 - Train Loss: 0.5097 at step 66800, lr 0.000410
+2025_03_25_16_14_56 - Train Loss: 0.2577 at step 67200, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 95) Accuracy: 0.8855; AP: 0.9646
+2025_03_25_16_16_08 - Train Loss: 0.2767 at step 67600, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 96) Accuracy: 0.6716; AP: 0.9407
+2025_03_25_16_17_20 - Train Loss: 0.2896 at step 68000, lr 0.000410
+2025_03_25_16_17_59 - Train Loss: 0.2938 at step 68400, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 97) Accuracy: 0.6983; AP: 0.9198
+2025_03_25_16_19_11 - Train Loss: 0.1686 at step 68800, lr 0.000410
+2025_03_25_16_19_50 - Train Loss: 0.1897 at step 69200, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 98) Accuracy: 0.8196; AP: 0.9605
+2025_03_25_16_21_02 - Train Loss: 0.1733 at step 69600, lr 0.000410
+2025_03_25_16_21_41 - Train Loss: 0.2220 at step 70000, lr 0.000410
+Final dataset root: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/real: ['id31_0006_oversample_3794.png', 'id60_0006_oversample_2817.png', 'id38_0002_oversample_1076.png', 'id34_0007_oversample_671.png', 'id17_0000_oversample_2897.png'] ... (5600 total)
+Files in /scratch1/ice.exconde/final_dataset/01_celebdf_unaltered/train/fake: ['id37_id16_0002_face_140.jpg', 'id40_id47_0002_face_300.jpg', 'id20_id33_0009_face_290.jpg', 'id42_id46_0003_face_100.jpg', 'id38_id23_0009_face_100.jpg'] ... (5600 total)
+(Validation @ epoch 99) Accuracy: 0.8938; AP: 0.9658
+Saving model ./checkpoints/experiment_name2025_03_25_13_32_31/model_epoch_last.pth
