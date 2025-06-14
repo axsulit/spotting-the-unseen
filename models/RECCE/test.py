@@ -65,6 +65,12 @@ def main():
         for images, labels in tqdm(test_loader, desc="Testing"):
             images, labels = images.to(device), labels.to(device)
             outputs = model(images)
+
+            if outputs.dim() == 0:
+                outputs = outputs.unsqueeze(0)  # Add batch dimension
+            elif outputs.dim() == 1:
+                outputs = outputs.unsqueeze(0)  # Add batch dimension if missing
+            
             outputs = outputs.squeeze()
             probs = torch.sigmoid(outputs)
             predictions = (probs > 0.5).long()
