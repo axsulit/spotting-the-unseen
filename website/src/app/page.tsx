@@ -1,3 +1,5 @@
+'use client';
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -5,6 +7,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ChevronDown, ExternalLink, Github, FileText, Database } from "lucide-react"
 import Image from "next/image"
+import { toast } from "sonner"
 
 export default function AcademicProject() {
   return (
@@ -94,9 +97,20 @@ export default function AcademicProject() {
               <FileText className="w-5 h-5 mr-2" />
               Read Paper
             </Button>
-            <Button variant="outline" size="lg" className="bg-white">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="bg-white"
+            >
+              <a
+              href="https://github.com/axsulit/spotting-the-unseen/tree/main/datasets"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
               <Database className="w-5 h-5 mr-2" />
-              View Dataset
+              View Datasets
+              </a>
             </Button>
           </div>
         </div>
@@ -402,20 +416,36 @@ export default function AcademicProject() {
             <CardContent>
               <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm text-gray-800 leading-relaxed">
                 <p>
-                  Exconde, I. R. C., Gon Gon, Z. A. F., Sulit, A. G. M., & Torio, Y. D. (2025). Spotting the Unseen: A
-                  Comprehensive Analysis of Face Forgery Detection Models. Center for Computational Imaging & Visual
-                  Innovations, De La Salle University. Presented at [Insert Conference Name].
+                  Exconde, I. R. C., Gon Gon, Z. A. F., Sulit, A. G. M., & Torio, Y. D. (2025). Spotting the unseen: A comprehensive analysis of face forgery detection models. Center for Computational Imaging & Visual Innovations, De La Salle University.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mt-6">
-                <Button variant="outline" className="bg-white">
+                <Button
+                  variant="outline"
+                  className="bg-white"
+                  onClick={() => {
+                    navigator.clipboard.writeText(`@inproceedings{exconde2025spotting,
+                  author    = {Exconde, I. R. C., Gon Gon, Z. A. F., Sulit, A. G. M., & Torio, Y. D.},
+                  title     = {Spotting the Unseen: A Comprehensive Analysis of Face Forgery Detection Models},
+                  year      = {2025},
+                  institution = {De La Salle University},
+                  }
+                  `)
+                    .then(() => {
+                      toast.success("Copied to clipboard");
+                    })
+                    .catch(() => {
+                      toast.error("Failed to copy");
+                    });
+                  }}
+                >
                   <FileText className="w-4 h-4 mr-2" />
                   BibTeX
                 </Button>
-                <Button variant="outline" className="bg-white">
+                {/* <Button variant="outline" className="bg-white">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   DOI
-                </Button>
+                </Button> */}
               </div>
             </CardContent>
           </Card>
