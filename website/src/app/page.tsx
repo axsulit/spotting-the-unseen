@@ -144,70 +144,68 @@ export default function AcademicProject() {
             <p className="text-gray-600">Visual comparison of real vs. fake faces and model architectures</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-[3.5fr_6.5fr] gap-8">
             {/* Dataset Examples */}
             <Card className="overflow-hidden">
               <CardHeader>
                 <CardTitle className="text-xl">Real vs. Fake Face Examples</CardTitle>
-                <CardDescription>Samples from FaceForensics++, Celeb-DF, and WildDeepfake datasets</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <div className="aspect-square bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
-                      <Image
-                        src="/placeholder.svg?height=150&width=150"
-                        alt="Real face example"
-                        width={150}
-                        height={150}
-                        className="rounded-lg"
-                      />
+                <div className="flex flex-col gap-4">
+                  {/* Dataset samples */}
+                    <div className="grid grid-cols-1 gap-6">
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="aspect-video w-full bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/datasets/celebdf_sample.png"
+                          alt="Celeb-DF real and fake faces"
+                          width={320}
+                          height={160}
+                          className="rounded-lg object-contain"
+                        />
+                      </div>
+                      <Badge variant="outline" className="bg-green-100 text-green-800">Celeb-DF</Badge>
                     </div>
-                    <Badge variant="secondary" className="w-full justify-center bg-green-100 text-green-800">
-                      Real
-                    </Badge>
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="aspect-video w-full bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/datasets/ffpp23_sample.png"
+                          alt="FaceForensics++ real and fake faces"
+                          width={320}
+                          height={160}
+                          className="rounded-lg object-contain"
+                        />
+                      </div>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800">FaceForensics++ (c23)</Badge>
+                    </div>
+                    
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="aspect-video w-full bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/datasets/ffpp40_sample.png"
+                          alt="WildDeepfake real and fake faces"
+                          width={320}
+                          height={160}
+                          className="rounded-lg object-contain"
+                        />
+                      </div>
+                      <Badge variant="outline" className="bg-yellow-100 text-yellow-800">FaceForensics++ (c40)</Badge>
+                    </div>
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="aspect-video w-full bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center">
+                        <Image
+                          src="/datasets/wdf_sample.png"
+                          alt="DFDC real and fake faces"
+                          width={320}
+                          height={160}
+                          className="rounded-lg object-contain"
+                        />
+                      </div>
+                      <Badge variant="outline" className="bg-purple-100 text-purple-800">WildDeepfake</Badge>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <div className="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center">
-                      <Image
-                        src="/placeholder.svg?height=150&width=150"
-                        alt="Fake face example"
-                        width={150}
-                        height={150}
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <Badge variant="secondary" className="w-full justify-center bg-red-100 text-red-800">
-                      Fake
-                    </Badge>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="aspect-square bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
-                      <Image
-                        src="/placeholder.svg?height=150&width=150"
-                        alt="Real face example 2"
-                        width={150}
-                        height={150}
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <Badge variant="secondary" className="w-full justify-center bg-green-100 text-green-800">
-                      Real
-                    </Badge>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center">
-                      <Image
-                        src="/placeholder.svg?height=150&width=150"
-                        alt="Fake face example 2"
-                        width={150}
-                        height={150}
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <Badge variant="secondary" className="w-full justify-center bg-red-100 text-red-800">
-                      Fake
-                    </Badge>
+                  <div className="text-xs text-gray-500 text-center mt-2">
+                    <span>Each grid: Top row = Real faces, Bottom row = Fake faces</span>
                   </div>
                 </div>
               </CardContent>
