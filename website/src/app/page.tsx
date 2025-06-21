@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { ChevronDown, ExternalLink, Github, FileText, Database } from "lucide-react"
+import { ChevronDown, Github, FileText, Database } from "lucide-react"
 import Image from "next/image"
 import { toast } from "sonner"
 
