@@ -442,50 +442,25 @@ export default function AcademicProject() {
             </CardHeader>
             <CardContent>
               <div className="text-gray-700 leading-relaxed mb-6">
-                <p>
-                  This study evaluates six deep learning models from three categories: spatial-based (Xception, RECCE),
-                  frequency-based (FreqNet, F3-Net), and attention-based (Add-Net, Multi-Att). We apply extensive data
-                  perturbations including blurring, resolution reduction, color mismatches, and noise to test model
-                  robustness. Our methodology also includes cross-dataset generalization analysis.
-                </p>
+              <p>
+              This study evaluates six deep learning models from three categories: spatial-based (Xception, RECCE),
+              frequency-based (FreqNet, F3-Net), and attention-based (Add-Net, Multi-Att). We apply extensive data
+              perturbations including blurring, resolution reduction, color mismatches, and noise to test model
+              robustness. Our methodology also includes cross-dataset generalization analysis.
+              </p>
               </div>
-
-              <Collapsible>
-                <CollapsibleTrigger asChild>
-                  <Button variant="outline" className="w-full justify-between">
-                    Detailed Methodology
-                    <ChevronDown className="h-4 w-4" />
-                  </Button>
-                </CollapsibleTrigger>
-                <CollapsibleContent className="mt-4 p-4 bg-gray-50 rounded-lg">
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Model Categories</h4>
-                      <ul className="list-disc list-inside text-gray-700 space-y-1">
-                        <li>
-                          <strong>Spatial-based:</strong> Xception, RECCE - Focus on spatial features and patterns
-                        </li>
-                        <li>
-                          <strong>Frequency-based:</strong> FreqNet, F3-Net - Analyze frequency domain characteristics
-                        </li>
-                        <li>
-                          <strong>Attention-based:</strong> Add-Net, Multi-Att - Utilize attention mechanisms
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Robustness Testing</h4>
-                      <ul className="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Gaussian blur and motion blur effects</li>
-                        <li>Resolution degradation (downsampling and upsampling)</li>
-                        <li>Color space transformations and mismatches</li>
-                        <li>Additive noise (Gaussian, salt-and-pepper)</li>
-                        <li>Compression artifacts simulation</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CollapsibleContent>
-              </Collapsible>
+              <div className="flex flex-col items-center">
+              <Image
+                src="/arch/pipeline.png"
+                alt="Evaluation Pipeline"
+                width={800}
+                height={0}
+                className="w-full h-auto rounded shadow object-contain"
+              />
+              <span className=" text-gray-700 mt-2 text-center">
+                Figure: (Top) Evaluation pipeline for deepfake detection models. The system begins with dataset acquisition from FaceForensics++, Wilddeepfake, and Celeb-DF. These are processed through a standardized pipeline involving frame extraction, image resolution normalization, face detection, frontal face filtering, and cropping. The resulting preprocessed datasets are optionally manipulated with forgery artifacts, including blurring, resolution resizing, color mismatches, splicing boundaries, and noise. Baseline models (e.g., XceptionNet, RECce, FreqNet, HiFi-FD, Multi-Att, and RFM) are then evaluated under both clean and manipulated conditions to assess robustness and cross-dataset generalization.
+              </span>
+              </div>
             </CardContent>
           </Card>
         </div>
