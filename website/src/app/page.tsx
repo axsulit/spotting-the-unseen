@@ -241,6 +241,10 @@ export default function AcademicProject() {
                           height={0}
                           className="w-full h-auto rounded shadow object-contain"
                         />
+                        <div className="text-xs text-blue-900 mt-2 text-center">
+  <strong>Figure:</strong> <em>Xception Architecture</em>. The model is organized into three main flows: <strong>Entry Flow</strong>, <strong>Middle Flow</strong>, and <strong>Exit Flow</strong>. The Entry Flow begins with standard and depthwise separable convolutions to extract low-level features while downsampling spatial resolution through strided convolutions and max pooling. The Middle Flow consists of 8 repeated modules, each comprising three depthwise separable convolution layers with residual connections, maintaining the spatial resolution (19×19×728). The Exit Flow increases feature depth through further separable convolutions and concludes with a global average pooling layer, producing a 2048-dimensional embedding. This is optionally passed through fully connected layers before final classification via logistic regression. All convolutional and separable convolution layers are followed by batch normalization, and all separable convolutions use a depth multiplier of 1.
+</div>
+
                       </div>
                     </CollapsibleContent>
                   </Collapsible>
@@ -275,6 +279,10 @@ export default function AcademicProject() {
                           height={0}
                           className="w-full h-auto rounded shadow object-contain"
                         />
+                         <div className="text-xs text-purple-800 mt-2 text-center">
+  <strong>Figure:</strong> <em>Multi-Attentional Deepfake Detection Architecture</em>. The model treats deepfake detection as a fine-grained classification task, capturing subtle artifacts via multiple localized attention regions. The <strong>Attention Module</strong> generates diverse spatial attention maps from deep semantic features, enabling part-based focus on discriminative regions. A <strong>Texture Enhancement Block</strong> extracts high-frequency cues from shallow features by computing residuals after local average pooling, which are enhanced through densely connected convolutional layers. The network uses <strong>Bilinear Attention Pooling (BAP)</strong> to separately aggregate both low-level textural features and high-level semantic features guided by the attention maps. These features are combined and passed through a classifier to predict whether the input face is <strong>Real or Fake</strong>. Training is further regularized by a <strong>Region Independence Loss</strong> and an <strong>Attention Guided Data Augmentation</strong> mechanism to ensure diverse and non-overlapping attention regions.
+</div>
+
                       </div>
                     </CollapsibleContent>
                   </Collapsible>
@@ -308,6 +316,10 @@ export default function AcademicProject() {
                         height={0}
                         className="w-full h-auto rounded shadow object-contain"
                       />
+                      <div className="text-xs text-orange-900 mt-2 text-center">
+  <strong>Figure:</strong> <em>FreqNet: Frequency Space Learning Network</em>. FreqNet enhances generalization in deepfake detection by explicitly modeling frequency-domain information at both the image and feature levels. <strong>(a) The HFRI Block</strong> captures high-frequency components from the RGB input using FFT, isolates frequency channels via filtering, and reconstructs enhanced spatial features through iFFT. <strong>(b) The HFRF Block</strong> extracts frequency-aware representations from intermediate feature maps across both spatial (<strong>HFRFS</strong>) and channel (<strong>HFRFC</strong>) dimensions by applying FFT, convolutional filtering, and inverse FFT. <strong>(c) The FCL Block</strong> performs spectrum learning by decomposing features into amplitude and phase, applying independent convolutions, and recombining them through iFFT. The <strong>overall architecture</strong> integrates these frequency-enhanced features with residual learning and concludes with a global average pooling and classification head to distinguish real from fake content.
+</div>
+
                     </div>
                   </CollapsibleContent>
                 </Collapsible>
@@ -342,6 +354,10 @@ export default function AcademicProject() {
                       height={0}
                       className="w-full h-auto rounded shadow object-contain"
                     />
+                    <div className="text-xs text-blue-800 mt-2 text-center">
+  <strong>Figure:</strong> <em>ReCCE: Reconstruction-Guided Deepfake Detection Architecture</em>. ReCCE integrates image reconstruction and classification within a unified framework. An <strong>Encoder-Decoder</strong> network reconstructs the input image <i>x</i> as <i>&#x0058;&#770;</i>, extracting multi-scale features <i>F<sub>enc</sub></i> and <i>F<sub>dec1–3</sub></i>. <strong>Information Aggregation</strong> builds a graph structure by connecting encoder and decoder nodes, aggregating local region information into graph-enhanced vectors <i>v<sub>agg</sub><sup>i</sup></i>. The <strong>Multi-scale Graph Reasoning</strong> module processes hierarchical decoder features <i>V<sub>dec1–3</sub></i> to capture global forgery traces, resulting in fused multi-scale features <i>V<sub>agg1–3</sub></i>. These are merged into <i>F<sub>enh</sub></i> and passed through a <strong>Reconstruction-Guided Attention</strong> module, which computes pixel-wise differences between <i>x</i> and <i>&#x0058;&#770;</i> to produce an attention map <i>&#x03C3;</i> that guides the final classification. Training is supervised via a combination of <strong>reconstruction loss</strong> (<i>&#x1D4C2;<sub>r</sub></i>), <strong>intermediate supervision loss</strong> (<i>&#x1D4C2;<sub>m</sub></i>), and <strong>classification loss</strong> (<i>&#x1D4C2;<sub>cls</sub></i>).
+</div>  
+
                   </div>
                 </CollapsibleContent>
               </Collapsible>
@@ -376,6 +392,10 @@ export default function AcademicProject() {
                       height={0}
                       className="w-full h-auto rounded shadow object-contain"
                     />
+                    <div className="text-xs text-purple-800 mt-2 text-center">
+  <strong>Figure:</strong> <em>RFM: Representative Forgery Mining Architecture for Deepfake Detection</em>. RFM improves deepfake detection by mining discriminative forgery-related regions through a dual-branch framework. In the <strong>Forgery Attention Map Generation</strong> stage, the network identifies suspicious regions using max-activated attention maps derived from intermediate features of the shared <strong>Backbone Detector</strong>. The <strong>Representative Forgery Erasing</strong> branch perturbs these high-response regions by injecting noise, encouraging the network to explore and learn from less obvious, complementary forgery cues. Both the original and erased images are processed in parallel, and their feature differences are emphasized using an element-wise subtraction followed by absolute value operation. This enhances the model’s sensitivity to subtle inconsistencies. A final classification head aggregates the output to determine whether the input is <strong>Real or Fake</strong>. This training strategy leads to better generalization and improved localization of manipulated regions.
+</div>
+
                   </div>
                 </CollapsibleContent>
               </Collapsible>
@@ -411,6 +431,10 @@ export default function AcademicProject() {
                       height={0}
                       className="w-full h-auto rounded shadow object-contain"
                     />
+                    <div className="text-xs text-orange-800 mt-2 text-center">
+  <strong>Figure:</strong> <em>HiFi-FD: High-Fidelity Forgery Detection Architecture</em>. The model employs a two-stream network consisting of an <strong>RGB Stream</strong> and a <strong>High-Frequency Stream</strong>. In the <strong>Input Module</strong>, high-frequency noise is extracted from the input image using SRM convolution filters, which are processed through a <strong>Multi-Scale High-Frequency Feature Extraction Module</strong> to obtain enriched noise features. The <strong>Residual Guided Spatial Attention (RSA) Module</strong> focuses the RGB stream on forgery traces by leveraging residual information from high-frequency features. In the <strong>Entry Flow</strong>, the two streams process features in parallel before entering the <strong>Middle Flow</strong>, which uses <strong>Dual Cross-Modality Attention (DCMA)</strong> to model the interaction between the RGB and high-frequency modalities. The <strong>Exit Flow</strong> fuses these features using a channel-wise attention mechanism to predict whether the input is <strong>Real</strong> or <strong>Fake</strong>.
+</div>
+
                   </div>
                 </CollapsibleContent>
               </Collapsible>
