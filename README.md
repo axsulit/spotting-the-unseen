@@ -38,14 +38,14 @@ To mimic real-world deepfake conditions, we apply the following perturbations:
 
 ### 4. Models Evaluated
 
-| Model      | Type            | Highlights |
+| Model      |  Type            | Highlights |
 |------------|------------------|------------|
-| [Xception](https://openaccess.thecvf.com/content_cvpr_2017/papers/Chollet_Xception_Deep_Learning_CVPR_2017_paper.pdf)   | Spatial-based     | CNN with depthwise separable convolutions |
-| [Multi-Att](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhao_Multi-Attentional_Deepfake_Detection_CVPR_2021_paper.pdf)  | Attention-based   | Multi-head attention on facial subregions |
-| [FreqNet](https://ojs.aaai.org/index.php/AAAI/article/download/28310/28609)   | Frequency-based   | FFT-domain convolutional analysis |
-| [RECCE](https://openaccess.thecvf.com/content/CVPR2022/papers/Cao_End-to-End_Reconstruction-Classification_Learning_for_Face_Forgery_Detection_CVPR_2022_paper.pdf)     | Spatial-based     | Reconstruction-guided attention |
-| [HiFi-FD](https://openaccess.thecvf.com/content/CVPR2021/papers/Luo_Generalizing_Face_Forgery_Detection_With_High-Frequency_Features_CVPR_2021_paper.pdf)    | Frequency-based   | High-frequency noise-aware modeling |
-| [RFM](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Representative_Forgery_Mining_for_Fake_Face_Detection_CVPR_2021_paper.pdf)     | Attention-based            | Custom experimental architecture |
+| [Xception](https://openaccess.thecvf.com/content_cvpr_2017/papers/Chollet_Xception_Deep_Learning_CVPR_2017_paper.pdf)   ([Code](https://keras.io/api/applications/xception/)) | Spatial-based     | CNN with depthwise separable convolutions |
+| [Multi-Att](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhao_Multi-Attentional_Deepfake_Detection_CVPR_2021_paper.pdf)   ([Code](https://github.com/yoctta/multiple-attention?tab=readme-ov-file)) | Attention-based   | Multi-head attention on facial subregions |
+| [FreqNet](https://ojs.aaai.org/index.php/AAAI/article/download/28310/28609)   ([Code](https://github.com/chuangchuangtan/FreqNet-DeepfakeDetection))  | Frequency-based   | FFT-domain convolutional analysis |
+| [RECCE](https://openaccess.thecvf.com/content/CVPR2022/papers/Cao_End-to-End_Reconstruction-Classification_Learning_for_Face_Forgery_Detection_CVPR_2022_paper.pdf)    ([Code](https://github.com/VISION-SJTU/RECCE/tree/main))   | Spatial-based     | Reconstruction-guided attention |
+| [HiFi-FD](https://openaccess.thecvf.com/content/CVPR2021/papers/Luo_Generalizing_Face_Forgery_Detection_With_High-Frequency_Features_CVPR_2021_paper.pdf)   (Code)   | Frequency-based   | High-frequency noise-aware modeling |
+| [RFM](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Representative_Forgery_Mining_for_Fake_Face_Detection_CVPR_2021_paper.pdf)   ([Code](https://github.com/crywang/RFM))    | Attention-based            | Custom experimental architecture |
 
 ## Performance Metrics
 
