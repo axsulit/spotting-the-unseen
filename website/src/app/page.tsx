@@ -217,43 +217,214 @@ export default function AcademicProject() {
             <Card className="overflow-hidden">
               <CardHeader>
                 <CardTitle className="text-xl">Model Architecture Comparison</CardTitle>
-                <CardDescription>Xception, Multi-Att, and FreqNet architectures</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div className="p-4 bg-blue-50 rounded-lg">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-blue-900">Xception (Spatial)</span>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800">
-                        CNN
-                      </Badge>
-                    </div>
-                    <div className="h-16 bg-gradient-to-r from-blue-200 to-blue-300 rounded flex items-center justify-center">
-                      <span className="text-blue-800 text-sm">Depthwise Separable Convolutions</span>
-                    </div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-semibold text-blue-900">Xception</span>
+                    <Badge variant="outline" className="bg-blue-100 text-blue-800">
+                      Spatial
+                    </Badge>
                   </div>
-                  <div className="p-4 bg-purple-50 rounded-lg">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-purple-900">Multi-Att (Attention)</span>
-                      <Badge variant="outline" className="bg-purple-100 text-purple-800">
-                        Attention
-                      </Badge>
-                    </div>
-                    <div className="h-16 bg-gradient-to-r from-purple-200 to-purple-300 rounded flex items-center justify-center">
-                      <span className="text-purple-800 text-sm">Multi-Head Attention Mechanism</span>
-                    </div>
+                  <div className="text-blue-800 text-sm mb-2">
+                    Uses depthwise separable convolutions to capture pixel-level artifacts and structural anomalies in facial images.
                   </div>
-                  <div className="p-4 bg-orange-50 rounded-lg">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-orange-900">FreqNet (Frequency)</span>
-                      <Badge variant="outline" className="bg-orange-100 text-orange-800">
-                        FFT
-                      </Badge>
-                    </div>
-                    <div className="h-16 bg-gradient-to-r from-orange-200 to-orange-300 rounded flex items-center justify-center">
-                      <span className="text-orange-800 text-sm">Frequency Domain Analysis</span>
-                    </div>
+                  <Collapsible>
+                    <CollapsibleTrigger asChild>
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-between px-0 text-blue-700 hover:bg-blue-100"
+                      >
+                        Show Architecture
+                        <ChevronDown className="h-4 w-4" />
+                      </Button>
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="mt-2">
+                      <div className="bg-gradient-to-r from-blue-200 to-blue-300 rounded p-2">
+                        <Image
+                          src="/arch/xception_arch.png"
+                          alt="Xception Architecture"
+                          width={800}
+                          height={0}
+                          className="w-full h-auto rounded shadow object-contain"
+                        />
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
+                </div>
+
+                <div className="p-4 bg-purple-50 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-semibold text-purple-900">Multi-Att</span>
+                    <Badge variant="outline" className="bg-purple-100 text-purple-800">
+                      Attention
+                    </Badge>
                   </div>
+                  <div className="text-purple-800 text-sm mb-2">
+                    Applies multiple spatial attention heads to focus on key facial regions (eyes, nose, mouth), enhancing detection of subtle, localized manipulations.
+                  </div>
+                  <Collapsible>
+                    <CollapsibleTrigger asChild>
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-between px-0 text-purple-700 hover:bg-purple-100"
+                      >
+                        Show Architecture
+                        <ChevronDown className="h-4 w-4" />
+                      </Button>
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="mt-2">
+                      <div className="bg-gradient-to-r from-purple-200 to-purple-300 rounded p-2">
+                        <Image
+                          src="/arch/multi-att_arch.png"
+                          alt="Multi-Att Architecture"
+                          width={800}
+                          height={0}
+                          className="w-full h-auto rounded shadow object-contain"
+                        />
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
+                </div>
+                <div className="p-4 bg-orange-50 rounded-lg">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-semibold text-orange-900">FreqNet</span>
+                  <Badge variant="outline" className="bg-orange-100 text-orange-800">
+                    Frequency
+                  </Badge>
+                </div>
+                <div className="text-orange-800 text-sm mb-2">
+                  Transforms images into the frequency domain using FFT and applies convolutions on high-frequency components to detect subtle manipulation artifacts.
+                </div>
+                <Collapsible>
+                  <CollapsibleTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-between px-0 text-orange-700 hover:bg-orange-100"
+                    >
+                      Show Architecture
+                      <ChevronDown className="h-4 w-4" />
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="mt-2">
+                    <div className="bg-gradient-to-r from-orange-200 to-orange-300 rounded p-2">
+                      <Image
+                        src="/arch/freqnet_arch.png"
+                        alt="FreqNet Architecture"
+                        width={800}
+                        height={0}
+                        className="w-full h-auto rounded shadow object-contain"
+                      />
+                    </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+
+              <div className="p-4 bg-blue-50 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-blue-900">RECCE</span>
+                <Badge variant="outline" className="bg-blue-100 text-blue-800">
+                  Spatial
+                </Badge>
+              </div>
+              <div className="text-blue-800 text-sm mb-2">
+                Combines an encoder-decoder CNN with classification learning to identify residual discrepancies caused by facial manipulations.
+              </div>
+              <Collapsible>
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-between px-0 text-blue-700 hover:bg-blue-100"
+                  >
+                    Show Architecture
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-2">
+                  <div className="bg-gradient-to-r from-blue-200 to-blue-300 rounded p-2">
+                    <Image
+                      src="/arch/recce_arch.png"
+                      alt="RECCE Architecture"
+                      width={800}
+                      height={0}
+                      className="w-full h-auto rounded shadow object-contain"
+                    />
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            </div>
+
+            <div className="p-4 bg-purple-50 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-purple-900">RFM</span>
+                <Badge variant="outline" className="bg-purple-100 text-purple-800">
+                  Attention
+                </Badge>
+              </div>
+              <div className="text-purple-800 text-sm mb-2">
+                Utilizes Forgery Attention Maps (FAM) and dynamic refinement to focus on manipulated facial regions, improving detection accuracy across diverse datasets.
+              </div>
+              <Collapsible>
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-between px-0 text-purple-700 hover:bg-purple-100"
+                  >
+                    Show Architecture
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-2">
+                  <div className="bg-gradient-to-r from-purple-200 to-purple-300 rounded p-2">
+                    <Image
+                      src="/arch/rfm_arch.png"
+                      alt="RFM Architecture"
+                      width={800}
+                      height={0}
+                      className="w-full h-auto rounded shadow object-contain"
+                    />
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            </div>
+
+
+            <div className="p-4 bg-orange-50 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-orange-900">HiFi-FD</span>
+                <Badge variant="outline" className="bg-orange-100 text-orange-800">
+                  Frequency
+                </Badge>
+              </div>
+              <div className="text-orange-800 text-sm mb-2">
+                Extracts high-frequency residuals and leverages cross-modality attention mechanisms to enhance generalization and capture subtle forgery clues.
+              </div>
+              <Collapsible>
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-between px-0 text-orange-700 hover:bg-orange-100"
+                  >
+                    Show Architecture
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-2">
+                  <div className="bg-gradient-to-r from-orange-200 to-orange-300 rounded p-2">
+                    <Image
+                      src="/arch/hifidf_arch.png"
+                      alt="HiFi-FD Architecture"
+                      width={800}
+                      height={0}
+                      className="w-full h-auto rounded shadow object-contain"
+                    />
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            </div>
+
+
                 </div>
               </CardContent>
             </Card>
