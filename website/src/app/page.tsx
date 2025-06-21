@@ -572,10 +572,7 @@ export default function AcademicProject() {
         <div className="container mx-auto max-w-4xl">
           <Card className="border-0 shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">Citation</CardTitle>
-              <CardDescription className="text-lg">
-                Please cite our work if you find it useful for your research
-              </CardDescription>
+              <CardTitle className="text-2xl text-gray-900">Cite our Paper</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm text-gray-800 leading-relaxed">
