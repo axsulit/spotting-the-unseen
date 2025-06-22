@@ -1,10 +1,10 @@
 'use client';
 
+import { ModelPerformanceTable } from "@/components/model-table/model-performance-table";
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ChevronDown, Github, FileText, Database } from "lucide-react"
 import Image from "next/image"
 import { toast } from "sonner"
@@ -489,80 +489,34 @@ export default function AcademicProject() {
       {/* Results */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
+          
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Performance Results</h2>
-            <p className="text-gray-600">Comprehensive evaluation across multiple datasets and metrics</p>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Performance Results</h2>
+        <p className="text-gray-600">Comprehensive evaluation across multiple datasets and metrics</p>
           </div>
 
           <Card className="overflow-hidden">
-            <CardHeader>
-              <CardTitle className="text-xl">Model Performance Comparison</CardTitle>
-              <CardDescription>
-                Accuracy (ACC) and Area Under Curve (AUC) metrics across different datasets
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="font-semibold">Model</TableHead>
-                      <TableHead className="font-semibold">Dataset</TableHead>
-                      <TableHead className="font-semibold text-center">ACC (%)</TableHead>
-                      <TableHead className="font-semibold text-center">AUC (%)</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="font-medium">Xception</TableCell>
-                      <TableCell>FF++ (C23)</TableCell>
-                      <TableCell className="text-center">95.73</TableCell>
-                      <TableCell className="text-center">96.30</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">Multi-Att</TableCell>
-                      <TableCell>Celeb-DF</TableCell>
-                      <TableCell className="text-center">97.92</TableCell>
-                      <TableCell className="text-center">99.94</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">RECCE</TableCell>
-                      <TableCell>FF++ (C40)</TableCell>
-                      <TableCell className="text-center">91.03</TableCell>
-                      <TableCell className="text-center">95.02</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">FreqNet</TableCell>
-                      <TableCell>WildDeepfake</TableCell>
-                      <TableCell className="text-center">88.45</TableCell>
-                      <TableCell className="text-center">92.18</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">F3-Net</TableCell>
-                      <TableCell>FF++ (C23)</TableCell>
-                      <TableCell className="text-center">94.21</TableCell>
-                      <TableCell className="text-center">95.87</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">Add-Net</TableCell>
-                      <TableCell>Celeb-DF</TableCell>
-                      <TableCell className="text-center">96.34</TableCell>
-                      <TableCell className="text-center">98.76</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </div>
+        <CardHeader>
+          <CardTitle className="text-xl">Model Performance Comparison</CardTitle>
+          <CardDescription>
+            Accuracy, Precision, Recall, and F1-Score across different datasets and models
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <ModelPerformanceTable />
+          </div>
 
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                <h4 className="font-semibold text-blue-900 mb-2">Key Findings</h4>
-                <ul className="text-blue-800 space-y-1 text-sm">
-                  <li>• Multi-Att achieved the highest performance on Celeb-DF dataset (97.92% ACC, 99.94% AUC)</li>
-                  <li>• Frequency-based models showed better robustness to compression artifacts</li>
-                  <li>• Cross-dataset generalization remains challenging for all model categories</li>
-                  <li>• Attention-based models demonstrated superior performance on high-quality datasets</li>
-                </ul>
-              </div>
-            </CardContent>
+          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+            <h4 className="font-semibold text-blue-900 mb-2">Key Findings</h4>
+            <ul className="text-blue-800 space-y-1 text-sm">
+          <li>• Multi-Att achieved the highest overall performance on Celeb-DF (Accuracy: 97.92%, F1: 97.95%)</li>
+          <li>• Frequency-based models (FreqNet, HiFi-FD) showed strong robustness to compression and noise</li>
+          <li>• Attention-based models (Multi-Att, RFM) excelled on high-quality and challenging datasets</li>
+          <li>• Cross-dataset generalization remains a challenge for all model categories</li>
+            </ul>
+          </div>
+        </CardContent>
           </Card>
         </div>
       </section>
