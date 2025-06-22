@@ -372,6 +372,21 @@ export default function AcademicProject() {
 														all separable
 														convolutions use a depth
 														multiplier of 1.
+														<br />
+														<br />
+														<span className="italic text-blue-800">
+															Image adapted from:
+															Chollet, F. (2017).
+															Xception: Deep
+															Learning with
+															Depthwise Separable
+															Convolutions. In
+															Proceedings of the
+															IEEE Conference on
+															Computer Vision and
+															Pattern Recognition
+															(CVPR).
+														</span>
 													</div>
 												</div>
 											</CollapsibleContent>
@@ -486,6 +501,23 @@ export default function AcademicProject() {
 														diverse and
 														non-overlapping
 														attention regions.
+														<br />
+														<br />
+														<span className="italic text-purple-800">
+															Image adapted from:
+															Zhao, H., Zhou, W.,
+															Chen, D., Wei, T.,
+															Zhang, W., & Yu, N.
+															(2021). Multi-
+															attentional deepfake
+															detection. In
+															Proceedings of the
+															ieee/cvf conference
+															on computer vision
+															and pattern
+															recognition (pp.
+															2185–2194).
+														</span>
 													</div>
 												</div>
 											</CollapsibleContent>
@@ -592,6 +624,26 @@ export default function AcademicProject() {
 														classification head to
 														distinguish real from
 														fake content.
+														<br />
+														<br />
+														<span className="italic text-orange-800">
+															Image adapted from:
+															Tan, C., Zhao, Y.,
+															Wei, S., Gu, G.,
+															Liu, P., & Wei, Y.
+															(2024, March).
+															Frequency- aware
+															deepfake detection:
+															Improving
+															generalizability
+															through frequency
+															space domain
+															learning. In
+															Proceedings of the
+															aaai conference on
+															artificial
+															intelligence.
+														</span>
 													</div>
 												</div>
 											</CollapsibleContent>
@@ -742,6 +794,23 @@ export default function AcademicProject() {
 															<sub>cls</sub>
 														</i>
 														).
+														<br />
+														<br />
+														<span className="italic text-blue-800">
+															Image adapted from:
+															Cao, J., Ma, C.,
+															Yao, T., Chen, S.,
+															Ding, S., & Yang, X.
+															(2022). End-to-end
+															reconstruction-classification
+															learning for face
+															forgery detection.
+															In Proceed- ings of
+															the ieee/cvf
+															conference on
+															computer vision and
+															pattern recognition.
+														</span>
 													</div>
 												</div>
 											</CollapsibleContent>
@@ -971,6 +1040,24 @@ export default function AcademicProject() {
 														input is{' '}
 														<strong>Real</strong> or{' '}
 														<strong>Fake</strong>.
+														<br />
+														<br />
+														<span className="italic text-orange-800">
+															Image adapted from:
+															Luo, Y., Zhang, Y.,
+															Yan, J., & Liu, W.
+															(2021, June).
+															Generalizing face
+															forgery detection
+															with high-frequency
+															features. In
+															Proceedings of the
+															ieee/cvf con-
+															ference on computer
+															vision and pattern
+															recognition (cvpr)
+															(p. 16317-16326).
+														</span>
 													</div>
 												</div>
 											</CollapsibleContent>
