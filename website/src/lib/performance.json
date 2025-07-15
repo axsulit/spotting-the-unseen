@@ -1259,10 +1259,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 99.95,
+		"f1": 99.95,
+		"precision": 99.89,
+		"recall": 100.0
 	},
 	{
 		"id": "116",
@@ -1270,10 +1270,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 99.64,
+		"f1": 99.79,
+		"precision": 99.68,
+		"recall": 99.89
 	},
 	{
 		"id": "117",
@@ -1281,10 +1281,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 91.77,
+		"f1": 91.9,
+		"precision": 90.4,
+		"recall": 93.45
 	},
 	{
 		"id": "118",
@@ -1292,10 +1292,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 89.31,
+		"f1": 89.81,
+		"precision": 85.76,
+		"recall": 94.26
 	},
 	{
 		"id": "119",
@@ -1303,10 +1303,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 61.65,
+		"f1": 38.85,
+		"precision": 95.79,
+		"recall": 24.36
 	},
 	{
 		"id": "120",
@@ -1314,10 +1314,10 @@
 		"alterationType": "unaltered",
 		"variation": "default",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 97.78,
+		"f1": 97.74,
+		"precision": 99.38,
+		"recall": 96.14
 	},
 	{
 		"id": "121",
@@ -1325,10 +1325,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 89.8,
+		"f1": 90.63,
+		"precision": 83.8,
+		"recall": 98.67
 	},
 	{
 		"id": "122",
@@ -1336,10 +1336,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 87.19,
+		"f1": 82.97,
+		"precision": 86.93,
+		"recall": 99.98
 	},
 	{
 		"id": "123",
@@ -1347,10 +1347,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 79.66,
+		"f1": 74.99,
+		"precision": 93.5,
+		"recall": 61.01
 	},
 	{
 		"id": "124",
@@ -1358,10 +1358,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 81.76,
+		"f1": 84.57,
+		"precision": 73.29,
+		"recall": 99.96
 	},
 	{
 		"id": "125",
@@ -1369,10 +1369,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 53.43,
+		"f1": 13.99,
+		"precision": 91.24,
+		"recall": 7.58
 	},
 	{
 		"id": "126",
@@ -1380,10 +1380,10 @@
 		"alterationType": "blurring",
 		"variation": "5",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 74.23,
+		"f1": 78.85,
+		"precision": 66.88,
+		"recall": 96.04
 	},
 	{
 		"id": "127",
@@ -1391,10 +1391,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 54.96,
+		"f1": 68.91,
+		"precision": 52.61,
+		"recall": 99.85
 	},
 	{
 		"id": "128",
@@ -1402,10 +1402,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 81.62,
+		"f1": 89.53,
+		"precision": 96.89,
+		"recall": 92.34
 	},
 	{
 		"id": "129",
@@ -1413,10 +1413,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 77.34,
+		"f1": 72.16,
+		"precision": 93.5,
+		"recall": 58.72
 	},
 	{
 		"id": "130",
@@ -1424,10 +1424,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 80.98,
+		"f1": 84.0,
+		"precision": 72.5,
+		"recall": 99.83
 	},
 	{
 		"id": "131",
@@ -1435,10 +1435,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.22,
+		"f1": 2.68,
+		"precision": 59.81,
+		"recall": 1.37
 	},
 	{
 		"id": "132",
@@ -1446,10 +1446,10 @@
 		"alterationType": "blurring",
 		"variation": "10",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 69.37,
+		"f1": 73.69,
+		"precision": 64.59,
+		"recall": 85.76
 	},
 	{
 		"id": "133",
@@ -1457,10 +1457,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.55,
+		"f1": 66.91,
+		"precision": 50.27,
+		"recall": 99.98
 	},
 	{
 		"id": "134",
@@ -1468,10 +1468,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 68.35,
+		"f1": 79.79,
+		"precision": 87.34,
+		"recall": 73.43
 	},
 	{
 		"id": "135",
@@ -1479,10 +1479,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 74.9,
+		"f1": 71.75,
+		"precision": 82.0,
+		"recall": 63.76
 	},
 	{
 		"id": "136",
@@ -1490,10 +1490,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 82.36,
+		"f1": 84.85,
+		"precision": 74.36,
+		"recall": 98.78
 	},
 	{
 		"id": "137",
@@ -1501,10 +1501,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 49.83,
+		"f1": 0.26,
+		"precision": 21.43,
+		"recall": 0.13
 	},
 	{
 		"id": "138",
@@ -1512,10 +1512,10 @@
 		"alterationType": "blurring",
 		"variation": "15",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.61,
+		"f1": 51.38,
+		"precision": 62.25,
+		"recall": 43.74
 	},
 	{
 		"id": "139",
@@ -1523,10 +1523,10 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.34,
+		"f1": 66.81,
+		"precision": 50.17,
+		"recall": 99.96
 	},
 	{
 		"id": "140",
@@ -1534,10 +1534,10 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 68.71,
+		"f1": 80.1,
+		"precision": 87.22,
+		"recall": 74.05
 	},
 	{
 		"id": "141",
@@ -1545,10 +1545,10 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 68.2,
+		"f1": 68.8,
+		"precision": 67.5,
+		"recall": 70.16
 	},
 	{
 		"id": "142",
@@ -1556,10 +1556,10 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 80.91,
+		"f1": 82.73,
+		"precision": 75.55,
+		"recall": 91.42
 	},
 	{
 		"id": "143",
@@ -1567,7 +1567,7 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 49.87,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1578,10 +1578,10 @@
 		"alterationType": "blurring",
 		"variation": "20",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 52.47,
+		"f1": 29.92,
+		"precision": 56.94,
+		"recall": 20.3
 	},
 	{
 		"id": "145",
@@ -1589,10 +1589,10 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.28,
+		"f1": 66.78,
+		"precision": 50.14,
+		"recall": 99.96
 	},
 	{
 		"id": "146",
@@ -1600,10 +1600,10 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 71.93,
+		"f1": 82.79,
+		"precision": 86.62,
+		"recall": 79.28
 	},
 	{
 		"id": "147",
@@ -1611,10 +1611,10 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 60.05,
+		"f1": 67.76,
+		"precision": 56.7,
+		"recall": 83.94
 	},
 	{
 		"id": "148",
@@ -1622,10 +1622,10 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 74.73,
+		"f1": 73.98,
+		"precision": 76.23,
+		"recall": 71.87
 	},
 	{
 		"id": "149",
@@ -1633,7 +1633,7 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 49.98,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1644,10 +1644,10 @@
 		"alterationType": "blurring",
 		"variation": "25",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 49.52,
+		"f1": 12.66,
+		"precision": 46.91,
+		"recall": 7.32
 	},
 	{
 		"id": "151",
@@ -1655,10 +1655,10 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "152",
@@ -1666,10 +1666,10 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 85.24,
+		"f1": 92.03,
+		"precision": 85.24,
+		"recall": 100.0
 	},
 	{
 		"id": "153",
@@ -1677,10 +1677,10 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "154",
@@ -1688,10 +1688,10 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 49.2,
+		"f1": 0.87,
+		"precision": 14.95,
+		"recall": 0.34
 	},
 	{
 		"id": "155",
@@ -1699,7 +1699,7 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1710,7 +1710,7 @@
 		"alterationType": "noise",
 		"variation": "10",
 		"model": "RFM",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1721,10 +1721,10 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "158",
@@ -1732,10 +1732,10 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 85.24,
+		"f1": 92.03,
+		"precision": 85.24,
+		"recall": 100.0
 	},
 	{
 		"id": "159",
@@ -1743,10 +1743,10 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "160",
@@ -1754,10 +1754,10 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 60.88,
+		"f1": 71.87,
+		"precision": 56.1,
+		"recall": 99.98
 	},
 	{
 		"id": "161",
@@ -1765,7 +1765,7 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1776,10 +1776,10 @@
 		"alterationType": "noise",
 		"variation": "20",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 51.1,
+		"f1": 31.67,
+		"precision": 52.56,
+		"recall": 22.65
 	},
 	{
 		"id": "163",
@@ -1787,10 +1787,10 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "164",
@@ -1798,10 +1798,10 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 84.8,
+		"f1": 91.78,
+		"precision": 84.8,
+		"recall": 100.0
 	},
 	{
 		"id": "165",
@@ -1809,10 +1809,10 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "166",
@@ -1820,10 +1820,10 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.62,
+		"f1": 70.73,
+		"precision": 54.71,
+		"recall": 100.0
 	},
 	{
 		"id": "167",
@@ -1831,7 +1831,7 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1842,10 +1842,10 @@
 		"alterationType": "noise",
 		"variation": "30",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 61.36,
+		"f1": 71.03,
+		"precision": 56.81,
+		"recall": 94.73
 	},
 	{
 		"id": "169",
@@ -1853,10 +1853,10 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "170",
@@ -1864,10 +1864,10 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 84.99,
+		"f1": 91.89,
+		"precision": 84.99,
+		"recall": 100.0
 	},
 	{
 		"id": "171",
@@ -1875,10 +1875,10 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "172",
@@ -1886,10 +1886,10 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 57.96,
+		"f1": 70.4,
+		"precision": 54.33,
+		"recall": 100.0
 	},
 	{
 		"id": "173",
@@ -1897,7 +1897,7 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1908,10 +1908,10 @@
 		"alterationType": "noise",
 		"variation": "40",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 59.45,
+		"f1": 71.15,
+		"precision": 55.22,
+		"recall": 99.98
 	},
 	{
 		"id": "175",
@@ -1919,10 +1919,10 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "176",
@@ -1930,10 +1930,10 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 85.18,
+		"f1": 91.99,
+		"precision": 85.18,
+		"recall": 100.0
 	},
 	{
 		"id": "177",
@@ -1941,10 +1941,10 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "178",
@@ -1952,10 +1952,10 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.53,
+		"f1": 70.67,
+		"precision": 54.73,
+		"recall": 98.67
 	},
 	{
 		"id": "179",
@@ -1963,7 +1963,7 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
+		"accuracy": 50.0,
 		"f1": 0.0,
 		"precision": 0.0,
 		"recall": 0.0
@@ -1974,10 +1974,10 @@
 		"alterationType": "noise",
 		"variation": "50",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.95,
+		"f1": 70.9,
+		"precision": 54.91,
+		"recall": 100.0
 	},
 	{
 		"id": "181",
@@ -1985,10 +1985,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 94.08,
+		"f1": 94.3,
+		"precision": 91.03,
+		"recall": 97.81
 	},
 	{
 		"id": "182",
@@ -1996,10 +1996,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 89.73,
+		"f1": 94.09,
+		"precision": 90.44,
+		"recall": 98.05
 	},
 	{
 		"id": "183",
@@ -2007,10 +2007,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 49.9,
+		"f1": 66.57,
+		"precision": 49.9,
+		"recall": 99.78
 	},
 	{
 		"id": "184",
@@ -2018,10 +2018,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "185",
@@ -2029,10 +2029,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 55.34,
+		"f1": 20.6,
+		"precision": 92.66,
+		"recall": 11.59
 	},
 	{
 		"id": "186",
@@ -2040,10 +2040,10 @@
 		"alterationType": "resize",
 		"variation": "64x64",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.01,
+		"f1": 0.04,
+		"precision": 100.0,
+		"recall": 0.02
 	},
 	{
 		"id": "187",
@@ -2051,10 +2051,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 99.43,
+		"f1": 99.43,
+		"precision": 99.09,
+		"recall": 99.79
 	},
 	{
 		"id": "188",
@@ -2062,10 +2062,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 96.89,
+		"f1": 98.2,
+		"precision": 96.56,
+		"recall": 99.89
 	},
 	{
 		"id": "189",
@@ -2073,10 +2073,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 49.99,
+		"f1": 66.66,
+		"precision": 50.0,
+		"recall": 99.98
 	},
 	{
 		"id": "190",
@@ -2084,10 +2084,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.29,
+		"f1": 66.8,
+		"precision": 50.14,
+		"recall": 100.0
 	},
 	{
 		"id": "191",
@@ -2095,10 +2095,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 56.5,
+		"f1": 23.58,
+		"precision": 96.91,
+		"recall": 13.42
 	},
 	{
 		"id": "192",
@@ -2106,10 +2106,10 @@
 		"alterationType": "resize",
 		"variation": "128x128",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 66.98,
+		"f1": 50.7,
+		"precision": 100.0,
+		"recall": 33.95
 	},
 	{
 		"id": "193",
@@ -2117,10 +2117,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 99.72,
+		"f1": 99.72,
+		"precision": 99.46,
+		"recall": 99.98
 	},
 	{
 		"id": "194",
@@ -2128,10 +2128,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 99.09,
+		"f1": 99.47,
+		"precision": 99.28,
+		"recall": 99.65
 	},
 	{
 		"id": "195",
@@ -2139,10 +2139,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 50.0,
+		"f1": 66.67,
+		"precision": 50.0,
+		"recall": 100.0
 	},
 	{
 		"id": "196",
@@ -2150,10 +2150,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 71.95,
+		"f1": 64.97,
+		"precision": 86.46,
+		"recall": 52.04
 	},
 	{
 		"id": "197",
@@ -2161,10 +2161,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.45,
+		"f1": 29.7,
+		"precision": 96.4,
+		"recall": 17.55
 	},
 	{
 		"id": "198",
@@ -2172,10 +2172,10 @@
 		"alterationType": "resize",
 		"variation": "512x512",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 94.95,
+		"f1": 94.7,
+		"precision": 99.59,
+		"recall": 90.27
 	},
 	{
 		"id": "199",
@@ -2183,10 +2183,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 97.83,
+		"f1": 97.8,
+		"precision": 98.86,
+		"recall": 96.77
 	},
 	{
 		"id": "200",
@@ -2194,10 +2194,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 97.98,
+		"f1": 98.82,
+		"precision": 97.96,
+		"recall": 99.7
 	},
 	{
 		"id": "201",
@@ -2205,10 +2205,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 72.16,
+		"f1": 76.01,
+		"precision": 66.7,
+		"recall": 88.23
 	},
 	{
 		"id": "202",
@@ -2216,10 +2216,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 88.27,
+		"f1": 88.3,
+		"precision": 88.06,
+		"recall": 88.55
 	},
 	{
 		"id": "203",
@@ -2227,10 +2227,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.3,
+		"f1": 29.6,
+		"precision": 94.9,
+		"recall": 17.53
 	},
 	{
 		"id": "204",
@@ -2238,10 +2238,10 @@
 		"alterationType": "color_mismatch",
 		"variation": "default",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 93.98,
+		"f1": 93.69,
+		"precision": 98.4,
+		"recall": 89.42
 	},
 	{
 		"id": "205",
@@ -2249,10 +2249,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 90.42,
+		"f1": 89.47,
+		"precision": 99.35,
+		"recall": 81.37
 	},
 	{
 		"id": "206",
@@ -2260,10 +2260,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 92.27,
+		"f1": 95.66,
+		"precision": 91.78,
+		"recall": 99.89
 	},
 	{
 		"id": "207",
@@ -2271,10 +2271,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 76.83,
+		"f1": 77.42,
+		"precision": 75.4,
+		"recall": 79.47
 	},
 	{
 		"id": "208",
@@ -2282,10 +2282,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 81.03,
+		"f1": 78.54,
+		"precision": 90.41,
+		"recall": 69.43
 	},
 	{
 		"id": "209",
@@ -2293,10 +2293,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 59.58,
+		"f1": 33.52,
+		"precision": 94.35,
+		"recall": 20.38
 	},
 	{
 		"id": "210",
@@ -2304,10 +2304,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "20",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 89.24,
+		"f1": 89.02,
+		"precision": 90.9,
+		"recall": 87.22
 	},
 	{
 		"id": "211",
@@ -2315,10 +2315,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 81.56,
+		"f1": 77.56,
+		"precision": 99.0,
+		"recall": 63.76
 	},
 	{
 		"id": "212",
@@ -2326,10 +2326,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 88.74,
+		"f1": 93.77,
+		"precision": 88.53,
+		"recall": 99.66
 	},
 	{
 		"id": "213",
@@ -2337,10 +2337,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 70.04,
+		"f1": 73.5,
+		"precision": 65.9,
+		"recall": 83.11
 	},
 	{
 		"id": "214",
@@ -2348,10 +2348,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 71.74,
+		"f1": 63.21,
+		"precision": 90.54,
+		"recall": 48.55
 	},
 	{
 		"id": "215",
@@ -2359,10 +2359,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 58.55,
+		"f1": 31.1,
+		"precision": 92.1,
+		"recall": 18.71
 	},
 	{
 		"id": "216",
@@ -2370,10 +2370,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "40",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 83.04,
+		"f1": 83.26,
+		"precision": 82.2,
+		"recall": 84.35
 	},
 	{
 		"id": "217",
@@ -2381,10 +2381,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 80.71,
+		"f1": 77.24,
+		"precision": 94.18,
+		"recall": 65.47
 	},
 	{
 		"id": "218",
@@ -2392,10 +2392,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 88.02,
+		"f1": 84.62,
+		"precision": 99.4,
+		"recall": 93.39
 	},
 	{
 		"id": "219",
@@ -2403,10 +2403,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 63.86,
+		"f1": 71.12,
+		"precision": 59.2,
+		"recall": 88.97
 	},
 	{
 		"id": "220",
@@ -2414,10 +2414,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 68.78,
+		"f1": 57.63,
+		"precision": 89.61,
+		"recall": 42.47
 	},
 	{
 		"id": "221",
@@ -2425,10 +2425,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 57.89,
+		"f1": 28.99,
+		"precision": 92.41,
+		"recall": 17.19
 	},
 	{
 		"id": "222",
@@ -2436,10 +2436,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "60",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 82.05,
+		"f1": 81.83,
+		"precision": 82.84,
+		"recall": 81.83
 	},
 	{
 		"id": "223",
@@ -2447,10 +2447,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "Xception",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 79.07,
+		"f1": 76.93,
+		"precision": 85.59,
+		"recall": 69.92
 	},
 	{
 		"id": "224",
@@ -2458,10 +2458,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "RECCE",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 87.29,
+		"f1": 92.97,
+		"precision": 87.7,
+		"recall": 98.91
 	},
 	{
 		"id": "225",
@@ -2469,10 +2469,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "FreqNet",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 61.26,
+		"f1": 70.41,
+		"precision": 56.9,
+		"recall": 92.16
 	},
 	{
 		"id": "226",
@@ -2480,10 +2480,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "HiFi-FD",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 67.82,
+		"f1": 55.28,
+		"precision": 90.59,
+		"recall": 39.78
 	},
 	{
 		"id": "227",
@@ -2491,10 +2491,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "Multi-Att",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 57.2,
+		"f1": 26.94,
+		"precision": 92.01,
+		"recall": 15.78
 	},
 	{
 		"id": "228",
@@ -2502,10 +2502,10 @@
 		"alterationType": "spliced_boundary",
 		"variation": "80",
 		"model": "RFM",
-		"accuracy": 0.0,
-		"f1": 0.0,
-		"precision": 0.0,
-		"recall": 0.0
+		"accuracy": 83.24,
+		"f1": 82.22,
+		"precision": 87.51,
+		"recall": 77.54
 	},
 	{
 		"id": "229",
