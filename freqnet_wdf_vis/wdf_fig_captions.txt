@@ -1,0 +1,11 @@
+wdf_fft_grid.png:
+
+Log-magnitude FFT of WDF samples (real vs fake). Each row shows a Real image, its FFT, the corresponding Fake image, and its FFT. The FFTs reveal spatially-varying high-frequency energy (compression lines, sensor noise, and inconsistent edges) found in WDF forgeries and real images, demonstrating the natural frequency variability that frequency-based detectors exploit.
+
+wdf_hp_grid.png:
+
+High-frequency reconstructions from WDF obtained by applying a high-pass mask in frequency space and transforming back to image space (iFFT). For each pair: Original | HF reconstruction | Absolute difference. The reconstructions preserve realistic compression and sensor artifacts and localized edge irregularities, showing the informative high-frequency content seen by frequency-domain modules.
+
+wdf_feature_fft.png (if generated):
+
+Average log-magnitude FFT of an intermediate conv-layer activation (feature-level frequency) for a representative real vs fake WDF sample, and their difference. This demonstrates that learned features also contain discriminative high-frequency structure in WDF.

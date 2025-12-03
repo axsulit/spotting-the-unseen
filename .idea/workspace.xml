@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bc496b1-0cf1-44f1-ae09-98e92f3b7626" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/split-data/split.py" beforeDir="false" afterPath="$PROJECT_DIR$/split-data/split.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ryoSRQTyQ772mSYr6sJOnyjfgD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.blur_batch_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.color_mismatch_batch_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.filter_frontal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.noise_batch_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.resolution_resizing_batch_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.splicing_boundaries_batch_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.split.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ACADEMICS/THESIS/spotting-the-unseen/task1_data_acquisition_preprocessing/ff++ (c40)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ACADEMICS\THESIS\spotting-the-unseen\task1_data_acquisition_preprocessing\ff++ (c40)" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ACADEMICS\THESIS\spotting-the-unseen\task2_dataset_alteration" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install -r requirements.txt" />
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bc496b1-0cf1-44f1-ae09-98e92f3b7626" name="Changes" comment="" />
+      <created>1737540675075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737540675075</updated>
+      <workItem from="1739342907880" duration="3123000" />
+      <workItem from="1739348657957" duration="8261000" />
+      <workItem from="1739702034637" duration="26917000" />
+      <workItem from="1739960626493" duration="69000" />
+      <workItem from="1739960709285" duration="105000" />
+      <workItem from="1739960836962" duration="2047000" />
+      <workItem from="1741069066085" duration="20105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$color_mismatch_batch_processing.coverage" NAME="color_mismatch_batch_processing Coverage Results" MODIFIED="1739713928867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task2_dataset_alteration" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$filter_frontal.coverage" NAME="filter_frontal Coverage Results" MODIFIED="1739354613201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task1_data_acquisition_preprocessing" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$splicing_boundaries_batch_processing.coverage" NAME="splicing_boundaries_batch_processing Coverage Results" MODIFIED="1739710240103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task2_dataset_alteration" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$blur_batch_processing.coverage" NAME="blur_batch_processing Coverage Results" MODIFIED="1739811045818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task2_dataset_alteration" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$resolution_resizing_batch_processing.coverage" NAME="resolution_resizing_batch_processing Coverage Results" MODIFIED="1739704009412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task2_dataset_alteration" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$noise_batch_processing.coverage" NAME="noise_batch_processing Coverage Results" MODIFIED="1739723915997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/task2_dataset_alteration" />
+    <SUITE FILE_PATH="coverage/spotting_the_unseen$split.coverage" NAME="split Coverage Results" MODIFIED="1741111677430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/split-data" />
+  </component>
+</project>

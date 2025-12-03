@@ -1,0 +1,1483 @@
+Checking dataset paths:
+Training Path: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train
+Validation Path: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking if '/scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train/real' exists: True
+Checking if '/scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train/fake' exists: True
+train.py  --dataroot  /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered  --batch_size  16  --lr  0.0005  --niter  50  --earlystop_epoch  5
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train/real: ['452_107_002392.png', '58_64_002036.png', '428_98_003252.png', '139_33_001046.png', '476_26_000538.png'] ... (67895 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/train/fake: ['107.tar_15_001762.png', '203.tar_126_004434.png', '15.tar_17_001721.png', '100.tar_0_000300.png', '152.tar_34_001420.png'] ... (68038 total)
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+==================== requires_grad Ture weight1
+==================== requires_grad Ture bias1
+==================== requires_grad Ture weight2
+==================== requires_grad Ture bias2
+==================== requires_grad Ture weight3
+==================== requires_grad Ture bias3
+==================== requires_grad Ture weight4
+==================== requires_grad Ture bias4
+==================== requires_grad Ture realconv1.weight
+==================== requires_grad Ture imagconv1.weight
+==================== requires_grad Ture realconv2.weight
+==================== requires_grad Ture imagconv2.weight
+==================== requires_grad Ture realconv3.weight
+==================== requires_grad Ture imagconv3.weight
+==================== requires_grad Ture realconv4.weight
+==================== requires_grad Ture imagconv4.weight
+==================== requires_grad Ture layer1.0.conv1.weight
+==================== requires_grad Ture layer1.0.bn1.weight
+==================== requires_grad Ture layer1.0.bn1.bias
+==================== requires_grad Ture layer1.0.conv2.weight
+==================== requires_grad Ture layer1.0.bn2.weight
+==================== requires_grad Ture layer1.0.bn2.bias
+==================== requires_grad Ture layer1.0.conv3.weight
+==================== requires_grad Ture layer1.0.bn3.weight
+==================== requires_grad Ture layer1.0.bn3.bias
+==================== requires_grad Ture layer1.0.downsample.0.weight
+==================== requires_grad Ture layer1.0.downsample.1.weight
+==================== requires_grad Ture layer1.0.downsample.1.bias
+==================== requires_grad Ture layer1.1.conv1.weight
+==================== requires_grad Ture layer1.1.bn1.weight
+==================== requires_grad Ture layer1.1.bn1.bias
+==================== requires_grad Ture layer1.1.conv2.weight
+==================== requires_grad Ture layer1.1.bn2.weight
+==================== requires_grad Ture layer1.1.bn2.bias
+==================== requires_grad Ture layer1.1.conv3.weight
+==================== requires_grad Ture layer1.1.bn3.weight
+==================== requires_grad Ture layer1.1.bn3.bias
+==================== requires_grad Ture layer1.2.conv1.weight
+==================== requires_grad Ture layer1.2.bn1.weight
+==================== requires_grad Ture layer1.2.bn1.bias
+==================== requires_grad Ture layer1.2.conv2.weight
+==================== requires_grad Ture layer1.2.bn2.weight
+==================== requires_grad Ture layer1.2.bn2.bias
+==================== requires_grad Ture layer1.2.conv3.weight
+==================== requires_grad Ture layer1.2.bn3.weight
+==================== requires_grad Ture layer1.2.bn3.bias
+==================== requires_grad Ture layer2.0.conv1.weight
+==================== requires_grad Ture layer2.0.bn1.weight
+==================== requires_grad Ture layer2.0.bn1.bias
+==================== requires_grad Ture layer2.0.conv2.weight
+==================== requires_grad Ture layer2.0.bn2.weight
+==================== requires_grad Ture layer2.0.bn2.bias
+==================== requires_grad Ture layer2.0.conv3.weight
+==================== requires_grad Ture layer2.0.bn3.weight
+==================== requires_grad Ture layer2.0.bn3.bias
+==================== requires_grad Ture layer2.0.downsample.0.weight
+==================== requires_grad Ture layer2.0.downsample.1.weight
+==================== requires_grad Ture layer2.0.downsample.1.bias
+==================== requires_grad Ture layer2.1.conv1.weight
+==================== requires_grad Ture layer2.1.bn1.weight
+==================== requires_grad Ture layer2.1.bn1.bias
+==================== requires_grad Ture layer2.1.conv2.weight
+==================== requires_grad Ture layer2.1.bn2.weight
+==================== requires_grad Ture layer2.1.bn2.bias
+==================== requires_grad Ture layer2.1.conv3.weight
+==================== requires_grad Ture layer2.1.bn3.weight
+==================== requires_grad Ture layer2.1.bn3.bias
+==================== requires_grad Ture layer2.2.conv1.weight
+==================== requires_grad Ture layer2.2.bn1.weight
+==================== requires_grad Ture layer2.2.bn1.bias
+==================== requires_grad Ture layer2.2.conv2.weight
+==================== requires_grad Ture layer2.2.bn2.weight
+==================== requires_grad Ture layer2.2.bn2.bias
+==================== requires_grad Ture layer2.2.conv3.weight
+==================== requires_grad Ture layer2.2.bn3.weight
+==================== requires_grad Ture layer2.2.bn3.bias
+==================== requires_grad Ture layer2.3.conv1.weight
+==================== requires_grad Ture layer2.3.bn1.weight
+==================== requires_grad Ture layer2.3.bn1.bias
+==================== requires_grad Ture layer2.3.conv2.weight
+==================== requires_grad Ture layer2.3.bn2.weight
+==================== requires_grad Ture layer2.3.bn2.bias
+==================== requires_grad Ture layer2.3.conv3.weight
+==================== requires_grad Ture layer2.3.bn3.weight
+==================== requires_grad Ture layer2.3.bn3.bias
+==================== requires_grad Ture fc1.weight
+==================== requires_grad Ture fc1.bias
+
+Current Working Directory: /scratch1/ice.exconde/FreqNet-DeepfakeDetection
+Early stopping patience: 5 epochs
+2025_07_15_18_31_04 - Train Loss: 0.6870 at step 400, lr 0.000500
+2025_07_15_18_35_29 - Train Loss: 0.6100 at step 800, lr 0.000500
+2025_07_15_18_39_54 - Train Loss: 0.6492 at step 1200, lr 0.000500
+2025_07_15_18_44_19 - Train Loss: 0.4007 at step 1600, lr 0.000500
+2025_07_15_18_48_44 - Train Loss: 0.5273 at step 2000, lr 0.000500
+2025_07_15_18_53_09 - Train Loss: 0.5612 at step 2400, lr 0.000500
+2025_07_15_18_57_34 - Train Loss: 0.3994 at step 2800, lr 0.000500
+2025_07_15_19_01_58 - Train Loss: 0.6040 at step 3200, lr 0.000500
+2025_07_15_19_06_23 - Train Loss: 0.5290 at step 3600, lr 0.000500
+2025_07_15_19_10_48 - Train Loss: 0.7701 at step 4000, lr 0.000500
+2025_07_15_19_15_13 - Train Loss: 0.3664 at step 4400, lr 0.000500
+2025_07_15_19_19_38 - Train Loss: 0.4081 at step 4800, lr 0.000500
+2025_07_15_19_24_03 - Train Loss: 0.2852 at step 5200, lr 0.000500
+2025_07_15_19_28_28 - Train Loss: 0.4504 at step 5600, lr 0.000500
+2025_07_15_19_32_53 - Train Loss: 0.6036 at step 6000, lr 0.000500
+2025_07_15_19_37_18 - Train Loss: 0.3455 at step 6400, lr 0.000500
+2025_07_15_19_41_43 - Train Loss: 0.3461 at step 6800, lr 0.000500
+2025_07_15_19_46_08 - Train Loss: 0.5207 at step 7200, lr 0.000500
+2025_07_15_19_50_33 - Train Loss: 0.5162 at step 7600, lr 0.000500
+2025_07_15_19_54_58 - Train Loss: 0.2974 at step 8000, lr 0.000500
+2025_07_15_19_59_23 - Train Loss: 0.3705 at step 8400, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 0) Accuracy: 0.7782; AP: 0.8780
+Real Accuracy: 0.8895
+Fake Accuracy: 0.6670
+Recall: 0.6670
+F1 Score: 0.7505
+TP: 9704.0, TN: 12941.0, FP: 1608.0, FN: 4845.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_0.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.7782 (epoch 0)
+2025_07_15_20_11_22 - Train Loss: 0.4670 at step 8800, lr 0.000500
+2025_07_15_20_15_47 - Train Loss: 0.5384 at step 9200, lr 0.000500
+2025_07_15_20_20_12 - Train Loss: 0.3983 at step 9600, lr 0.000500
+2025_07_15_20_24_37 - Train Loss: 0.3077 at step 10000, lr 0.000500
+2025_07_15_20_29_02 - Train Loss: 0.5229 at step 10400, lr 0.000500
+2025_07_15_20_33_27 - Train Loss: 0.4144 at step 10800, lr 0.000500
+2025_07_15_20_37_52 - Train Loss: 0.2247 at step 11200, lr 0.000500
+2025_07_15_20_42_17 - Train Loss: 0.6576 at step 11600, lr 0.000500
+2025_07_15_20_46_42 - Train Loss: 0.3429 at step 12000, lr 0.000500
+2025_07_15_20_51_07 - Train Loss: 0.3582 at step 12400, lr 0.000500
+2025_07_15_20_55_32 - Train Loss: 0.4639 at step 12800, lr 0.000500
+2025_07_15_20_59_57 - Train Loss: 0.2497 at step 13200, lr 0.000500
+2025_07_15_21_04_22 - Train Loss: 0.4523 at step 13600, lr 0.000500
+2025_07_15_21_08_47 - Train Loss: 0.2792 at step 14000, lr 0.000500
+2025_07_15_21_13_12 - Train Loss: 0.3566 at step 14400, lr 0.000500
+2025_07_15_21_17_37 - Train Loss: 0.2587 at step 14800, lr 0.000500
+2025_07_15_21_22_02 - Train Loss: 0.2669 at step 15200, lr 0.000500
+2025_07_15_21_26_27 - Train Loss: 0.2078 at step 15600, lr 0.000500
+2025_07_15_21_30_52 - Train Loss: 0.2420 at step 16000, lr 0.000500
+2025_07_15_21_35_17 - Train Loss: 0.3959 at step 16400, lr 0.000500
+2025_07_15_21_39_42 - Train Loss: 0.2712 at step 16800, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 1) Accuracy: 0.8327; AP: 0.9185
+Real Accuracy: 0.7631
+Fake Accuracy: 0.9023
+Recall: 0.9023
+F1 Score: 0.8436
+TP: 13127.0, TN: 11102.0, FP: 3447.0, FN: 1422.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_1.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.8327 (epoch 1)
+2025_07_15_21_51_41 - Train Loss: 0.3852 at step 17200, lr 0.000500
+2025_07_15_21_56_06 - Train Loss: 0.3738 at step 17600, lr 0.000500
+2025_07_15_22_00_31 - Train Loss: 0.5348 at step 18000, lr 0.000500
+2025_07_15_22_04_56 - Train Loss: 0.2032 at step 18400, lr 0.000500
+2025_07_15_22_09_21 - Train Loss: 0.3817 at step 18800, lr 0.000500
+2025_07_15_22_13_46 - Train Loss: 0.3226 at step 19200, lr 0.000500
+2025_07_15_22_18_11 - Train Loss: 0.5285 at step 19600, lr 0.000500
+2025_07_15_22_22_36 - Train Loss: 0.4453 at step 20000, lr 0.000500
+2025_07_15_22_27_01 - Train Loss: 0.2506 at step 20400, lr 0.000500
+2025_07_15_22_31_26 - Train Loss: 0.4245 at step 20800, lr 0.000500
+2025_07_15_22_35_51 - Train Loss: 0.6554 at step 21200, lr 0.000500
+2025_07_15_22_40_16 - Train Loss: 0.4906 at step 21600, lr 0.000500
+2025_07_15_22_44_41 - Train Loss: 0.3937 at step 22000, lr 0.000500
+2025_07_15_22_49_06 - Train Loss: 0.4876 at step 22400, lr 0.000500
+2025_07_15_22_53_31 - Train Loss: 0.2372 at step 22800, lr 0.000500
+2025_07_15_22_57_56 - Train Loss: 0.3242 at step 23200, lr 0.000500
+2025_07_15_23_02_21 - Train Loss: 0.3589 at step 23600, lr 0.000500
+2025_07_15_23_06_46 - Train Loss: 0.3503 at step 24000, lr 0.000500
+2025_07_15_23_11_11 - Train Loss: 0.2684 at step 24400, lr 0.000500
+2025_07_15_23_15_36 - Train Loss: 0.3863 at step 24800, lr 0.000500
+2025_07_15_23_20_01 - Train Loss: 0.2424 at step 25200, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 2) Accuracy: 0.8861; AP: 0.9551
+Real Accuracy: 0.8787
+Fake Accuracy: 0.8935
+Recall: 0.8935
+F1 Score: 0.8869
+TP: 12999.0, TN: 12784.0, FP: 1765.0, FN: 1550.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_2.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.8861 (epoch 2)
+2025_07_15_23_32_00 - Train Loss: 0.2116 at step 25600, lr 0.000500
+2025_07_15_23_36_25 - Train Loss: 0.2637 at step 26000, lr 0.000500
+2025_07_15_23_40_50 - Train Loss: 0.6044 at step 26400, lr 0.000500
+2025_07_15_23_45_15 - Train Loss: 0.4311 at step 26800, lr 0.000500
+2025_07_15_23_49_40 - Train Loss: 0.1658 at step 27200, lr 0.000500
+2025_07_15_23_54_05 - Train Loss: 0.2417 at step 27600, lr 0.000500
+2025_07_15_23_58_30 - Train Loss: 0.2793 at step 28000, lr 0.000500
+2025_07_16_00_02_55 - Train Loss: 0.2691 at step 28400, lr 0.000500
+2025_07_16_00_07_20 - Train Loss: 0.1854 at step 28800, lr 0.000500
+2025_07_16_00_11_45 - Train Loss: 0.2763 at step 29200, lr 0.000500
+2025_07_16_00_16_10 - Train Loss: 0.3903 at step 29600, lr 0.000500
+2025_07_16_00_20_35 - Train Loss: 0.2215 at step 30000, lr 0.000500
+2025_07_16_00_25_00 - Train Loss: 0.6230 at step 30400, lr 0.000500
+2025_07_16_00_29_25 - Train Loss: 0.2404 at step 30800, lr 0.000500
+2025_07_16_00_33_49 - Train Loss: 0.9679 at step 31200, lr 0.000500
+2025_07_16_00_38_15 - Train Loss: 0.1718 at step 31600, lr 0.000500
+2025_07_16_00_42_39 - Train Loss: 0.1499 at step 32000, lr 0.000500
+2025_07_16_00_47_04 - Train Loss: 0.2006 at step 32400, lr 0.000500
+2025_07_16_00_51_29 - Train Loss: 0.5173 at step 32800, lr 0.000500
+2025_07_16_00_55_54 - Train Loss: 0.1773 at step 33200, lr 0.000500
+2025_07_16_01_00_19 - Train Loss: 0.1767 at step 33600, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 3) Accuracy: 0.8441; AP: 0.9602
+Real Accuracy: 0.9704
+Fake Accuracy: 0.7178
+Recall: 0.7178
+F1 Score: 0.8215
+TP: 10443.0, TN: 14118.0, FP: 431.0, FN: 4106.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_3.pth
+Current accuracy 0.8441 not better than best 0.8861 (epoch 2)
+Epochs without improvement: 1/5
+2025_07_16_01_12_18 - Train Loss: 0.5242 at step 34000, lr 0.000500
+2025_07_16_01_16_43 - Train Loss: 0.1498 at step 34400, lr 0.000500
+2025_07_16_01_21_08 - Train Loss: 0.1056 at step 34800, lr 0.000500
+2025_07_16_01_25_33 - Train Loss: 0.5414 at step 35200, lr 0.000500
+2025_07_16_01_29_58 - Train Loss: 0.1991 at step 35600, lr 0.000500
+2025_07_16_01_34_23 - Train Loss: 0.3482 at step 36000, lr 0.000500
+2025_07_16_01_38_48 - Train Loss: 0.3477 at step 36400, lr 0.000500
+2025_07_16_01_43_13 - Train Loss: 0.2064 at step 36800, lr 0.000500
+2025_07_16_01_47_38 - Train Loss: 0.2311 at step 37200, lr 0.000500
+2025_07_16_01_52_03 - Train Loss: 0.3235 at step 37600, lr 0.000500
+2025_07_16_01_56_28 - Train Loss: 0.0524 at step 38000, lr 0.000500
+2025_07_16_02_00_53 - Train Loss: 0.1775 at step 38400, lr 0.000500
+2025_07_16_02_05_18 - Train Loss: 0.2226 at step 38800, lr 0.000500
+2025_07_16_02_09_43 - Train Loss: 0.4637 at step 39200, lr 0.000500
+2025_07_16_02_14_08 - Train Loss: 0.3212 at step 39600, lr 0.000500
+2025_07_16_02_18_34 - Train Loss: 0.2025 at step 40000, lr 0.000500
+2025_07_16_02_22_59 - Train Loss: 0.3233 at step 40400, lr 0.000500
+2025_07_16_02_27_24 - Train Loss: 0.2752 at step 40800, lr 0.000500
+2025_07_16_02_31_49 - Train Loss: 0.3015 at step 41200, lr 0.000500
+2025_07_16_02_36_14 - Train Loss: 0.3567 at step 41600, lr 0.000500
+2025_07_16_02_40_39 - Train Loss: 0.1252 at step 42000, lr 0.000500
+2025_07_16_02_45_04 - Train Loss: 0.1854 at step 42400, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 4) Accuracy: 0.9074; AP: 0.9719
+Real Accuracy: 0.8920
+Fake Accuracy: 0.9227
+Recall: 0.9227
+F1 Score: 0.9088
+TP: 13425.0, TN: 12978.0, FP: 1571.0, FN: 1124.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_4.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9074 (epoch 4)
+2025_07_16_02_57_03 - Train Loss: 0.4525 at step 42800, lr 0.000500
+2025_07_16_03_01_28 - Train Loss: 0.3169 at step 43200, lr 0.000500
+2025_07_16_03_05_53 - Train Loss: 0.3175 at step 43600, lr 0.000500
+2025_07_16_03_10_18 - Train Loss: 0.0563 at step 44000, lr 0.000500
+2025_07_16_03_14_43 - Train Loss: 0.4717 at step 44400, lr 0.000500
+2025_07_16_03_19_08 - Train Loss: 0.2917 at step 44800, lr 0.000500
+2025_07_16_03_23_33 - Train Loss: 0.0836 at step 45200, lr 0.000500
+2025_07_16_03_27_58 - Train Loss: 0.1410 at step 45600, lr 0.000500
+2025_07_16_03_32_23 - Train Loss: 0.2955 at step 46000, lr 0.000500
+2025_07_16_03_36_48 - Train Loss: 0.1781 at step 46400, lr 0.000500
+2025_07_16_03_41_13 - Train Loss: 0.1016 at step 46800, lr 0.000500
+2025_07_16_03_45_38 - Train Loss: 0.0548 at step 47200, lr 0.000500
+2025_07_16_03_50_03 - Train Loss: 0.3320 at step 47600, lr 0.000500
+2025_07_16_03_54_28 - Train Loss: 0.5589 at step 48000, lr 0.000500
+2025_07_16_03_58_53 - Train Loss: 0.3355 at step 48400, lr 0.000500
+2025_07_16_04_03_18 - Train Loss: 0.3257 at step 48800, lr 0.000500
+2025_07_16_04_07_43 - Train Loss: 0.1603 at step 49200, lr 0.000500
+2025_07_16_04_12_08 - Train Loss: 0.1608 at step 49600, lr 0.000500
+2025_07_16_04_16_33 - Train Loss: 0.1290 at step 50000, lr 0.000500
+2025_07_16_04_20_58 - Train Loss: 0.5273 at step 50400, lr 0.000500
+2025_07_16_04_25_23 - Train Loss: 0.2493 at step 50800, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 5) Accuracy: 0.9213; AP: 0.9770
+Real Accuracy: 0.9100
+Fake Accuracy: 0.9327
+Recall: 0.9327
+F1 Score: 0.9222
+TP: 13570.0, TN: 13239.0, FP: 1310.0, FN: 979.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_5.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9213 (epoch 5)
+2025_07_16_04_37_22 - Train Loss: 0.0296 at step 51200, lr 0.000500
+2025_07_16_04_41_47 - Train Loss: 0.3935 at step 51600, lr 0.000500
+2025_07_16_04_46_12 - Train Loss: 0.2912 at step 52000, lr 0.000500
+2025_07_16_04_50_37 - Train Loss: 0.1062 at step 52400, lr 0.000500
+2025_07_16_04_55_02 - Train Loss: 0.2123 at step 52800, lr 0.000500
+2025_07_16_04_59_27 - Train Loss: 0.1375 at step 53200, lr 0.000500
+2025_07_16_05_03_52 - Train Loss: 0.8630 at step 53600, lr 0.000500
+2025_07_16_05_08_17 - Train Loss: 0.1414 at step 54000, lr 0.000500
+2025_07_16_05_12_42 - Train Loss: 0.1174 at step 54400, lr 0.000500
+2025_07_16_05_17_07 - Train Loss: 0.1991 at step 54800, lr 0.000500
+2025_07_16_05_21_32 - Train Loss: 0.2666 at step 55200, lr 0.000500
+2025_07_16_05_25_57 - Train Loss: 0.2250 at step 55600, lr 0.000500
+2025_07_16_05_30_22 - Train Loss: 0.5274 at step 56000, lr 0.000500
+2025_07_16_05_34_47 - Train Loss: 0.1293 at step 56400, lr 0.000500
+2025_07_16_05_39_12 - Train Loss: 0.2552 at step 56800, lr 0.000500
+2025_07_16_05_43_37 - Train Loss: 0.1515 at step 57200, lr 0.000500
+2025_07_16_05_48_02 - Train Loss: 0.2358 at step 57600, lr 0.000500
+2025_07_16_05_52_27 - Train Loss: 0.3097 at step 58000, lr 0.000500
+2025_07_16_05_56_52 - Train Loss: 0.2955 at step 58400, lr 0.000500
+2025_07_16_06_01_17 - Train Loss: 0.2064 at step 58800, lr 0.000500
+2025_07_16_06_05_42 - Train Loss: 0.0913 at step 59200, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 6) Accuracy: 0.9212; AP: 0.9786
+Real Accuracy: 0.9454
+Fake Accuracy: 0.8970
+Recall: 0.8970
+F1 Score: 0.9192
+TP: 13051.0, TN: 13754.0, FP: 795.0, FN: 1498.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_6.pth
+Current accuracy 0.9212 not better than best 0.9213 (epoch 5)
+Epochs without improvement: 1/5
+2025_07_16_06_17_41 - Train Loss: 0.1845 at step 59600, lr 0.000500
+2025_07_16_06_22_06 - Train Loss: 0.0710 at step 60000, lr 0.000500
+2025_07_16_06_26_31 - Train Loss: 0.7271 at step 60400, lr 0.000500
+2025_07_16_06_30_56 - Train Loss: 0.1125 at step 60800, lr 0.000500
+2025_07_16_06_35_22 - Train Loss: 0.2636 at step 61200, lr 0.000500
+2025_07_16_06_39_47 - Train Loss: 0.2448 at step 61600, lr 0.000500
+2025_07_16_06_44_12 - Train Loss: 0.0497 at step 62000, lr 0.000500
+2025_07_16_06_48_37 - Train Loss: 0.2244 at step 62400, lr 0.000500
+2025_07_16_06_53_02 - Train Loss: 0.2214 at step 62800, lr 0.000500
+2025_07_16_06_57_27 - Train Loss: 0.0515 at step 63200, lr 0.000500
+2025_07_16_07_01_52 - Train Loss: 0.1336 at step 63600, lr 0.000500
+2025_07_16_07_06_17 - Train Loss: 0.1657 at step 64000, lr 0.000500
+2025_07_16_07_10_42 - Train Loss: 0.1334 at step 64400, lr 0.000500
+2025_07_16_07_15_07 - Train Loss: 0.2189 at step 64800, lr 0.000500
+2025_07_16_07_19_32 - Train Loss: 0.2246 at step 65200, lr 0.000500
+2025_07_16_07_23_57 - Train Loss: 0.1002 at step 65600, lr 0.000500
+2025_07_16_07_28_22 - Train Loss: 0.2621 at step 66000, lr 0.000500
+2025_07_16_07_32_47 - Train Loss: 0.7231 at step 66400, lr 0.000500
+2025_07_16_07_37_12 - Train Loss: 0.0713 at step 66800, lr 0.000500
+2025_07_16_07_41_37 - Train Loss: 0.1393 at step 67200, lr 0.000500
+2025_07_16_07_46_02 - Train Loss: 0.0984 at step 67600, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 7) Accuracy: 0.9286; AP: 0.9836
+Real Accuracy: 0.9619
+Fake Accuracy: 0.8953
+Recall: 0.8953
+F1 Score: 0.9262
+TP: 13026.0, TN: 13995.0, FP: 554.0, FN: 1523.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_7.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9286 (epoch 7)
+2025_07_16_07_58_01 - Train Loss: 0.0758 at step 68000, lr 0.000500
+2025_07_16_08_02_26 - Train Loss: 0.3816 at step 68400, lr 0.000500
+2025_07_16_08_06_51 - Train Loss: 0.1308 at step 68800, lr 0.000500
+2025_07_16_08_11_16 - Train Loss: 0.2199 at step 69200, lr 0.000500
+2025_07_16_08_15_42 - Train Loss: 0.1598 at step 69600, lr 0.000500
+2025_07_16_08_20_07 - Train Loss: 0.2629 at step 70000, lr 0.000500
+2025_07_16_08_24_32 - Train Loss: 0.1925 at step 70400, lr 0.000500
+2025_07_16_08_28_57 - Train Loss: 0.5418 at step 70800, lr 0.000500
+2025_07_16_08_33_22 - Train Loss: 0.0888 at step 71200, lr 0.000500
+2025_07_16_08_37_47 - Train Loss: 0.2504 at step 71600, lr 0.000500
+2025_07_16_08_42_12 - Train Loss: 0.1108 at step 72000, lr 0.000500
+2025_07_16_08_46_37 - Train Loss: 0.1345 at step 72400, lr 0.000500
+2025_07_16_08_51_02 - Train Loss: 0.3325 at step 72800, lr 0.000500
+2025_07_16_08_55_27 - Train Loss: 0.1000 at step 73200, lr 0.000500
+2025_07_16_08_59_52 - Train Loss: 0.2273 at step 73600, lr 0.000500
+2025_07_16_09_04_17 - Train Loss: 0.2718 at step 74000, lr 0.000500
+2025_07_16_09_08_42 - Train Loss: 0.2465 at step 74400, lr 0.000500
+2025_07_16_09_13_07 - Train Loss: 0.1034 at step 74800, lr 0.000500
+2025_07_16_09_17_32 - Train Loss: 0.0534 at step 75200, lr 0.000500
+2025_07_16_09_21_57 - Train Loss: 0.3345 at step 75600, lr 0.000500
+2025_07_16_09_26_22 - Train Loss: 0.0845 at step 76000, lr 0.000500
+2025_07_16_09_30_47 - Train Loss: 0.0275 at step 76400, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 8) Accuracy: 0.9314; AP: 0.9829
+Real Accuracy: 0.9209
+Fake Accuracy: 0.9420
+Recall: 0.9420
+F1 Score: 0.9322
+TP: 13705.0, TN: 13398.0, FP: 1151.0, FN: 844.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_8.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9314 (epoch 8)
+2025_07_16_09_42_46 - Train Loss: 0.0719 at step 76800, lr 0.000500
+2025_07_16_09_47_11 - Train Loss: 0.3185 at step 77200, lr 0.000500
+2025_07_16_09_51_36 - Train Loss: 0.1227 at step 77600, lr 0.000500
+2025_07_16_09_56_01 - Train Loss: 0.0544 at step 78000, lr 0.000500
+2025_07_16_10_00_26 - Train Loss: 0.2659 at step 78400, lr 0.000500
+2025_07_16_10_04_51 - Train Loss: 0.0607 at step 78800, lr 0.000500
+2025_07_16_10_09_16 - Train Loss: 0.0376 at step 79200, lr 0.000500
+2025_07_16_10_13_41 - Train Loss: 0.0283 at step 79600, lr 0.000500
+2025_07_16_10_18_06 - Train Loss: 0.1423 at step 80000, lr 0.000500
+2025_07_16_10_22_31 - Train Loss: 0.0487 at step 80400, lr 0.000500
+2025_07_16_10_26_56 - Train Loss: 0.1756 at step 80800, lr 0.000500
+2025_07_16_10_31_21 - Train Loss: 0.1001 at step 81200, lr 0.000500
+2025_07_16_10_35_46 - Train Loss: 0.0615 at step 81600, lr 0.000500
+2025_07_16_10_40_11 - Train Loss: 0.4380 at step 82000, lr 0.000500
+2025_07_16_10_44_37 - Train Loss: 0.1660 at step 82400, lr 0.000500
+2025_07_16_10_49_02 - Train Loss: 0.0993 at step 82800, lr 0.000500
+2025_07_16_10_53_27 - Train Loss: 0.1588 at step 83200, lr 0.000500
+2025_07_16_10_57_52 - Train Loss: 0.0875 at step 83600, lr 0.000500
+2025_07_16_11_02_17 - Train Loss: 0.1735 at step 84000, lr 0.000500
+2025_07_16_11_06_42 - Train Loss: 0.2482 at step 84400, lr 0.000500
+2025_07_16_11_11_07 - Train Loss: 0.0964 at step 84800, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 9) Accuracy: 0.9410; AP: 0.9870
+Real Accuracy: 0.9656
+Fake Accuracy: 0.9163
+Recall: 0.9163
+F1 Score: 0.9395
+TP: 13331.0, TN: 14049.0, FP: 500.0, FN: 1218.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_9.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9410 (epoch 9)
+2025_07_16_11_23_06 - Train Loss: 0.1805 at step 85200, lr 0.000500
+2025_07_16_11_27_31 - Train Loss: 0.0934 at step 85600, lr 0.000500
+2025_07_16_11_31_56 - Train Loss: 0.1500 at step 86000, lr 0.000500
+2025_07_16_11_36_21 - Train Loss: 0.0977 at step 86400, lr 0.000500
+2025_07_16_11_40_46 - Train Loss: 0.0525 at step 86800, lr 0.000500
+2025_07_16_11_45_12 - Train Loss: 0.1139 at step 87200, lr 0.000500
+2025_07_16_11_49_37 - Train Loss: 0.1978 at step 87600, lr 0.000500
+2025_07_16_11_54_02 - Train Loss: 0.0861 at step 88000, lr 0.000500
+2025_07_16_11_58_27 - Train Loss: 0.1766 at step 88400, lr 0.000500
+2025_07_16_12_02_52 - Train Loss: 0.1469 at step 88800, lr 0.000500
+2025_07_16_12_07_17 - Train Loss: 0.0364 at step 89200, lr 0.000500
+2025_07_16_12_11_42 - Train Loss: 0.3700 at step 89600, lr 0.000500
+2025_07_16_12_16_07 - Train Loss: 0.2518 at step 90000, lr 0.000500
+2025_07_16_12_20_32 - Train Loss: 0.1032 at step 90400, lr 0.000500
+2025_07_16_12_24_57 - Train Loss: 0.1581 at step 90800, lr 0.000500
+2025_07_16_12_29_22 - Train Loss: 0.2388 at step 91200, lr 0.000500
+2025_07_16_12_33_47 - Train Loss: 0.1915 at step 91600, lr 0.000500
+2025_07_16_12_38_12 - Train Loss: 0.1141 at step 92000, lr 0.000500
+2025_07_16_12_42_37 - Train Loss: 0.1073 at step 92400, lr 0.000500
+2025_07_16_12_47_02 - Train Loss: 0.1098 at step 92800, lr 0.000500
+2025_07_16_12_51_27 - Train Loss: 0.1860 at step 93200, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 10) Accuracy: 0.9286; AP: 0.9882
+Real Accuracy: 0.9790
+Fake Accuracy: 0.8781
+Recall: 0.8781
+F1 Score: 0.9248
+TP: 12775.0, TN: 14244.0, FP: 305.0, FN: 1774.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_10.pth
+Current accuracy 0.9286 not better than best 0.9410 (epoch 9)
+Epochs without improvement: 1/5
+2025_07_16_13_03_26 - Train Loss: 0.2479 at step 93600, lr 0.000500
+2025_07_16_13_07_52 - Train Loss: 0.0819 at step 94000, lr 0.000500
+2025_07_16_13_12_17 - Train Loss: 0.0380 at step 94400, lr 0.000500
+2025_07_16_13_16_42 - Train Loss: 0.0958 at step 94800, lr 0.000500
+2025_07_16_13_21_07 - Train Loss: 0.2497 at step 95200, lr 0.000500
+2025_07_16_13_25_32 - Train Loss: 0.0614 at step 95600, lr 0.000500
+2025_07_16_13_29_57 - Train Loss: 0.0621 at step 96000, lr 0.000500
+2025_07_16_13_34_22 - Train Loss: 0.2438 at step 96400, lr 0.000500
+2025_07_16_13_38_47 - Train Loss: 0.1580 at step 96800, lr 0.000500
+2025_07_16_13_43_12 - Train Loss: 0.3280 at step 97200, lr 0.000500
+2025_07_16_13_47_37 - Train Loss: 0.1346 at step 97600, lr 0.000500
+2025_07_16_13_52_02 - Train Loss: 0.3428 at step 98000, lr 0.000500
+2025_07_16_13_56_27 - Train Loss: 0.0619 at step 98400, lr 0.000500
+2025_07_16_14_00_52 - Train Loss: 0.2164 at step 98800, lr 0.000500
+2025_07_16_14_05_17 - Train Loss: 0.0792 at step 99200, lr 0.000500
+2025_07_16_14_09_42 - Train Loss: 0.3353 at step 99600, lr 0.000500
+2025_07_16_14_14_07 - Train Loss: 0.0819 at step 100000, lr 0.000500
+2025_07_16_14_18_32 - Train Loss: 0.1910 at step 100400, lr 0.000500
+2025_07_16_14_22_57 - Train Loss: 0.3450 at step 100800, lr 0.000500
+2025_07_16_14_27_22 - Train Loss: 0.1835 at step 101200, lr 0.000500
+2025_07_16_14_31_47 - Train Loss: 0.0971 at step 101600, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 11) Accuracy: 0.9413; AP: 0.9879
+Real Accuracy: 0.9636
+Fake Accuracy: 0.9190
+Recall: 0.9190
+F1 Score: 0.9400
+TP: 13371.0, TN: 14019.0, FP: 530.0, FN: 1178.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_11.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9413 (epoch 11)
+2025_07_16_14_43_46 - Train Loss: 0.4918 at step 102000, lr 0.000500
+2025_07_16_14_48_11 - Train Loss: 0.0800 at step 102400, lr 0.000500
+2025_07_16_14_52_36 - Train Loss: 0.0701 at step 102800, lr 0.000500
+2025_07_16_14_57_01 - Train Loss: 0.0649 at step 103200, lr 0.000500
+2025_07_16_15_01_26 - Train Loss: 0.1525 at step 103600, lr 0.000500
+2025_07_16_15_05_51 - Train Loss: 0.0639 at step 104000, lr 0.000500
+2025_07_16_15_10_16 - Train Loss: 0.4822 at step 104400, lr 0.000500
+2025_07_16_15_14_41 - Train Loss: 0.3060 at step 104800, lr 0.000500
+2025_07_16_15_19_06 - Train Loss: 0.2806 at step 105200, lr 0.000500
+2025_07_16_15_23_31 - Train Loss: 0.0482 at step 105600, lr 0.000500
+2025_07_16_15_27_56 - Train Loss: 0.0564 at step 106000, lr 0.000500
+2025_07_16_15_32_21 - Train Loss: 0.1984 at step 106400, lr 0.000500
+2025_07_16_15_36_46 - Train Loss: 0.1537 at step 106800, lr 0.000500
+2025_07_16_15_41_12 - Train Loss: 0.4466 at step 107200, lr 0.000500
+2025_07_16_15_45_37 - Train Loss: 0.0135 at step 107600, lr 0.000500
+2025_07_16_15_50_02 - Train Loss: 0.1651 at step 108000, lr 0.000500
+2025_07_16_15_54_27 - Train Loss: 0.1377 at step 108400, lr 0.000500
+2025_07_16_15_58_52 - Train Loss: 0.0670 at step 108800, lr 0.000500
+2025_07_16_16_03_17 - Train Loss: 0.0817 at step 109200, lr 0.000500
+2025_07_16_16_07_42 - Train Loss: 0.1053 at step 109600, lr 0.000500
+2025_07_16_16_12_07 - Train Loss: 0.0077 at step 110000, lr 0.000500
+2025_07_16_16_16_32 - Train Loss: 0.1172 at step 110400, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 12) Accuracy: 0.9510; AP: 0.9901
+Real Accuracy: 0.9450
+Fake Accuracy: 0.9570
+Recall: 0.9570
+F1 Score: 0.9513
+TP: 13923.0, TN: 13749.0, FP: 800.0, FN: 626.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_12.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9510 (epoch 12)
+2025_07_16_16_28_31 - Train Loss: 0.2409 at step 110800, lr 0.000500
+2025_07_16_16_32_56 - Train Loss: 0.0690 at step 111200, lr 0.000500
+2025_07_16_16_37_21 - Train Loss: 0.0627 at step 111600, lr 0.000500
+2025_07_16_16_41_47 - Train Loss: 0.0921 at step 112000, lr 0.000500
+2025_07_16_16_46_12 - Train Loss: 0.0808 at step 112400, lr 0.000500
+2025_07_16_16_50_37 - Train Loss: 0.0989 at step 112800, lr 0.000500
+2025_07_16_16_55_02 - Train Loss: 0.1475 at step 113200, lr 0.000500
+2025_07_16_16_59_27 - Train Loss: 0.2269 at step 113600, lr 0.000500
+2025_07_16_17_03_52 - Train Loss: 0.2401 at step 114000, lr 0.000500
+2025_07_16_17_08_17 - Train Loss: 0.0799 at step 114400, lr 0.000500
+2025_07_16_17_12_42 - Train Loss: 0.0768 at step 114800, lr 0.000500
+2025_07_16_17_17_07 - Train Loss: 0.1980 at step 115200, lr 0.000500
+2025_07_16_17_21_32 - Train Loss: 0.1785 at step 115600, lr 0.000500
+2025_07_16_17_25_57 - Train Loss: 0.2148 at step 116000, lr 0.000500
+2025_07_16_17_30_22 - Train Loss: 0.1089 at step 116400, lr 0.000500
+2025_07_16_17_34_47 - Train Loss: 0.2251 at step 116800, lr 0.000500
+2025_07_16_17_39_12 - Train Loss: 0.0807 at step 117200, lr 0.000500
+2025_07_16_17_43_37 - Train Loss: 0.2098 at step 117600, lr 0.000500
+2025_07_16_17_48_02 - Train Loss: 0.2093 at step 118000, lr 0.000500
+2025_07_16_17_52_27 - Train Loss: 0.1803 at step 118400, lr 0.000500
+2025_07_16_17_56_52 - Train Loss: 0.1117 at step 118800, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 13) Accuracy: 0.9578; AP: 0.9922
+Real Accuracy: 0.9570
+Fake Accuracy: 0.9585
+Recall: 0.9585
+F1 Score: 0.9578
+TP: 13945.0, TN: 13924.0, FP: 625.0, FN: 604.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_13.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9578 (epoch 13)
+2025_07_16_18_08_52 - Train Loss: 0.0785 at step 119200, lr 0.000500
+2025_07_16_18_13_17 - Train Loss: 0.2685 at step 119600, lr 0.000500
+2025_07_16_18_17_42 - Train Loss: 0.0736 at step 120000, lr 0.000500
+2025_07_16_18_22_07 - Train Loss: 0.3123 at step 120400, lr 0.000500
+2025_07_16_18_26_32 - Train Loss: 0.0121 at step 120800, lr 0.000500
+2025_07_16_18_30_57 - Train Loss: 0.0578 at step 121200, lr 0.000500
+2025_07_16_18_35_22 - Train Loss: 0.0774 at step 121600, lr 0.000500
+2025_07_16_18_39_47 - Train Loss: 0.1263 at step 122000, lr 0.000500
+2025_07_16_18_44_12 - Train Loss: 0.0831 at step 122400, lr 0.000500
+2025_07_16_18_48_37 - Train Loss: 0.0414 at step 122800, lr 0.000500
+2025_07_16_18_53_02 - Train Loss: 0.1979 at step 123200, lr 0.000500
+2025_07_16_18_57_27 - Train Loss: 0.1388 at step 123600, lr 0.000500
+2025_07_16_19_01_52 - Train Loss: 0.0629 at step 124000, lr 0.000500
+2025_07_16_19_06_17 - Train Loss: 0.0164 at step 124400, lr 0.000500
+2025_07_16_19_10_42 - Train Loss: 0.2321 at step 124800, lr 0.000500
+2025_07_16_19_15_07 - Train Loss: 0.1673 at step 125200, lr 0.000500
+2025_07_16_19_19_32 - Train Loss: 0.2818 at step 125600, lr 0.000500
+2025_07_16_19_23_57 - Train Loss: 0.1709 at step 126000, lr 0.000500
+2025_07_16_19_28_22 - Train Loss: 0.0560 at step 126400, lr 0.000500
+2025_07_16_19_32_47 - Train Loss: 0.3127 at step 126800, lr 0.000500
+2025_07_16_19_37_12 - Train Loss: 0.0735 at step 127200, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 14) Accuracy: 0.9506; AP: 0.9934
+Real Accuracy: 0.9825
+Fake Accuracy: 0.9187
+Recall: 0.9187
+F1 Score: 0.9490
+TP: 13366.0, TN: 14295.0, FP: 254.0, FN: 1183.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_14.pth
+Current accuracy 0.9506 not better than best 0.9578 (epoch 13)
+Epochs without improvement: 1/5
+2025_07_16_19_49_12 - Train Loss: 0.0304 at step 127600, lr 0.000500
+2025_07_16_19_53_37 - Train Loss: 0.1450 at step 128000, lr 0.000500
+2025_07_16_19_58_02 - Train Loss: 0.0566 at step 128400, lr 0.000500
+2025_07_16_20_02_27 - Train Loss: 0.0710 at step 128800, lr 0.000500
+2025_07_16_20_06_52 - Train Loss: 0.2171 at step 129200, lr 0.000500
+2025_07_16_20_11_17 - Train Loss: 0.0344 at step 129600, lr 0.000500
+2025_07_16_20_15_42 - Train Loss: 0.1000 at step 130000, lr 0.000500
+2025_07_16_20_20_07 - Train Loss: 0.3230 at step 130400, lr 0.000500
+2025_07_16_20_24_32 - Train Loss: 0.1943 at step 130800, lr 0.000500
+2025_07_16_20_28_57 - Train Loss: 0.1348 at step 131200, lr 0.000500
+2025_07_16_20_33_22 - Train Loss: 0.1975 at step 131600, lr 0.000500
+2025_07_16_20_37_47 - Train Loss: 0.0104 at step 132000, lr 0.000500
+2025_07_16_20_42_12 - Train Loss: 0.1096 at step 132400, lr 0.000500
+2025_07_16_20_46_37 - Train Loss: 0.1479 at step 132800, lr 0.000500
+2025_07_16_20_51_02 - Train Loss: 0.2238 at step 133200, lr 0.000500
+2025_07_16_20_55_27 - Train Loss: 0.2886 at step 133600, lr 0.000500
+2025_07_16_20_59_52 - Train Loss: 0.1437 at step 134000, lr 0.000500
+2025_07_16_21_04_17 - Train Loss: 0.1971 at step 134400, lr 0.000500
+2025_07_16_21_08_42 - Train Loss: 0.2410 at step 134800, lr 0.000500
+2025_07_16_21_13_07 - Train Loss: 0.0268 at step 135200, lr 0.000500
+2025_07_16_21_17_33 - Train Loss: 0.0148 at step 135600, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 15) Accuracy: 0.9579; AP: 0.9927
+Real Accuracy: 0.9691
+Fake Accuracy: 0.9466
+Recall: 0.9466
+F1 Score: 0.9574
+TP: 13772.0, TN: 14100.0, FP: 449.0, FN: 777.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_15.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9579 (epoch 15)
+2025_07_16_21_29_32 - Train Loss: 0.0324 at step 136000, lr 0.000500
+2025_07_16_21_33_57 - Train Loss: 0.0335 at step 136400, lr 0.000500
+2025_07_16_21_38_22 - Train Loss: 0.2991 at step 136800, lr 0.000500
+2025_07_16_21_42_47 - Train Loss: 0.0206 at step 137200, lr 0.000500
+2025_07_16_21_47_12 - Train Loss: 0.0605 at step 137600, lr 0.000500
+2025_07_16_21_51_37 - Train Loss: 0.2460 at step 138000, lr 0.000500
+2025_07_16_21_56_02 - Train Loss: 0.0672 at step 138400, lr 0.000500
+2025_07_16_22_00_27 - Train Loss: 0.1400 at step 138800, lr 0.000500
+2025_07_16_22_04_52 - Train Loss: 0.0692 at step 139200, lr 0.000500
+2025_07_16_22_09_17 - Train Loss: 0.1494 at step 139600, lr 0.000500
+2025_07_16_22_13_42 - Train Loss: 0.0365 at step 140000, lr 0.000500
+2025_07_16_22_18_07 - Train Loss: 0.0739 at step 140400, lr 0.000500
+2025_07_16_22_22_32 - Train Loss: 0.2781 at step 140800, lr 0.000500
+2025_07_16_22_26_57 - Train Loss: 0.0278 at step 141200, lr 0.000500
+2025_07_16_22_31_22 - Train Loss: 0.4306 at step 141600, lr 0.000500
+2025_07_16_22_35_47 - Train Loss: 0.1186 at step 142000, lr 0.000500
+2025_07_16_22_40_12 - Train Loss: 0.1579 at step 142400, lr 0.000500
+2025_07_16_22_44_37 - Train Loss: 0.0904 at step 142800, lr 0.000500
+2025_07_16_22_49_02 - Train Loss: 0.0198 at step 143200, lr 0.000500
+2025_07_16_22_53_27 - Train Loss: 0.0574 at step 143600, lr 0.000500
+2025_07_16_22_57_52 - Train Loss: 0.2365 at step 144000, lr 0.000500
+2025_07_16_23_02_17 - Train Loss: 0.0345 at step 144400, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 16) Accuracy: 0.9656; AP: 0.9945
+Real Accuracy: 0.9608
+Fake Accuracy: 0.9704
+Recall: 0.9704
+F1 Score: 0.9657
+TP: 14118.0, TN: 13978.0, FP: 571.0, FN: 431.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_16.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9656 (epoch 16)
+2025_07_16_23_14_16 - Train Loss: 0.0322 at step 144800, lr 0.000500
+2025_07_16_23_18_41 - Train Loss: 0.3694 at step 145200, lr 0.000500
+2025_07_16_23_23_06 - Train Loss: 0.0762 at step 145600, lr 0.000500
+2025_07_16_23_27_31 - Train Loss: 0.0660 at step 146000, lr 0.000500
+2025_07_16_23_31_56 - Train Loss: 0.0073 at step 146400, lr 0.000500
+2025_07_16_23_36_21 - Train Loss: 0.2352 at step 146800, lr 0.000500
+2025_07_16_23_40_46 - Train Loss: 0.0132 at step 147200, lr 0.000500
+2025_07_16_23_45_11 - Train Loss: 0.0563 at step 147600, lr 0.000500
+2025_07_16_23_49_36 - Train Loss: 0.0182 at step 148000, lr 0.000500
+2025_07_16_23_54_01 - Train Loss: 0.0653 at step 148400, lr 0.000500
+2025_07_16_23_58_26 - Train Loss: 0.2317 at step 148800, lr 0.000500
+2025_07_17_00_02_51 - Train Loss: 0.0725 at step 149200, lr 0.000500
+2025_07_17_00_07_16 - Train Loss: 0.0585 at step 149600, lr 0.000500
+2025_07_17_00_11_41 - Train Loss: 0.4113 at step 150000, lr 0.000500
+2025_07_17_00_16_06 - Train Loss: 0.5526 at step 150400, lr 0.000500
+2025_07_17_00_20_31 - Train Loss: 0.1593 at step 150800, lr 0.000500
+2025_07_17_00_24_56 - Train Loss: 0.1383 at step 151200, lr 0.000500
+2025_07_17_00_29_21 - Train Loss: 0.0210 at step 151600, lr 0.000500
+2025_07_17_00_33_46 - Train Loss: 0.0449 at step 152000, lr 0.000500
+2025_07_17_00_38_11 - Train Loss: 0.3643 at step 152400, lr 0.000500
+2025_07_17_00_42_36 - Train Loss: 0.0975 at step 152800, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 17) Accuracy: 0.9669; AP: 0.9951
+Real Accuracy: 0.9630
+Fake Accuracy: 0.9709
+Recall: 0.9709
+F1 Score: 0.9671
+TP: 14125.0, TN: 14011.0, FP: 538.0, FN: 424.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_17.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9669 (epoch 17)
+2025_07_17_00_54_35 - Train Loss: 0.2805 at step 153200, lr 0.000500
+2025_07_17_00_59_00 - Train Loss: 0.3485 at step 153600, lr 0.000500
+2025_07_17_01_03_25 - Train Loss: 0.0190 at step 154000, lr 0.000500
+2025_07_17_01_07_50 - Train Loss: 0.0888 at step 154400, lr 0.000500
+2025_07_17_01_12_15 - Train Loss: 0.0549 at step 154800, lr 0.000500
+2025_07_17_01_16_40 - Train Loss: 0.2043 at step 155200, lr 0.000500
+2025_07_17_01_21_05 - Train Loss: 0.3088 at step 155600, lr 0.000500
+2025_07_17_01_25_30 - Train Loss: 0.2907 at step 156000, lr 0.000500
+2025_07_17_01_29_55 - Train Loss: 0.1657 at step 156400, lr 0.000500
+2025_07_17_01_34_20 - Train Loss: 0.1856 at step 156800, lr 0.000500
+2025_07_17_01_38_45 - Train Loss: 0.3009 at step 157200, lr 0.000500
+2025_07_17_01_43_10 - Train Loss: 0.2048 at step 157600, lr 0.000500
+2025_07_17_01_47_35 - Train Loss: 0.1308 at step 158000, lr 0.000500
+2025_07_17_01_52_00 - Train Loss: 0.0186 at step 158400, lr 0.000500
+2025_07_17_01_56_25 - Train Loss: 0.1614 at step 158800, lr 0.000500
+2025_07_17_02_00_50 - Train Loss: 0.0891 at step 159200, lr 0.000500
+2025_07_17_02_05_15 - Train Loss: 0.0886 at step 159600, lr 0.000500
+2025_07_17_02_09_40 - Train Loss: 0.0446 at step 160000, lr 0.000500
+2025_07_17_02_14_05 - Train Loss: 0.0667 at step 160400, lr 0.000500
+2025_07_17_02_18_30 - Train Loss: 0.0463 at step 160800, lr 0.000500
+2025_07_17_02_22_55 - Train Loss: 0.0289 at step 161200, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 18) Accuracy: 0.9664; AP: 0.9948
+Real Accuracy: 0.9645
+Fake Accuracy: 0.9682
+Recall: 0.9682
+F1 Score: 0.9664
+TP: 14086.0, TN: 14033.0, FP: 516.0, FN: 463.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_18.pth
+Current accuracy 0.9664 not better than best 0.9669 (epoch 17)
+Epochs without improvement: 1/5
+2025_07_17_02_34_54 - Train Loss: 0.3360 at step 161600, lr 0.000500
+2025_07_17_02_39_19 - Train Loss: 0.1524 at step 162000, lr 0.000500
+2025_07_17_02_43_44 - Train Loss: 0.0359 at step 162400, lr 0.000500
+2025_07_17_02_48_09 - Train Loss: 0.0631 at step 162800, lr 0.000500
+2025_07_17_02_52_34 - Train Loss: 0.1674 at step 163200, lr 0.000500
+2025_07_17_02_56_59 - Train Loss: 0.0073 at step 163600, lr 0.000500
+2025_07_17_03_01_24 - Train Loss: 0.4121 at step 164000, lr 0.000500
+2025_07_17_03_05_49 - Train Loss: 0.2249 at step 164400, lr 0.000500
+2025_07_17_03_10_14 - Train Loss: 0.1537 at step 164800, lr 0.000500
+2025_07_17_03_14_39 - Train Loss: 0.1445 at step 165200, lr 0.000500
+2025_07_17_03_19_04 - Train Loss: 0.0549 at step 165600, lr 0.000500
+2025_07_17_03_23_29 - Train Loss: 0.1588 at step 166000, lr 0.000500
+2025_07_17_03_27_54 - Train Loss: 0.1219 at step 166400, lr 0.000500
+2025_07_17_03_32_19 - Train Loss: 0.0488 at step 166800, lr 0.000500
+2025_07_17_03_36_44 - Train Loss: 0.0479 at step 167200, lr 0.000500
+2025_07_17_03_41_09 - Train Loss: 0.1586 at step 167600, lr 0.000500
+2025_07_17_03_45_34 - Train Loss: 0.0127 at step 168000, lr 0.000500
+2025_07_17_03_49_59 - Train Loss: 0.0185 at step 168400, lr 0.000500
+2025_07_17_03_54_24 - Train Loss: 0.1703 at step 168800, lr 0.000500
+2025_07_17_03_58_49 - Train Loss: 0.0197 at step 169200, lr 0.000500
+2025_07_17_04_03_14 - Train Loss: 0.0199 at step 169600, lr 0.000500
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 19) Accuracy: 0.9631; AP: 0.9942
+Real Accuracy: 0.9792
+Fake Accuracy: 0.9469
+Recall: 0.9469
+F1 Score: 0.9625
+TP: 13777.0, TN: 14246.0, FP: 303.0, FN: 772.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_19.pth
+Current accuracy 0.9631 not better than best 0.9669 (epoch 17)
+Epochs without improvement: 2/5
+2025_07_17_04_15_13 - Train Loss: 0.0333 at step 170000, lr 0.000500
+2025_07_17_04_19_38 - Train Loss: 0.0096 at step 170400, lr 0.000500
+2025_07_17_04_24_03 - Train Loss: 0.1899 at step 170800, lr 0.000500
+2025_07_17_04_28_28 - Train Loss: 0.0596 at step 171200, lr 0.000500
+2025_07_17_04_32_53 - Train Loss: 0.0747 at step 171600, lr 0.000500
+2025_07_17_04_37_18 - Train Loss: 0.0403 at step 172000, lr 0.000500
+2025_07_17_04_41_43 - Train Loss: 0.0257 at step 172400, lr 0.000500
+2025_07_17_04_46_08 - Train Loss: 0.0628 at step 172800, lr 0.000500
+2025_07_17_04_50_33 - Train Loss: 0.2364 at step 173200, lr 0.000500
+2025_07_17_04_54_58 - Train Loss: 0.0416 at step 173600, lr 0.000500
+2025_07_17_04_59_23 - Train Loss: 0.4993 at step 174000, lr 0.000500
+2025_07_17_05_03_48 - Train Loss: 0.0243 at step 174400, lr 0.000500
+2025_07_17_05_08_13 - Train Loss: 0.0363 at step 174800, lr 0.000500
+2025_07_17_05_12_38 - Train Loss: 0.0145 at step 175200, lr 0.000500
+2025_07_17_05_17_03 - Train Loss: 0.0439 at step 175600, lr 0.000500
+2025_07_17_05_21_28 - Train Loss: 0.0122 at step 176000, lr 0.000500
+2025_07_17_05_25_53 - Train Loss: 0.1113 at step 176400, lr 0.000500
+2025_07_17_05_30_18 - Train Loss: 0.3249 at step 176800, lr 0.000500
+2025_07_17_05_34_43 - Train Loss: 0.1337 at step 177200, lr 0.000500
+2025_07_17_05_39_08 - Train Loss: 0.1472 at step 177600, lr 0.000500
+2025_07_17_05_43_33 - Train Loss: 0.3094 at step 178000, lr 0.000500
+2025_07_17_05_47_58 - Train Loss: 0.0070 at step 178400, lr 0.000500
+2025_07_17_05_48_08 - Adjusting LR at epoch 20, step 178416
+*************************
+Changing lr from 0.0005 to 0.0004
+*************************
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 20) Accuracy: 0.9682; AP: 0.9957
+Real Accuracy: 0.9723
+Fake Accuracy: 0.9641
+Recall: 0.9641
+F1 Score: 0.9681
+TP: 14027.0, TN: 14146.0, FP: 403.0, FN: 522.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_20.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9682 (epoch 20)
+2025_07_17_05_59_57 - Train Loss: 0.1456 at step 178800, lr 0.000400
+2025_07_17_06_04_22 - Train Loss: 0.1050 at step 179200, lr 0.000400
+2025_07_17_06_08_47 - Train Loss: 0.1187 at step 179600, lr 0.000400
+2025_07_17_06_13_12 - Train Loss: 0.0595 at step 180000, lr 0.000400
+2025_07_17_06_17_37 - Train Loss: 0.0330 at step 180400, lr 0.000400
+2025_07_17_06_22_02 - Train Loss: 0.0888 at step 180800, lr 0.000400
+2025_07_17_06_26_27 - Train Loss: 0.0144 at step 181200, lr 0.000400
+2025_07_17_06_30_52 - Train Loss: 0.2075 at step 181600, lr 0.000400
+2025_07_17_06_35_17 - Train Loss: 0.1989 at step 182000, lr 0.000400
+2025_07_17_06_39_42 - Train Loss: 0.1311 at step 182400, lr 0.000400
+2025_07_17_06_44_07 - Train Loss: 0.0339 at step 182800, lr 0.000400
+2025_07_17_06_48_32 - Train Loss: 0.2079 at step 183200, lr 0.000400
+2025_07_17_06_52_57 - Train Loss: 0.0104 at step 183600, lr 0.000400
+2025_07_17_06_57_22 - Train Loss: 0.0437 at step 184000, lr 0.000400
+2025_07_17_07_01_47 - Train Loss: 0.0112 at step 184400, lr 0.000400
+2025_07_17_07_06_12 - Train Loss: 0.0273 at step 184800, lr 0.000400
+2025_07_17_07_10_37 - Train Loss: 0.0047 at step 185200, lr 0.000400
+2025_07_17_07_15_02 - Train Loss: 0.0508 at step 185600, lr 0.000400
+2025_07_17_07_19_27 - Train Loss: 0.0919 at step 186000, lr 0.000400
+2025_07_17_07_23_52 - Train Loss: 0.2665 at step 186400, lr 0.000400
+2025_07_17_07_28_17 - Train Loss: 0.0653 at step 186800, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 21) Accuracy: 0.9728; AP: 0.9967
+Real Accuracy: 0.9746
+Fake Accuracy: 0.9711
+Recall: 0.9711
+F1 Score: 0.9728
+TP: 14128.0, TN: 14179.0, FP: 370.0, FN: 421.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_21.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9728 (epoch 21)
+2025_07_17_07_40_16 - Train Loss: 0.0485 at step 187200, lr 0.000400
+2025_07_17_07_44_41 - Train Loss: 0.0765 at step 187600, lr 0.000400
+2025_07_17_07_49_06 - Train Loss: 0.0424 at step 188000, lr 0.000400
+2025_07_17_07_53_31 - Train Loss: 0.0050 at step 188400, lr 0.000400
+2025_07_17_07_57_56 - Train Loss: 0.0898 at step 188800, lr 0.000400
+2025_07_17_08_02_21 - Train Loss: 0.2892 at step 189200, lr 0.000400
+2025_07_17_08_06_46 - Train Loss: 0.1275 at step 189600, lr 0.000400
+2025_07_17_08_11_11 - Train Loss: 0.2171 at step 190000, lr 0.000400
+2025_07_17_08_15_36 - Train Loss: 0.0473 at step 190400, lr 0.000400
+2025_07_17_08_20_01 - Train Loss: 0.0962 at step 190800, lr 0.000400
+2025_07_17_08_24_26 - Train Loss: 0.0205 at step 191200, lr 0.000400
+2025_07_17_08_28_51 - Train Loss: 0.1217 at step 191600, lr 0.000400
+2025_07_17_08_33_16 - Train Loss: 0.0124 at step 192000, lr 0.000400
+2025_07_17_08_37_41 - Train Loss: 0.0252 at step 192400, lr 0.000400
+2025_07_17_08_42_06 - Train Loss: 0.2999 at step 192800, lr 0.000400
+2025_07_17_08_46_31 - Train Loss: 0.1474 at step 193200, lr 0.000400
+2025_07_17_08_50_56 - Train Loss: 0.0433 at step 193600, lr 0.000400
+2025_07_17_08_55_21 - Train Loss: 0.0748 at step 194000, lr 0.000400
+2025_07_17_08_59_46 - Train Loss: 0.2731 at step 194400, lr 0.000400
+2025_07_17_09_04_11 - Train Loss: 0.0521 at step 194800, lr 0.000400
+2025_07_17_09_08_36 - Train Loss: 0.0289 at step 195200, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 22) Accuracy: 0.9741; AP: 0.9965
+Real Accuracy: 0.9734
+Fake Accuracy: 0.9748
+Recall: 0.9748
+F1 Score: 0.9741
+TP: 14183.0, TN: 14162.0, FP: 387.0, FN: 366.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_22.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9741 (epoch 22)
+2025_07_17_09_20_35 - Train Loss: 0.0220 at step 195600, lr 0.000400
+2025_07_17_09_25_00 - Train Loss: 0.0468 at step 196000, lr 0.000400
+2025_07_17_09_29_25 - Train Loss: 0.4821 at step 196400, lr 0.000400
+2025_07_17_09_33_50 - Train Loss: 0.0829 at step 196800, lr 0.000400
+2025_07_17_09_38_15 - Train Loss: 0.0262 at step 197200, lr 0.000400
+2025_07_17_09_42_40 - Train Loss: 0.0329 at step 197600, lr 0.000400
+2025_07_17_09_47_05 - Train Loss: 0.1459 at step 198000, lr 0.000400
+2025_07_17_09_51_30 - Train Loss: 0.0529 at step 198400, lr 0.000400
+2025_07_17_09_55_55 - Train Loss: 0.0373 at step 198800, lr 0.000400
+2025_07_17_10_00_20 - Train Loss: 0.0445 at step 199200, lr 0.000400
+2025_07_17_10_04_45 - Train Loss: 0.0259 at step 199600, lr 0.000400
+2025_07_17_10_09_09 - Train Loss: 0.1115 at step 200000, lr 0.000400
+2025_07_17_10_13_34 - Train Loss: 0.0556 at step 200400, lr 0.000400
+2025_07_17_10_17_59 - Train Loss: 0.1901 at step 200800, lr 0.000400
+2025_07_17_10_22_24 - Train Loss: 0.0285 at step 201200, lr 0.000400
+2025_07_17_10_26_49 - Train Loss: 0.0302 at step 201600, lr 0.000400
+2025_07_17_10_31_14 - Train Loss: 0.0795 at step 202000, lr 0.000400
+2025_07_17_10_35_40 - Train Loss: 0.0816 at step 202400, lr 0.000400
+2025_07_17_10_40_05 - Train Loss: 0.0090 at step 202800, lr 0.000400
+2025_07_17_10_44_30 - Train Loss: 0.0317 at step 203200, lr 0.000400
+2025_07_17_10_48_55 - Train Loss: 0.0282 at step 203600, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 23) Accuracy: 0.9726; AP: 0.9962
+Real Accuracy: 0.9742
+Fake Accuracy: 0.9711
+Recall: 0.9711
+F1 Score: 0.9726
+TP: 14128.0, TN: 14174.0, FP: 375.0, FN: 421.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_23.pth
+Current accuracy 0.9726 not better than best 0.9741 (epoch 22)
+Epochs without improvement: 1/5
+2025_07_17_11_00_54 - Train Loss: 0.0541 at step 204000, lr 0.000400
+2025_07_17_11_05_19 - Train Loss: 0.1937 at step 204400, lr 0.000400
+2025_07_17_11_09_44 - Train Loss: 0.0409 at step 204800, lr 0.000400
+2025_07_17_11_14_09 - Train Loss: 0.1593 at step 205200, lr 0.000400
+2025_07_17_11_18_34 - Train Loss: 0.1141 at step 205600, lr 0.000400
+2025_07_17_11_22_59 - Train Loss: 0.0289 at step 206000, lr 0.000400
+2025_07_17_11_27_24 - Train Loss: 0.0368 at step 206400, lr 0.000400
+2025_07_17_11_31_49 - Train Loss: 0.0682 at step 206800, lr 0.000400
+2025_07_17_11_36_14 - Train Loss: 0.0639 at step 207200, lr 0.000400
+2025_07_17_11_40_39 - Train Loss: 0.0375 at step 207600, lr 0.000400
+2025_07_17_11_45_03 - Train Loss: 0.0357 at step 208000, lr 0.000400
+2025_07_17_11_49_28 - Train Loss: 0.1643 at step 208400, lr 0.000400
+2025_07_17_11_53_53 - Train Loss: 0.0875 at step 208800, lr 0.000400
+2025_07_17_11_58_18 - Train Loss: 0.0188 at step 209200, lr 0.000400
+2025_07_17_12_02_43 - Train Loss: 0.1651 at step 209600, lr 0.000400
+2025_07_17_12_07_08 - Train Loss: 0.0743 at step 210000, lr 0.000400
+2025_07_17_12_11_33 - Train Loss: 0.1063 at step 210400, lr 0.000400
+2025_07_17_12_15_58 - Train Loss: 0.0296 at step 210800, lr 0.000400
+2025_07_17_12_20_23 - Train Loss: 0.0735 at step 211200, lr 0.000400
+2025_07_17_12_24_48 - Train Loss: 0.0095 at step 211600, lr 0.000400
+2025_07_17_12_29_13 - Train Loss: 0.5369 at step 212000, lr 0.000400
+2025_07_17_12_33_38 - Train Loss: 0.0176 at step 212400, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 24) Accuracy: 0.9780; AP: 0.9971
+Real Accuracy: 0.9789
+Fake Accuracy: 0.9770
+Recall: 0.9770
+F1 Score: 0.9780
+TP: 14215.0, TN: 14242.0, FP: 307.0, FN: 334.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_24.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9780 (epoch 24)
+2025_07_17_12_45_38 - Train Loss: 0.0137 at step 212800, lr 0.000400
+2025_07_17_12_50_03 - Train Loss: 0.1615 at step 213200, lr 0.000400
+2025_07_17_12_54_28 - Train Loss: 0.0956 at step 213600, lr 0.000400
+2025_07_17_12_58_53 - Train Loss: 0.1525 at step 214000, lr 0.000400
+2025_07_17_13_03_18 - Train Loss: 0.0134 at step 214400, lr 0.000400
+2025_07_17_13_07_43 - Train Loss: 0.0809 at step 214800, lr 0.000400
+2025_07_17_13_12_08 - Train Loss: 0.0205 at step 215200, lr 0.000400
+2025_07_17_13_16_33 - Train Loss: 0.2289 at step 215600, lr 0.000400
+2025_07_17_13_20_58 - Train Loss: 0.0406 at step 216000, lr 0.000400
+2025_07_17_13_25_23 - Train Loss: 0.0160 at step 216400, lr 0.000400
+2025_07_17_13_29_48 - Train Loss: 0.1742 at step 216800, lr 0.000400
+2025_07_17_13_34_13 - Train Loss: 0.0071 at step 217200, lr 0.000400
+2025_07_17_13_38_38 - Train Loss: 0.1489 at step 217600, lr 0.000400
+2025_07_17_13_43_03 - Train Loss: 0.0392 at step 218000, lr 0.000400
+2025_07_17_13_47_28 - Train Loss: 0.0493 at step 218400, lr 0.000400
+2025_07_17_13_51_53 - Train Loss: 0.1567 at step 218800, lr 0.000400
+2025_07_17_13_56_18 - Train Loss: 0.3107 at step 219200, lr 0.000400
+2025_07_17_14_00_43 - Train Loss: 0.0313 at step 219600, lr 0.000400
+2025_07_17_14_05_08 - Train Loss: 0.0287 at step 220000, lr 0.000400
+2025_07_17_14_09_33 - Train Loss: 0.1575 at step 220400, lr 0.000400
+2025_07_17_14_13_58 - Train Loss: 0.0277 at step 220800, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 25) Accuracy: 0.9777; AP: 0.9973
+Real Accuracy: 0.9789
+Fake Accuracy: 0.9766
+Recall: 0.9766
+F1 Score: 0.9777
+TP: 14208.0, TN: 14242.0, FP: 307.0, FN: 341.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_25.pth
+Current accuracy 0.9777 not better than best 0.9780 (epoch 24)
+Epochs without improvement: 1/5
+2025_07_17_14_25_57 - Train Loss: 0.0239 at step 221200, lr 0.000400
+2025_07_17_14_30_22 - Train Loss: 0.0032 at step 221600, lr 0.000400
+2025_07_17_14_34_47 - Train Loss: 0.0624 at step 222000, lr 0.000400
+2025_07_17_14_39_12 - Train Loss: 0.2689 at step 222400, lr 0.000400
+2025_07_17_14_43_37 - Train Loss: 0.1734 at step 222800, lr 0.000400
+2025_07_17_14_48_02 - Train Loss: 0.0431 at step 223200, lr 0.000400
+2025_07_17_14_52_27 - Train Loss: 0.0969 at step 223600, lr 0.000400
+2025_07_17_14_56_52 - Train Loss: 0.1589 at step 224000, lr 0.000400
+2025_07_17_15_01_17 - Train Loss: 0.0250 at step 224400, lr 0.000400
+2025_07_17_15_05_42 - Train Loss: 0.0108 at step 224800, lr 0.000400
+2025_07_17_15_10_07 - Train Loss: 0.0036 at step 225200, lr 0.000400
+2025_07_17_15_14_32 - Train Loss: 0.0500 at step 225600, lr 0.000400
+2025_07_17_15_18_57 - Train Loss: 0.0311 at step 226000, lr 0.000400
+2025_07_17_15_23_22 - Train Loss: 0.0161 at step 226400, lr 0.000400
+2025_07_17_15_27_47 - Train Loss: 0.0256 at step 226800, lr 0.000400
+2025_07_17_15_32_12 - Train Loss: 0.0197 at step 227200, lr 0.000400
+2025_07_17_15_36_37 - Train Loss: 0.0171 at step 227600, lr 0.000400
+2025_07_17_15_41_02 - Train Loss: 0.1931 at step 228000, lr 0.000400
+2025_07_17_15_45_27 - Train Loss: 0.0335 at step 228400, lr 0.000400
+2025_07_17_15_49_52 - Train Loss: 0.2758 at step 228800, lr 0.000400
+2025_07_17_15_54_17 - Train Loss: 0.0064 at step 229200, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 26) Accuracy: 0.9749; AP: 0.9973
+Real Accuracy: 0.9849
+Fake Accuracy: 0.9649
+Recall: 0.9649
+F1 Score: 0.9746
+TP: 14038.0, TN: 14329.0, FP: 220.0, FN: 511.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_26.pth
+Current accuracy 0.9749 not better than best 0.9780 (epoch 24)
+Epochs without improvement: 2/5
+2025_07_17_16_06_16 - Train Loss: 0.0785 at step 229600, lr 0.000400
+2025_07_17_16_10_41 - Train Loss: 0.0538 at step 230000, lr 0.000400
+2025_07_17_16_15_06 - Train Loss: 0.0132 at step 230400, lr 0.000400
+2025_07_17_16_19_31 - Train Loss: 0.0313 at step 230800, lr 0.000400
+2025_07_17_16_23_56 - Train Loss: 0.0057 at step 231200, lr 0.000400
+2025_07_17_16_28_21 - Train Loss: 0.0386 at step 231600, lr 0.000400
+2025_07_17_16_32_46 - Train Loss: 0.0284 at step 232000, lr 0.000400
+2025_07_17_16_37_11 - Train Loss: 0.1018 at step 232400, lr 0.000400
+2025_07_17_16_41_36 - Train Loss: 0.2397 at step 232800, lr 0.000400
+2025_07_17_16_46_01 - Train Loss: 0.0912 at step 233200, lr 0.000400
+2025_07_17_16_50_26 - Train Loss: 0.0155 at step 233600, lr 0.000400
+2025_07_17_16_54_51 - Train Loss: 0.0142 at step 234000, lr 0.000400
+2025_07_17_16_59_16 - Train Loss: 0.0172 at step 234400, lr 0.000400
+2025_07_17_17_03_41 - Train Loss: 0.0131 at step 234800, lr 0.000400
+2025_07_17_17_08_06 - Train Loss: 0.0310 at step 235200, lr 0.000400
+2025_07_17_17_12_31 - Train Loss: 0.3884 at step 235600, lr 0.000400
+2025_07_17_17_16_56 - Train Loss: 0.1033 at step 236000, lr 0.000400
+2025_07_17_17_21_21 - Train Loss: 0.0199 at step 236400, lr 0.000400
+2025_07_17_17_25_46 - Train Loss: 0.1116 at step 236800, lr 0.000400
+2025_07_17_17_30_11 - Train Loss: 0.0255 at step 237200, lr 0.000400
+2025_07_17_17_34_36 - Train Loss: 0.1198 at step 237600, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 27) Accuracy: 0.9788; AP: 0.9977
+Real Accuracy: 0.9777
+Fake Accuracy: 0.9799
+Recall: 0.9799
+F1 Score: 0.9789
+TP: 14257.0, TN: 14225.0, FP: 324.0, FN: 292.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_27.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9788 (epoch 27)
+2025_07_17_17_46_35 - Train Loss: 0.0394 at step 238000, lr 0.000400
+2025_07_17_17_51_00 - Train Loss: 0.0741 at step 238400, lr 0.000400
+2025_07_17_17_55_25 - Train Loss: 0.0163 at step 238800, lr 0.000400
+2025_07_17_17_59_50 - Train Loss: 0.0463 at step 239200, lr 0.000400
+2025_07_17_18_04_15 - Train Loss: 0.0215 at step 239600, lr 0.000400
+2025_07_17_18_08_40 - Train Loss: 0.2246 at step 240000, lr 0.000400
+2025_07_17_18_13_05 - Train Loss: 0.1067 at step 240400, lr 0.000400
+2025_07_17_18_17_30 - Train Loss: 0.0071 at step 240800, lr 0.000400
+2025_07_17_18_21_55 - Train Loss: 0.2194 at step 241200, lr 0.000400
+2025_07_17_18_26_20 - Train Loss: 0.1180 at step 241600, lr 0.000400
+2025_07_17_18_30_45 - Train Loss: 0.0094 at step 242000, lr 0.000400
+2025_07_17_18_35_10 - Train Loss: 0.3134 at step 242400, lr 0.000400
+2025_07_17_18_39_35 - Train Loss: 0.0164 at step 242800, lr 0.000400
+2025_07_17_18_44_00 - Train Loss: 0.0012 at step 243200, lr 0.000400
+2025_07_17_18_48_25 - Train Loss: 0.0182 at step 243600, lr 0.000400
+2025_07_17_18_52_50 - Train Loss: 0.0192 at step 244000, lr 0.000400
+2025_07_17_18_57_15 - Train Loss: 0.0137 at step 244400, lr 0.000400
+2025_07_17_19_01_40 - Train Loss: 0.0008 at step 244800, lr 0.000400
+2025_07_17_19_06_05 - Train Loss: 0.1247 at step 245200, lr 0.000400
+2025_07_17_19_10_30 - Train Loss: 0.0215 at step 245600, lr 0.000400
+2025_07_17_19_14_55 - Train Loss: 0.2120 at step 246000, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 28) Accuracy: 0.9755; AP: 0.9979
+Real Accuracy: 0.9897
+Fake Accuracy: 0.9612
+Recall: 0.9612
+F1 Score: 0.9751
+TP: 13985.0, TN: 14399.0, FP: 150.0, FN: 564.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_28.pth
+Current accuracy 0.9755 not better than best 0.9788 (epoch 27)
+Epochs without improvement: 1/5
+2025_07_17_19_26_54 - Train Loss: 0.0791 at step 246400, lr 0.000400
+2025_07_17_19_31_19 - Train Loss: 0.1604 at step 246800, lr 0.000400
+2025_07_17_19_35_44 - Train Loss: 0.0826 at step 247200, lr 0.000400
+2025_07_17_19_40_09 - Train Loss: 0.0041 at step 247600, lr 0.000400
+2025_07_17_19_44_34 - Train Loss: 0.0610 at step 248000, lr 0.000400
+2025_07_17_19_48_59 - Train Loss: 0.0314 at step 248400, lr 0.000400
+2025_07_17_19_53_24 - Train Loss: 0.0718 at step 248800, lr 0.000400
+2025_07_17_19_57_49 - Train Loss: 0.2063 at step 249200, lr 0.000400
+2025_07_17_20_02_14 - Train Loss: 0.0136 at step 249600, lr 0.000400
+2025_07_17_20_06_39 - Train Loss: 0.0030 at step 250000, lr 0.000400
+2025_07_17_20_11_04 - Train Loss: 0.1682 at step 250400, lr 0.000400
+2025_07_17_20_15_29 - Train Loss: 0.0564 at step 250800, lr 0.000400
+2025_07_17_20_19_54 - Train Loss: 0.0175 at step 251200, lr 0.000400
+2025_07_17_20_24_19 - Train Loss: 0.0229 at step 251600, lr 0.000400
+2025_07_17_20_28_44 - Train Loss: 0.0194 at step 252000, lr 0.000400
+2025_07_17_20_33_09 - Train Loss: 0.0486 at step 252400, lr 0.000400
+2025_07_17_20_37_34 - Train Loss: 0.0092 at step 252800, lr 0.000400
+2025_07_17_20_41_59 - Train Loss: 0.0078 at step 253200, lr 0.000400
+2025_07_17_20_46_24 - Train Loss: 0.0425 at step 253600, lr 0.000400
+2025_07_17_20_50_49 - Train Loss: 0.0512 at step 254000, lr 0.000400
+2025_07_17_20_55_14 - Train Loss: 0.0163 at step 254400, lr 0.000400
+2025_07_17_20_59_39 - Train Loss: 0.0165 at step 254800, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 29) Accuracy: 0.9792; AP: 0.9980
+Real Accuracy: 0.9870
+Fake Accuracy: 0.9713
+Recall: 0.9713
+F1 Score: 0.9790
+TP: 14132.0, TN: 14360.0, FP: 189.0, FN: 417.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_29.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9792 (epoch 29)
+2025_07_17_21_11_38 - Train Loss: 0.0101 at step 255200, lr 0.000400
+2025_07_17_21_16_03 - Train Loss: 0.0707 at step 255600, lr 0.000400
+2025_07_17_21_20_28 - Train Loss: 0.0054 at step 256000, lr 0.000400
+2025_07_17_21_24_53 - Train Loss: 0.1367 at step 256400, lr 0.000400
+2025_07_17_21_29_18 - Train Loss: 0.0712 at step 256800, lr 0.000400
+2025_07_17_21_33_43 - Train Loss: 0.0809 at step 257200, lr 0.000400
+2025_07_17_21_38_08 - Train Loss: 0.4114 at step 257600, lr 0.000400
+2025_07_17_21_42_33 - Train Loss: 0.0908 at step 258000, lr 0.000400
+2025_07_17_21_46_58 - Train Loss: 0.1497 at step 258400, lr 0.000400
+2025_07_17_21_51_23 - Train Loss: 0.1148 at step 258800, lr 0.000400
+2025_07_17_21_55_48 - Train Loss: 0.0174 at step 259200, lr 0.000400
+2025_07_17_22_00_13 - Train Loss: 0.1145 at step 259600, lr 0.000400
+2025_07_17_22_04_38 - Train Loss: 0.0177 at step 260000, lr 0.000400
+2025_07_17_22_09_03 - Train Loss: 0.0203 at step 260400, lr 0.000400
+2025_07_17_22_13_28 - Train Loss: 0.0584 at step 260800, lr 0.000400
+2025_07_17_22_17_53 - Train Loss: 0.0901 at step 261200, lr 0.000400
+2025_07_17_22_22_18 - Train Loss: 0.0427 at step 261600, lr 0.000400
+2025_07_17_22_26_43 - Train Loss: 0.2053 at step 262000, lr 0.000400
+2025_07_17_22_31_08 - Train Loss: 0.1324 at step 262400, lr 0.000400
+2025_07_17_22_35_33 - Train Loss: 0.0070 at step 262800, lr 0.000400
+2025_07_17_22_39_58 - Train Loss: 0.5997 at step 263200, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 30) Accuracy: 0.9798; AP: 0.9980
+Real Accuracy: 0.9782
+Fake Accuracy: 0.9813
+Recall: 0.9813
+F1 Score: 0.9798
+TP: 14277.0, TN: 14232.0, FP: 317.0, FN: 272.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_30.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9798 (epoch 30)
+2025_07_17_22_51_57 - Train Loss: 0.0265 at step 263600, lr 0.000400
+2025_07_17_22_56_22 - Train Loss: 0.0213 at step 264000, lr 0.000400
+2025_07_17_23_00_47 - Train Loss: 0.0192 at step 264400, lr 0.000400
+2025_07_17_23_05_12 - Train Loss: 0.2175 at step 264800, lr 0.000400
+2025_07_17_23_09_37 - Train Loss: 0.0457 at step 265200, lr 0.000400
+2025_07_17_23_14_02 - Train Loss: 0.0183 at step 265600, lr 0.000400
+2025_07_17_23_18_27 - Train Loss: 0.1546 at step 266000, lr 0.000400
+2025_07_17_23_22_52 - Train Loss: 0.0291 at step 266400, lr 0.000400
+2025_07_17_23_27_17 - Train Loss: 0.0158 at step 266800, lr 0.000400
+2025_07_17_23_31_42 - Train Loss: 0.0822 at step 267200, lr 0.000400
+2025_07_17_23_36_07 - Train Loss: 0.0048 at step 267600, lr 0.000400
+2025_07_17_23_40_32 - Train Loss: 0.0055 at step 268000, lr 0.000400
+2025_07_17_23_44_57 - Train Loss: 0.0379 at step 268400, lr 0.000400
+2025_07_17_23_49_22 - Train Loss: 0.0099 at step 268800, lr 0.000400
+2025_07_17_23_53_47 - Train Loss: 0.0528 at step 269200, lr 0.000400
+2025_07_17_23_58_12 - Train Loss: 0.1446 at step 269600, lr 0.000400
+2025_07_18_00_02_37 - Train Loss: 0.0353 at step 270000, lr 0.000400
+2025_07_18_00_07_02 - Train Loss: 0.0020 at step 270400, lr 0.000400
+2025_07_18_00_11_27 - Train Loss: 0.0561 at step 270800, lr 0.000400
+2025_07_18_00_15_52 - Train Loss: 0.4743 at step 271200, lr 0.000400
+2025_07_18_00_20_17 - Train Loss: 0.0357 at step 271600, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 31) Accuracy: 0.9803; AP: 0.9980
+Real Accuracy: 0.9729
+Fake Accuracy: 0.9877
+Recall: 0.9877
+F1 Score: 0.9804
+TP: 14370.0, TN: 14154.0, FP: 395.0, FN: 179.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_31.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9803 (epoch 31)
+2025_07_18_00_32_16 - Train Loss: 0.0211 at step 272000, lr 0.000400
+2025_07_18_00_36_41 - Train Loss: 0.2021 at step 272400, lr 0.000400
+2025_07_18_00_41_06 - Train Loss: 0.0181 at step 272800, lr 0.000400
+2025_07_18_00_45_31 - Train Loss: 0.0514 at step 273200, lr 0.000400
+2025_07_18_00_49_56 - Train Loss: 0.0216 at step 273600, lr 0.000400
+2025_07_18_00_54_21 - Train Loss: 0.0064 at step 274000, lr 0.000400
+2025_07_18_00_58_46 - Train Loss: 0.0226 at step 274400, lr 0.000400
+2025_07_18_01_03_11 - Train Loss: 0.1532 at step 274800, lr 0.000400
+2025_07_18_01_07_36 - Train Loss: 0.0141 at step 275200, lr 0.000400
+2025_07_18_01_12_01 - Train Loss: 0.1059 at step 275600, lr 0.000400
+2025_07_18_01_16_26 - Train Loss: 0.0467 at step 276000, lr 0.000400
+2025_07_18_01_20_51 - Train Loss: 0.0422 at step 276400, lr 0.000400
+2025_07_18_01_25_16 - Train Loss: 0.0595 at step 276800, lr 0.000400
+2025_07_18_01_29_41 - Train Loss: 0.2356 at step 277200, lr 0.000400
+2025_07_18_01_34_06 - Train Loss: 0.0034 at step 277600, lr 0.000400
+2025_07_18_01_38_31 - Train Loss: 0.0569 at step 278000, lr 0.000400
+2025_07_18_01_42_56 - Train Loss: 0.0085 at step 278400, lr 0.000400
+2025_07_18_01_47_21 - Train Loss: 0.0530 at step 278800, lr 0.000400
+2025_07_18_01_51_46 - Train Loss: 0.0037 at step 279200, lr 0.000400
+2025_07_18_01_56_11 - Train Loss: 0.0098 at step 279600, lr 0.000400
+2025_07_18_02_00_36 - Train Loss: 0.0158 at step 280000, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 32) Accuracy: 0.9755; AP: 0.9980
+Real Accuracy: 0.9900
+Fake Accuracy: 0.9610
+Recall: 0.9610
+F1 Score: 0.9751
+TP: 13982.0, TN: 14403.0, FP: 146.0, FN: 567.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_32.pth
+Current accuracy 0.9755 not better than best 0.9803 (epoch 31)
+Epochs without improvement: 1/5
+2025_07_18_02_12_35 - Train Loss: 0.0273 at step 280400, lr 0.000400
+2025_07_18_02_17_00 - Train Loss: 0.2840 at step 280800, lr 0.000400
+2025_07_18_02_21_26 - Train Loss: 0.0174 at step 281200, lr 0.000400
+2025_07_18_02_25_51 - Train Loss: 0.0811 at step 281600, lr 0.000400
+2025_07_18_02_30_16 - Train Loss: 0.2625 at step 282000, lr 0.000400
+2025_07_18_02_34_41 - Train Loss: 0.1229 at step 282400, lr 0.000400
+2025_07_18_02_39_06 - Train Loss: 0.0078 at step 282800, lr 0.000400
+2025_07_18_02_43_31 - Train Loss: 0.1171 at step 283200, lr 0.000400
+2025_07_18_02_47_56 - Train Loss: 0.0968 at step 283600, lr 0.000400
+2025_07_18_02_52_21 - Train Loss: 0.1292 at step 284000, lr 0.000400
+2025_07_18_02_56_45 - Train Loss: 0.0101 at step 284400, lr 0.000400
+2025_07_18_03_01_10 - Train Loss: 0.0706 at step 284800, lr 0.000400
+2025_07_18_03_05_35 - Train Loss: 0.0095 at step 285200, lr 0.000400
+2025_07_18_03_10_00 - Train Loss: 0.0294 at step 285600, lr 0.000400
+2025_07_18_03_14_25 - Train Loss: 0.0127 at step 286000, lr 0.000400
+2025_07_18_03_18_50 - Train Loss: 0.2029 at step 286400, lr 0.000400
+2025_07_18_03_23_15 - Train Loss: 0.0011 at step 286800, lr 0.000400
+2025_07_18_03_27_40 - Train Loss: 0.1610 at step 287200, lr 0.000400
+2025_07_18_03_32_06 - Train Loss: 0.0142 at step 287600, lr 0.000400
+2025_07_18_03_36_31 - Train Loss: 0.0092 at step 288000, lr 0.000400
+2025_07_18_03_40_56 - Train Loss: 0.0039 at step 288400, lr 0.000400
+2025_07_18_03_45_21 - Train Loss: 0.0576 at step 288800, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 33) Accuracy: 0.9791; AP: 0.9980
+Real Accuracy: 0.9702
+Fake Accuracy: 0.9880
+Recall: 0.9880
+F1 Score: 0.9793
+TP: 14375.0, TN: 14116.0, FP: 433.0, FN: 174.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_33.pth
+Current accuracy 0.9791 not better than best 0.9803 (epoch 31)
+Epochs without improvement: 2/5
+2025_07_18_03_57_20 - Train Loss: 0.0013 at step 289200, lr 0.000400
+2025_07_18_04_01_45 - Train Loss: 0.0322 at step 289600, lr 0.000400
+2025_07_18_04_06_10 - Train Loss: 0.0318 at step 290000, lr 0.000400
+2025_07_18_04_10_35 - Train Loss: 0.0103 at step 290400, lr 0.000400
+2025_07_18_04_15_00 - Train Loss: 0.1037 at step 290800, lr 0.000400
+2025_07_18_04_19_25 - Train Loss: 0.0263 at step 291200, lr 0.000400
+2025_07_18_04_23_50 - Train Loss: 0.0054 at step 291600, lr 0.000400
+2025_07_18_04_28_15 - Train Loss: 0.0223 at step 292000, lr 0.000400
+2025_07_18_04_32_40 - Train Loss: 0.0721 at step 292400, lr 0.000400
+2025_07_18_04_37_05 - Train Loss: 0.0519 at step 292800, lr 0.000400
+2025_07_18_04_41_29 - Train Loss: 0.0047 at step 293200, lr 0.000400
+2025_07_18_04_45_54 - Train Loss: 0.0434 at step 293600, lr 0.000400
+2025_07_18_04_50_19 - Train Loss: 0.0602 at step 294000, lr 0.000400
+2025_07_18_04_54_44 - Train Loss: 0.0435 at step 294400, lr 0.000400
+2025_07_18_04_59_09 - Train Loss: 0.0139 at step 294800, lr 0.000400
+2025_07_18_05_03_34 - Train Loss: 0.0834 at step 295200, lr 0.000400
+2025_07_18_05_07_59 - Train Loss: 0.0324 at step 295600, lr 0.000400
+2025_07_18_05_12_25 - Train Loss: 0.0072 at step 296000, lr 0.000400
+2025_07_18_05_16_50 - Train Loss: 0.0063 at step 296400, lr 0.000400
+2025_07_18_05_21_15 - Train Loss: 0.0091 at step 296800, lr 0.000400
+2025_07_18_05_25_40 - Train Loss: 0.1769 at step 297200, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 34) Accuracy: 0.9824; AP: 0.9985
+Real Accuracy: 0.9882
+Fake Accuracy: 0.9766
+Recall: 0.9766
+F1 Score: 0.9823
+TP: 14209.0, TN: 14377.0, FP: 172.0, FN: 340.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_34.pth
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
+New best model saved! Accuracy: 0.9824 (epoch 34)
+2025_07_18_05_37_39 - Train Loss: 0.0064 at step 297600, lr 0.000400
+2025_07_18_05_42_04 - Train Loss: 0.0042 at step 298000, lr 0.000400
+2025_07_18_05_46_29 - Train Loss: 0.0144 at step 298400, lr 0.000400
+2025_07_18_05_50_54 - Train Loss: 0.0288 at step 298800, lr 0.000400
+2025_07_18_05_55_19 - Train Loss: 0.0462 at step 299200, lr 0.000400
+2025_07_18_05_59_44 - Train Loss: 0.1420 at step 299600, lr 0.000400
+2025_07_18_06_04_09 - Train Loss: 0.0400 at step 300000, lr 0.000400
+2025_07_18_06_08_34 - Train Loss: 0.1554 at step 300400, lr 0.000400
+2025_07_18_06_12_59 - Train Loss: 0.0117 at step 300800, lr 0.000400
+2025_07_18_06_17_24 - Train Loss: 0.0535 at step 301200, lr 0.000400
+2025_07_18_06_21_48 - Train Loss: 0.0558 at step 301600, lr 0.000400
+2025_07_18_06_26_13 - Train Loss: 0.2769 at step 302000, lr 0.000400
+2025_07_18_06_30_38 - Train Loss: 0.0360 at step 302400, lr 0.000400
+2025_07_18_06_35_03 - Train Loss: 0.0119 at step 302800, lr 0.000400
+2025_07_18_06_39_28 - Train Loss: 0.0262 at step 303200, lr 0.000400
+2025_07_18_06_43_53 - Train Loss: 0.0129 at step 303600, lr 0.000400
+2025_07_18_06_48_18 - Train Loss: 0.0117 at step 304000, lr 0.000400
+2025_07_18_06_52_43 - Train Loss: 0.0155 at step 304400, lr 0.000400
+2025_07_18_06_57_08 - Train Loss: 0.0637 at step 304800, lr 0.000400
+2025_07_18_07_01_33 - Train Loss: 0.0264 at step 305200, lr 0.000400
+2025_07_18_07_05_58 - Train Loss: 0.1325 at step 305600, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 35) Accuracy: 0.9820; AP: 0.9984
+Real Accuracy: 0.9877
+Fake Accuracy: 0.9764
+Recall: 0.9764
+F1 Score: 0.9819
+TP: 14205.0, TN: 14370.0, FP: 179.0, FN: 344.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_35.pth
+Current accuracy 0.9820 not better than best 0.9824 (epoch 34)
+Epochs without improvement: 1/5
+2025_07_18_07_17_58 - Train Loss: 0.0545 at step 306000, lr 0.000400
+2025_07_18_07_22_23 - Train Loss: 0.0089 at step 306400, lr 0.000400
+2025_07_18_07_26_48 - Train Loss: 0.0018 at step 306800, lr 0.000400
+2025_07_18_07_31_13 - Train Loss: 0.2921 at step 307200, lr 0.000400
+2025_07_18_07_35_38 - Train Loss: 0.0341 at step 307600, lr 0.000400
+2025_07_18_07_40_03 - Train Loss: 0.0959 at step 308000, lr 0.000400
+2025_07_18_07_44_28 - Train Loss: 0.0155 at step 308400, lr 0.000400
+2025_07_18_07_48_53 - Train Loss: 0.0069 at step 308800, lr 0.000400
+2025_07_18_07_53_18 - Train Loss: 0.0247 at step 309200, lr 0.000400
+2025_07_18_07_57_43 - Train Loss: 0.0447 at step 309600, lr 0.000400
+2025_07_18_08_02_08 - Train Loss: 0.2674 at step 310000, lr 0.000400
+2025_07_18_08_06_33 - Train Loss: 0.1109 at step 310400, lr 0.000400
+2025_07_18_08_10_58 - Train Loss: 0.0631 at step 310800, lr 0.000400
+2025_07_18_08_15_23 - Train Loss: 0.0540 at step 311200, lr 0.000400
+2025_07_18_08_19_48 - Train Loss: 0.1706 at step 311600, lr 0.000400
+2025_07_18_08_24_13 - Train Loss: 0.0147 at step 312000, lr 0.000400
+2025_07_18_08_28_38 - Train Loss: 0.0774 at step 312400, lr 0.000400
+2025_07_18_08_33_03 - Train Loss: 0.5141 at step 312800, lr 0.000400
+2025_07_18_08_37_28 - Train Loss: 0.0172 at step 313200, lr 0.000400
+2025_07_18_08_41_53 - Train Loss: 0.0110 at step 313600, lr 0.000400
+2025_07_18_08_46_18 - Train Loss: 0.0439 at step 314000, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 36) Accuracy: 0.9807; AP: 0.9985
+Real Accuracy: 0.9914
+Fake Accuracy: 0.9699
+Recall: 0.9699
+F1 Score: 0.9804
+TP: 14111.0, TN: 14424.0, FP: 125.0, FN: 438.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_36.pth
+Current accuracy 0.9807 not better than best 0.9824 (epoch 34)
+Epochs without improvement: 2/5
+2025_07_18_08_58_17 - Train Loss: 0.0362 at step 314400, lr 0.000400
+2025_07_18_09_02_42 - Train Loss: 0.2496 at step 314800, lr 0.000400
+2025_07_18_09_07_07 - Train Loss: 0.0320 at step 315200, lr 0.000400
+2025_07_18_09_11_32 - Train Loss: 0.0188 at step 315600, lr 0.000400
+2025_07_18_09_15_57 - Train Loss: 0.0250 at step 316000, lr 0.000400
+2025_07_18_09_20_22 - Train Loss: 0.0379 at step 316400, lr 0.000400
+2025_07_18_09_24_47 - Train Loss: 0.0033 at step 316800, lr 0.000400
+2025_07_18_09_29_12 - Train Loss: 0.0265 at step 317200, lr 0.000400
+2025_07_18_09_33_37 - Train Loss: 0.0545 at step 317600, lr 0.000400
+2025_07_18_09_38_02 - Train Loss: 0.1425 at step 318000, lr 0.000400
+2025_07_18_09_42_27 - Train Loss: 0.0120 at step 318400, lr 0.000400
+2025_07_18_09_46_52 - Train Loss: 0.2396 at step 318800, lr 0.000400
+2025_07_18_09_51_17 - Train Loss: 0.0217 at step 319200, lr 0.000400
+2025_07_18_09_55_42 - Train Loss: 0.0058 at step 319600, lr 0.000400
+2025_07_18_10_00_07 - Train Loss: 0.0531 at step 320000, lr 0.000400
+2025_07_18_10_04_32 - Train Loss: 0.1001 at step 320400, lr 0.000400
+2025_07_18_10_08_57 - Train Loss: 0.1421 at step 320800, lr 0.000400
+2025_07_18_10_13_22 - Train Loss: 0.0467 at step 321200, lr 0.000400
+2025_07_18_10_17_47 - Train Loss: 0.0362 at step 321600, lr 0.000400
+2025_07_18_10_22_12 - Train Loss: 0.0434 at step 322000, lr 0.000400
+2025_07_18_10_26_37 - Train Loss: 0.0044 at step 322400, lr 0.000400
+2025_07_18_10_31_02 - Train Loss: 0.0405 at step 322800, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 37) Accuracy: 0.9802; AP: 0.9982
+Real Accuracy: 0.9876
+Fake Accuracy: 0.9728
+Recall: 0.9728
+F1 Score: 0.9801
+TP: 14153.0, TN: 14369.0, FP: 180.0, FN: 396.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_37.pth
+Current accuracy 0.9802 not better than best 0.9824 (epoch 34)
+Epochs without improvement: 3/5
+2025_07_18_10_43_01 - Train Loss: 0.0389 at step 323200, lr 0.000400
+2025_07_18_10_47_26 - Train Loss: 0.0417 at step 323600, lr 0.000400
+2025_07_18_10_51_51 - Train Loss: 0.0021 at step 324000, lr 0.000400
+2025_07_18_10_56_16 - Train Loss: 0.3425 at step 324400, lr 0.000400
+2025_07_18_11_00_41 - Train Loss: 0.1355 at step 324800, lr 0.000400
+2025_07_18_11_05_06 - Train Loss: 0.0117 at step 325200, lr 0.000400
+2025_07_18_11_09_31 - Train Loss: 0.0088 at step 325600, lr 0.000400
+2025_07_18_11_13_56 - Train Loss: 0.0204 at step 326000, lr 0.000400
+2025_07_18_11_18_21 - Train Loss: 0.0186 at step 326400, lr 0.000400
+2025_07_18_11_22_46 - Train Loss: 0.0511 at step 326800, lr 0.000400
+2025_07_18_11_27_11 - Train Loss: 0.2247 at step 327200, lr 0.000400
+2025_07_18_11_31_36 - Train Loss: 0.3394 at step 327600, lr 0.000400
+2025_07_18_11_36_00 - Train Loss: 0.0678 at step 328000, lr 0.000400
+2025_07_18_11_40_25 - Train Loss: 0.2101 at step 328400, lr 0.000400
+2025_07_18_11_44_50 - Train Loss: 0.0765 at step 328800, lr 0.000400
+2025_07_18_11_49_15 - Train Loss: 0.1664 at step 329200, lr 0.000400
+2025_07_18_11_53_40 - Train Loss: 0.0040 at step 329600, lr 0.000400
+2025_07_18_11_58_05 - Train Loss: 0.0849 at step 330000, lr 0.000400
+2025_07_18_12_02_30 - Train Loss: 0.0342 at step 330400, lr 0.000400
+2025_07_18_12_06_55 - Train Loss: 0.0128 at step 330800, lr 0.000400
+2025_07_18_12_11_20 - Train Loss: 0.1077 at step 331200, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 38) Accuracy: 0.9786; AP: 0.9983
+Real Accuracy: 0.9642
+Fake Accuracy: 0.9931
+Recall: 0.9931
+F1 Score: 0.9789
+TP: 14448.0, TN: 14028.0, FP: 521.0, FN: 101.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_38.pth
+Current accuracy 0.9786 not better than best 0.9824 (epoch 34)
+Epochs without improvement: 4/5
+2025_07_18_12_23_19 - Train Loss: 0.0057 at step 331600, lr 0.000400
+2025_07_18_12_27_44 - Train Loss: 0.0190 at step 332000, lr 0.000400
+2025_07_18_12_32_09 - Train Loss: 0.0134 at step 332400, lr 0.000400
+2025_07_18_12_36_34 - Train Loss: 0.0038 at step 332800, lr 0.000400
+2025_07_18_12_40_59 - Train Loss: 0.1494 at step 333200, lr 0.000400
+2025_07_18_12_45_24 - Train Loss: 0.0027 at step 333600, lr 0.000400
+2025_07_18_12_49_49 - Train Loss: 0.0085 at step 334000, lr 0.000400
+2025_07_18_12_54_14 - Train Loss: 0.0307 at step 334400, lr 0.000400
+2025_07_18_12_58_39 - Train Loss: 0.0448 at step 334800, lr 0.000400
+2025_07_18_13_03_04 - Train Loss: 0.0223 at step 335200, lr 0.000400
+2025_07_18_13_07_29 - Train Loss: 0.0279 at step 335600, lr 0.000400
+2025_07_18_13_11_54 - Train Loss: 0.0085 at step 336000, lr 0.000400
+2025_07_18_13_16_19 - Train Loss: 0.0069 at step 336400, lr 0.000400
+2025_07_18_13_20_44 - Train Loss: 0.0073 at step 336800, lr 0.000400
+2025_07_18_13_25_09 - Train Loss: 0.0131 at step 337200, lr 0.000400
+2025_07_18_13_29_34 - Train Loss: 0.0083 at step 337600, lr 0.000400
+2025_07_18_13_33_59 - Train Loss: 0.0523 at step 338000, lr 0.000400
+2025_07_18_13_38_24 - Train Loss: 0.0701 at step 338400, lr 0.000400
+2025_07_18_13_42_49 - Train Loss: 0.0628 at step 338800, lr 0.000400
+2025_07_18_13_47_14 - Train Loss: 0.0250 at step 339200, lr 0.000400
+2025_07_18_13_51_39 - Train Loss: 0.0815 at step 339600, lr 0.000400
+Final dataset root: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Checking dataset at: /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/real: ['260_123_003614.png', '570_0_000033.png', '287_486_008490.png', '572_92_000660.png', '223_232_003804.png'] ... (14549 total)
+Files in /scratch1/ice.exconde/WildDeepfake/01_wdf_unaltered/val/fake: ['123.tar_0_000247.png', '169.tar_0_000963.png', '135.tar_12_000230.png', '106.tar_43_000738.png', '223.tar_202_002604.png'] ... (14549 total)
+(Validation @ epoch 39) Accuracy: 0.9824; AP: 0.9982
+Real Accuracy: 0.9824
+Fake Accuracy: 0.9823
+Recall: 0.9823
+F1 Score: 0.9824
+TP: 14292.0, TN: 14293.0, FP: 256.0, FN: 257.0
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_epoch_39.pth
+Current accuracy 0.9824 not better than best 0.9824 (epoch 34)
+Epochs without improvement: 5/5
+Early stopping triggered! No improvement for 5 epochs.
+Best model was from epoch 34 with accuracy 0.9824
+Saving model ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_last.pth
+Training completed. Best model was from epoch 34 with accuracy 0.9824
+Loading best model from epoch 34...
+loading the model from ./checkpoints/experiment_name2025_07_15_18_26_35/model_epoch_best.pth
