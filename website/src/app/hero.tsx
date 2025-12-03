@@ -1,6 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { FileText, Database } from "lucide-react";
 
 export default function Hero() {
 	return (
@@ -19,43 +17,14 @@ export default function Hero() {
 						Spotting the Unseen: A Comprehensive Analysis of Face
 						Forgery Detection Models
 					</h1>
-					<div className="mb-6 flex flex-wrap justify-center gap-2 text-gray-700 text-base font-medium">
-						<span>Isiah Reuben C. Exconde</span>
-						<span>•</span>
-						<span>Zhoe Aeris F. Gon Gon</span>
-						<span>•</span>
-						<span>Anne Gabrielle M. Sulit</span>
-						<span>•</span>
-						<span>Ysobella D. Torio</span>
-					</div>
-					<p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-						Investigating the robustness of state-of-the-art
-						deepfake detection models under real-world conditions
-						and challenging scenarios.
-					</p>
-					<div className="flex flex-wrap justify-center gap-4">
-						<Button
-							size="lg"
-							className="bg-blue-600 hover:bg-blue-700"
-						>
-							<FileText className="w-5 h-5 mr-2" />
-							Read Paper
-						</Button>
-						<Button
-							asChild
-							variant="outline"
-							size="lg"
-							className="bg-white"
-						>
-							<a
-								href="https://github.com/axsulit/spotting-the-unseen/tree/main/datasets"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Database className="w-5 h-5 mr-2" />
-								View Datasets
-							</a>
-						</Button>
+					<div className="flex flex-wrap justify-center gap-2 text-base font-medium">
+						<a href="https://sites.google.com/view/ice-exconde-e-portfolio/home" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">Isiah Reuben C. Exconde</a>
+						<span className="text-gray-700">•</span>
+						<a href="https://zhoe-aeris.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">Zhoe Aeris F. Gon Gon</a>
+						<span className="text-gray-700">•</span>
+						<a href="https://axsulit.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">Anne Gabrielle M. Sulit</a>
+						<span className="text-gray-700">•</span>
+						<a href="https://bellatorio.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">Ysobella D. Torio</a>
 					</div>
 				</div>
 			</section>
