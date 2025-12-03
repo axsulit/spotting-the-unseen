@@ -1,5 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ModelPerformanceTable } from "@/components/model-table/model-performance-table";
 import Image from "next/image";
 export default function Results() {
 	return (
@@ -80,7 +78,7 @@ export default function Results() {
                             height={1080} 
                             className="w-full h-auto object-contain" 
                         />
-                        <p  className="text-gray-700 text-sm">Figure: Heatmaps of spatial (Xception, RECCE), frequency-based (FreqNet, HiFi-FD), and attention-based (Multi-Att, RFM) face forgery detection models evaluated under a wide range of perturbations. Each heatmap illustrates the models' accuracy, precision, recall, and F1-score.</p>
+                        <p  className="text-gray-700 text-sm">Figure: Heatmaps of spatial (Xception, RECCE), frequency-based (FreqNet, HiFi-FD), and attention-based (Multi-Att, RFM) face forgery detection models evaluated under a wide range of perturbations. Each heatmap illustrates the models&apos; accuracy, precision, recall, and F1-score.</p>
 
                         <Image 
                             src="/bargraphs.png" 
