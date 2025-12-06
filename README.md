@@ -47,27 +47,6 @@ To mimic real-world deepfake conditions, we apply the following perturbations:
 | [HiFi-FD](https://openaccess.thecvf.com/content/CVPR2021/papers/Luo_Generalizing_Face_Forgery_Detection_With_High-Frequency_Features_CVPR_2021_paper.pdf)   ([Code](https://github.com/crywang/face-forgery-detection⁩))   | Frequency-based   | High-frequency noise-aware modeling |
 | [RFM](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Representative_Forgery_Mining_for_Fake_Face_Detection_CVPR_2021_paper.pdf)   ([Code](https://github.com/crywang/RFM))    | Attention-based            | Custom experimental architecture |
 
-## Performance Metrics
-
-Models were evaluated using:
-
-- **Accuracy** – Correct predictions over all samples
-- **Precision** – True positives over predicted positives
-- **Recall** – True positives over actual positives
-- **F1 Score** – Harmonic mean of precision and recall
-
-## Key Findings
-
-| Model     | Unaltered Accuracy | F1-Score under Noise 50% |
-|-----------|--------------------|--------------------------|
-| Xception  | 99.83%             | 66.67%                   |
-| Multi-Att | 99.96%             | 68.42%                   |
-| FreqNet   | 87.79%             | 66.44%                   |
-
-- **Xception** performs consistently well across resolution and color changes.
-- **Multi-Att** demonstrates resilience in identifying localized manipulation, especially splicing.
-- **FreqNet** is more vulnerable to compression and noise but excels in blur-based perturbations.
-
 ## Environment
 
 - Python 3.8+
